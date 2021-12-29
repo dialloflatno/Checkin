@@ -1,0 +1,2 @@
+class SemstersController < ApplicationController
+end
