@@ -79,7 +79,7 @@ puts 'New Subjects.....🖇️'
 
  puts 'Funtime......🥳'
  
- Event.create( title:'MEET AND TREAT', planner:'BobCat Club',time:Time.new(2022,1,1,0,9,0,0), date:DateTime.new(2022, 1, 1, 0, 0, 0), location_id:4)
+ Event.create( title:'MEET AND TREAT', planner:'BobCat Club',time:Time.new(2022,1,1,0,9,0,0), date:DateTime.new(2022, 1, 1, 0, 0, 0), location_id:6)
  Event.create( title:'RACK CATS VS NEW CHARTER BASKET BALL', planner:'BobCat Club', time:Time.new(2022,1,1,0,9,0,0), date:DateTime.new(2022, 1, 1, 0, 0, 0), location_id:4)
  Event.create( title:'MEET AND TREAT', planner:'BobCat Club', time:Time.new(2022,1,1,0,9,0,0).strftime("%H:%M"), date:DateTime.new(2022, 1, 1, 0, 0, 0), location_id:4)
  Event.create( title:'RACK CATS VS NEW CHARTER BASKET BALL', planner:'BobCat Club', time:Time.new(2022,1,1,0,9,0,0).strftime("%H:%M"), date:DateTime.new(2022, 1, 1, 0, 0, 0), location_id:4)
