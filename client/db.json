@@ -1,19 +1,82 @@
-{
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
+[
+  {
+  "id": 12,
+  "title": "MEET AND TREAT",
+  "planner": "BobCat Club",
+  "time": "2022-01-01T00:09:00.000Z",
+  "date": "2022-01-01T00:00:00.000Z",
+  "location": {
+  "name": "room 8"
   }
-}
+  },
+  {
+  "id": 13,
+  "title": "RACK CATS VS NEW CHARTER BASKET BALL",
+  "planner": "BobCat Club",
+  "time": "2022-01-01T00:09:00.000Z",
+  "date": "2022-01-01T00:00:00.000Z",
+  "location": {
+  "name": "Gym"
+  }
+  },
+  {
+  "id": 14,
+  "title": "MEET AND TREAT",
+  "planner": "BobCat Club",
+  "time": "2022-01-04T00:09:00.000Z",
+  "date": "2022-01-01T00:00:00.000Z",
+  "location": {
+  "name": "Cafetriea"
+  }
+  },
+  {
+  "id": 15,
+  "title": "RACK CATS VS NEW CHARTER BASKET BALL",
+  "planner": "BobCat Club",
+  "time": "2022-01-04T00:09:00.000Z",
+  "date": "2022-01-01T00:00:00.000Z",
+  "location": {
+  "name": "room 12"
+  }
+  },
+  {
+  "id": 16,
+  "title": "MEET AND TREAT",
+  "planner": "BobCat Club",
+  "time": "2022-01-04T00:09:00.000Z",
+  "date": "2022-01-01T00:00:00.000Z",
+  "location": {
+  "name": "room 212"
+  }
+  },
+  {
+  "id": 17,
+  "title": "RACK CATS VS NEW CHARTER BASKET BALL",
+  "planner": "BobCat Club",
+  "time": "2022-01-01T00:09:00.000Z",
+  "date": "2022-01-01T00:00:00.000Z",
+  "location": {
+  "name": "Gym"
+  }
+  },
+  {
+  "id": 18,
+  "title": "MEET AND TREAT",
+  "planner": "BobCat Club",
+  "time": "2022-01-04T00:09:00.000Z",
+  "date": "2022-01-01T00:00:00.000Z",
+  "location": {
+  "name": "Cafetriea"
+  }
+  },
+  {
+  "id": 19,
+  "title": "RACK CATS VS NEW CHARTER BASKET BALL",
+  "planner": "BobCat Club",
+  "time": "2022-01-04T00:09:00.000Z",
+  "date": "2022-01-01T00:00:00.000Z",
+  "location": {
+  "name": "room 12"
+  }
+  }
+  ]

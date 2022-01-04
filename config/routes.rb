@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :events
+  resources :events,only: [:index, :create]
   resources :users, only: [:index]
   resources :subjects
   resources :periods
