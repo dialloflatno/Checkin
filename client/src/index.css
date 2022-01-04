@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.signContainer {
+  height: 100vh;
+  background-color: black;
+  width: 100vw;
+  display: grid;
+  grid-template: 1fr 5fr 1fr;
+  align-items: center;
+  justify-content: center;
+  grid-template-areas:
+    'username'
+    'password'
+    'signIn';
+}
+
+.signContainer username password button {
+  position: absolute;
+  align-items: center;
+}
+
+.username {
+  margin: 10px;
+  width: 20vw;
+  height: 30px;
+}
+.password {
+  margin: 10px;
+  width: 20vw;
+  height: 30px;
+}
+.signIn {
+  background-color: red;
+  width: 5pc;
+}

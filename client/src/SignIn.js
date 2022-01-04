@@ -3,7 +3,7 @@ import { useState } from "react";
 function SignIn() {
 
     const [username, setUsername] = useState("");
-    const [password, setPassword] = useState("");
+    // const [password, setPassword] = useState("");
 
     function handleSubmit (e){
         e.preventDefault();
@@ -27,7 +27,7 @@ function SignIn() {
     const handleChange = (e) => {
         console.log(e.target.value)
     }
-// Node
+no
     return (
         <div className="signContainer">
             <form onSubmit = {handleSubmit}>
