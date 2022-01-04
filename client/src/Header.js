@@ -1,10 +1,10 @@
 // This is the Navigation Bar
 import "./App.css";
-// import Emergency from "./Emergency";
-// import Schedule from "./Schedule";
-// import Grades from "./Grades";
-// import Profile from "./Profile";
-// import Events from "./Events";
+import Emergency from "./Emergency";
+import Schedule from "./Schedule";
+import Grades from "./Grades";
+import Profile from "./Profile";
+import Events from "./Events";
 import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
 import React from "react";
 
@@ -21,11 +21,11 @@ function Header() {
         </ul>
       </nav>
       <Switch>
-        <Route path="/Emergency">{/* <Emergency /> */}</Route>
-        <Route path="/Schedule">{/* <Schedule /> */}</Route>
-        <Route path="/Profile">{/* <Profile /> */}</Route>
-        <Route path="/Grades">{/* <Grades /> */}</Route>
-        <Route path="/Events">{/* <Events /> */}</Route>
+        <Route path="/Emergency"><Emergency /></Route>
+        <Route path="/Schedule"><Schedule /></Route>
+        <Route path="/Profile"><Profile /></Route>
+        <Route path="/Grades"><Grades /></Route>
+        <Route path="/Events"><Events /></Route>
       </Switch>
     </BrowserRouter>
   );
