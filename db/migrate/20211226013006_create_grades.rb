@@ -1,10 +1,10 @@
-class CreateGrades < ActiveRecord::Migration[7.0]
+class CreateGrades < ActiveRecord::Migration[6.1]
   def change
     create_table :grades do |t|
-      t.integer :grade 
+      t.integer :grade
       t.string :comment
-      t.references :teacher , :student
- 
+      t.references :teacher, :student
+
       t.timestamps
     end
   end
