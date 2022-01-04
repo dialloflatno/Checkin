@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import EventsForm from './EventsForm'
 import { useEffect } from 'react';
 
-function Events() {
+function Events({handleAdd,handleEventDelete}) {
 
     useEffect(() =>{
         fetch('/events')
@@ -13,9 +13,10 @@ function Events() {
       
     return (
         <div>
-            <EventsForm />
+            <EventsForm handleEventDelete={handleEventDelete} handleAdd={handleAdd}/>
         </div>
     );
-  }
+    }
+  
   
   export default Events;
