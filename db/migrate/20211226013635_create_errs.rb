@@ -1,4 +1,4 @@
-class CreateErrs < ActiveRecord::Migration[7.0]
+class CreateErrs < ActiveRecord::Migration[6.1]
   def change
     create_table :errs do |t|
       t.references :student, :location

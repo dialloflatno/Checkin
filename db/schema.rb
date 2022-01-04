@@ -12,9 +12,12 @@
 
 ActiveRecord::Schema.define(version: 2021_12_28_002412) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "errs", force: :cascade do |t|
-    t.integer "student_id"
-    t.integer "location_id"
+    t.bigint "student_id"
+    t.bigint "location_id"
     t.text "emergency"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -25,9 +28,9 @@ ActiveRecord::Schema.define(version: 2021_12_28_002412) do
   create_table "events", force: :cascade do |t|
     t.string "title"
     t.string "planner"
-    t.datetime "time", precision: 6
-    t.datetime "date", precision: 6
-    t.integer "location_id"
+    t.datetime "time"
+    t.datetime "date"
+    t.bigint "location_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["location_id"], name: "index_events_on_location_id"
@@ -36,8 +39,8 @@ ActiveRecord::Schema.define(version: 2021_12_28_002412) do
   create_table "grades", force: :cascade do |t|
     t.integer "grade"
     t.string "comment"
-    t.integer "teacher_id"
-    t.integer "student_id"
+    t.bigint "teacher_id"
+    t.bigint "student_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["student_id"], name: "index_grades_on_student_id"
@@ -51,8 +54,8 @@ ActiveRecord::Schema.define(version: 2021_12_28_002412) do
   end
 
   create_table "periods", force: :cascade do |t|
-    t.integer "subject_id"
-    t.integer "schedule_id"
+    t.bigint "subject_id"
+    t.bigint "schedule_id"
     t.integer "start_time"
     t.integer "end_time"
     t.datetime "created_at", precision: 6, null: false
@@ -62,8 +65,8 @@ ActiveRecord::Schema.define(version: 2021_12_28_002412) do
   end
 
   create_table "schedules", force: :cascade do |t|
-    t.integer "student_id"
-    t.integer "period_id"
+    t.bigint "student_id"
+    t.bigint "period_id"
     t.integer "period_second"
     t.integer "period_thrid"
     t.integer "period_fourth"
@@ -85,15 +88,15 @@ ActiveRecord::Schema.define(version: 2021_12_28_002412) do
   create_table "semsters", force: :cascade do |t|
     t.string "semster"
     t.integer "year"
-    t.integer "schedule_id"
+    t.bigint "schedule_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["schedule_id"], name: "index_semsters_on_schedule_id"
   end
 
   create_table "students", force: :cascade do |t|
-    t.integer "school_id"
-    t.integer "user_id"
+    t.bigint "school_id"
+    t.bigint "user_id"
     t.integer "student_school_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -103,8 +106,8 @@ ActiveRecord::Schema.define(version: 2021_12_28_002412) do
 
   create_table "subjects", force: :cascade do |t|
     t.string "name"
-    t.integer "teacher_id"
-    t.integer "location_id"
+    t.bigint "teacher_id"
+    t.bigint "location_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["location_id"], name: "index_subjects_on_location_id"
@@ -114,8 +117,8 @@ ActiveRecord::Schema.define(version: 2021_12_28_002412) do
   create_table "teachers", force: :cascade do |t|
     t.integer "school_authorization_code"
     t.integer "teacher_school_id"
-    t.integer "user_id"
-    t.integer "school_id"
+    t.bigint "user_id"
+    t.bigint "school_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["school_id"], name: "index_teachers_on_school_id"
@@ -127,7 +130,7 @@ ActiveRecord::Schema.define(version: 2021_12_28_002412) do
     t.string "last_name"
     t.string "email"
     t.integer "phone_number"
-    t.string "user_name"
+    t.string "username"
     t.string "password"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

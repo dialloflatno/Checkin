@@ -1,4 +1,4 @@
-class CreateTeachers < ActiveRecord::Migration[7.0]
+class CreateTeachers < ActiveRecord::Migration[6.1]
   def change
     create_table :teachers do |t|
       t.integer :school_authorization_code
