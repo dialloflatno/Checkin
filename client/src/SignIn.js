@@ -17,7 +17,7 @@ function SignIn() {
             headers: { 
                 "Content-Type": 'applications/json',
             },
-            body: JSON.stringify({ username ,password}),
+            body: JSON.stringify({user}),
         }).then((r) => {
             if(r.ok) {
                 r.json().then((user) => setUsername(user));
