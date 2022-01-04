@@ -3,7 +3,7 @@ import { useState } from "react";
 function SignIn() {
 
     const [username, setUsername] = useState("");
-    const [password, setPassword] = useState("");
+    // const [password, setPassword] = useState("");
 
     function handleSubmit (e){
         e.preventDefault();
@@ -17,7 +17,7 @@ function SignIn() {
             headers: { 
                 "Content-Type": 'applications/json',
             },
-            body: JSON.stringify({user}),
+            body: JSON.stringify({ username ,password}),
         }).then((r) => {
             if(r.ok) {
                 r.json().then((user) => setUsername(user));
@@ -27,7 +27,7 @@ function SignIn() {
     const handleChange = (e) => {
         console.log(e.target.value)
     }
-// Node
+no
     return (
         <div className="signContainer">
             <form onSubmit = {handleSubmit}>

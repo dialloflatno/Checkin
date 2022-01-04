@@ -25,16 +25,7 @@ code {
     'password'
     'signIn';
 }
-button {
-  border: tomato;
-  color: rgb(138, 10, 10);
-  margin-inline-end: 156px;
-  margin-top: 20px;
-  background-color: rgb(138, 10, 10);
-  width: 43px;
-  height: 29px;
-  border-radius: 100px;
-}
+
 .signContainer username password button {
   position: absolute;
   align-items: center;

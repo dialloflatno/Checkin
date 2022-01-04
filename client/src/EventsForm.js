@@ -12,7 +12,7 @@ function Form({ event, handleAdd }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch(event, {
+    fetch("/events", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -26,7 +26,7 @@ function Form({ event, handleAdd }) {
       }),
     })
       .then((r) => r.json())
-      .then((data) => handleAdd(data));
+      .then((data) => console.log(data));
   };
 
   return (
