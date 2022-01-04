@@ -12,9 +12,9 @@ function Header() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route>
+        <Route exact path="/Emergency">
           {/* <Emergency /> */}
-          <Link to="/Emergency">Emergency</Link>
+          {/* <Link to="/Emergency">Emergency</Link> */}
         </Route>
       </Switch>
       <Switch>
