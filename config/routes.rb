@@ -13,6 +13,13 @@ Rails.application.routes.draw do
 
   resources :students, only: [:index]
 
+  #session routes for login / logout
+  post '/login', to: 'sessions#create'
+  delete '/logout', to: 'sessions#destroy'
+
+  #user route
+  get '/me', to: 'users#show'
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

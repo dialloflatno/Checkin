@@ -5,4 +5,6 @@ class StudentsController < ApplicationController
         render json: students.to_json(except: [:password, :created_at, :updated_at]) , status: :ok
      end
 
+
+     
 end
