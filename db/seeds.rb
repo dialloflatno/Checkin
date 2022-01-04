@@ -12,7 +12,7 @@ dan_user =
     first_name: 'Dan',
     last_name: 'Mithcell',
     email: '12jkd3@gmail.com',
-    phone_number: 19_030_293_390,
+    phone_number: 1903093_390,
     user_name: 'dan_usermchill',
     password: 'm0ney123',
   )
@@ -21,7 +21,7 @@ jack_user =
     first_name: 'Jack',
     last_name: 'Mithcell',
     email: '123jkd3@gmail.com',
-    phone_number: 19_030_293_390,
+    phone_number: 190329390,
     user_name: 'jackmchill',
     password: 'mskey123',
   )
@@ -30,7 +30,7 @@ fin_user =
     first_name: 'Fin',
     last_name: 'Mithcell',
     email: '1203ak3@gmail.com',
-    phone_number: 19_030_293_390,
+    phone_number: 1900293390,
     user_name: 'finnmchill',
     password: 'mnyE123',
   )
@@ -39,7 +39,7 @@ chris_user =
     first_name: 'Chris',
     last_name: 'Mithcell',
     email: '193jkd03@gmail.com',
-    phone_number: 19_030_293_390,
+    phone_number: 1900293390,
     user_name: 'chrismchill',
     password: 'Nesy123',
   )
@@ -48,7 +48,7 @@ mick_user =
     first_name: 'Mick',
     last_name: 'Mithcell',
     email: '1ihkd93@gmail.com',
-    phone_number: 19_030_293_390,
+    phone_number: 1930993390,
     user_name: 'ann123',
     password: 'moyne123',
   )
@@ -57,7 +57,7 @@ ann_user =
     first_name: 'Ann',
     last_name: 'Bilderbilt',
     email: '14edih3@gmail.com',
-    phone_number: 19_030_293_390,
+    phone_number: 1903093490,
     user_name: 'jackiee123',
     password: 'nkdnf34',
   )
@@ -66,7 +66,7 @@ jackiee_user =
     first_name: 'Jackiee',
     last_name: 'Vant',
     email: '14edih3@gmail.com',
-    phone_number: 19_030_293_390,
+    phone_number: 193093390,
     user_name: 'vinny1223',
     password: 'sdfnkjfd39',
   )
@@ -75,7 +75,7 @@ vinny_user =
     first_name: 'Vinny',
     last_name: 'Bolskdi',
     email: '14edih3@gmail.com',
-    phone_number: 19_030_293_390,
+    phone_number: 19937293390,
     user_name: 'vinny1233',
     password: 'jek33',
   )
@@ -84,7 +84,7 @@ paskini_user =
     first_name: 'Paskini',
     last_name: 'Koeirwash',
     email: '14edih3@gmail.com',
-    phone_number: 19_030_293_390,
+    phone_number: 1903293390,
     user_name: 'pask909',
     password: 'nkf9348',
   )
@@ -95,7 +95,7 @@ milliardHighSchool =
   School.create(
     name: 'Milliard HighSchool',
     address: '9383 ParkSide Central W',
-    school_authorization_code: 928_030,
+    school_authorization_code: 928030,
   )
 frankDillardHighSchool =
   School.create(
@@ -243,40 +243,70 @@ Grade.create(grade: 200, comment: 'The Future', teacher_id: 23, student_id: 20)
 
 puts 'Funtime......🥳'
 
+puts 'Funtime......🥳'
+
 Event.create(
   title: 'MEET AND TREAT',
   planner: 'BobCat Club',
   time: Time.new(2022, 1, 1, 0, 9, 0, 0),
   date: DateTime.new(2022, 1, 1, 0, 0, 0),
-  location_id: 6,
+  location_id: 11,
 )
 Event.create(
   title: 'RACK CATS VS NEW CHARTER BASKET BALL',
   planner: 'BobCat Club',
   time: Time.new(2022, 1, 1, 0, 9, 0, 0),
   date: DateTime.new(2022, 1, 1, 0, 0, 0),
-  location_id: 4,
+  location_id: 12,
 )
 Event.create(
   title: 'MEET AND TREAT',
   planner: 'BobCat Club',
   time: Time.new(2022, 1, 1, 0, 9, 0, 0).strftime('%H:%M'),
   date: DateTime.new(2022, 1, 1, 0, 0, 0),
-  location_id: 4,
+  location_id: 13,
 )
 Event.create(
   title: 'RACK CATS VS NEW CHARTER BASKET BALL',
   planner: 'BobCat Club',
   time: Time.new(2022, 1, 1, 0, 9, 0, 0).strftime('%H:%M'),
   date: DateTime.new(2022, 1, 1, 0, 0, 0),
-  location_id: 4,
+  location_id: 14,
 )
 Event.create(
   title: 'MEET AND TREAT',
   planner: 'BobCat Club',
   time: Time.new(2022, 1, 1, 0, 9, 0, 0).strftime('%H:%M'),
   date: DateTime.new(2022, 1, 1, 0, 0, 0),
-  location_id: 4,
+  location_id: 15,
+)
+Event.create(
+  title: 'RACK CATS VS NEW CHARTER BASKET BALL',
+  planner: 'BobCat Club',
+  time: Time.new(2022, 1, 1, 0, 9, 0, 0),
+  date: DateTime.new(2022, 1, 1, 0, 0, 0),
+  location_id: 12,
+)
+Event.create(
+  title: 'MEET AND TREAT',
+  planner: 'BobCat Club',
+  time: Time.new(2022, 1, 1, 0, 9, 0, 0).strftime('%H:%M'),
+  date: DateTime.new(2022, 1, 1, 0, 0, 0),
+  location_id: 13,
+)
+Event.create(
+  title: 'RACK CATS VS NEW CHARTER BASKET BALL',
+  planner: 'BobCat Club',
+  time: Time.new(2022, 1, 1, 0, 9, 0, 0).strftime('%H:%M'),
+  date: DateTime.new(2022, 1, 1, 0, 0, 0),
+  location_id: 14,
+)
+Event.create(
+  title: 'MEET AND TREAT',
+  planner: 'BobCat Club',
+  time: Time.new(2022, 1, 1, 0, 9, 0, 0).strftime('%H:%M'),
+  date: DateTime.new(2022, 1, 1, 0, 0, 0),
+  location_id: 15,
 )
 
 #  Time.new.localtime.ctime.to_time.hour
