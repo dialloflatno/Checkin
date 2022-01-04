@@ -1,9 +1,10 @@
-import React from "react";
+import React from 'react';
+import EventsForm from './EventsForm'
 
 function Events() {
     return (
         <div>
-            Events
+            <EventsForm />
         </div>
     );
   }
