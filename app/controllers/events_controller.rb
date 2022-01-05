@@ -4,13 +4,13 @@ class EventsController < ApplicationController
     render json: events, status: :ok
   end
 
-  def create 
+  def create
     event = Event.create(event_params)
-      if event
-        render json: event, status: :created
-      else
-        render json: { error: 'validation error' }, status: unprocessable_entity
-      end
+    if event
+      render json: event, status: :created
+    else
+      render json: { error: 'validation error' }, status: :unprocessable_entity
+    end
   end
 
   private

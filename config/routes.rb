@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  resources :events,only: [:index, :create]
-  resources :users, only: [:index]
+  resources :events, only: %i[index create]
+  resources :users, only: %i[index show create]
   resources :subjects
   resources :periods
   resources :errs
@@ -19,6 +19,7 @@ Rails.application.routes.draw do
 
   #user route
   get '/me', to: 'users#show'
+  post '/signup', to: 'users#create'
 
   #events routes
   post '/events', to: 'events#create'
