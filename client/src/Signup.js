@@ -4,6 +4,7 @@ function SignUp({ setUser }) {
   const [full_name, setFullName] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [DOB, setDOB] = useState("");
   const [email, setEmail] = useState("");
   const [state, setState] = useState("");
   const [school, setSchool] = useState("");
@@ -22,6 +23,7 @@ function SignUp({ setUser }) {
         username,
         password,
         email,
+        DOB,
         state,
         school,
         IDNUMBER,
@@ -35,9 +37,9 @@ function SignUp({ setUser }) {
       }
     });
   }
-  const handleChange = (e) => {
-    console.log(e.target.value);
-  };
+  // const handleChange = (e) => {
+  //   console.log(e.target.value);
+  // };
   return (
     <div className="signContainer">
       <form onSubmit={handleSubmit}>
@@ -54,6 +56,13 @@ function SignUp({ setUser }) {
           type="email"
           onChange={(e) => setEmail(e.target.value)}
           placeholder="123@me.com"
+        />
+        <br/>
+        <input
+          className="email"
+          type="month"         
+           onChange={(e) => setDOB(e.target.value)}
+          placeholder="mm/dd/yyyy"
         />
         <br />
         <input

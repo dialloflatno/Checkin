@@ -44,7 +44,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <SignUp />
+        <SignUp setUser ={setUser} />
         <SignIn setUser ={setUser}/>
         <Header eventLists={eventLists} handleEventDelete={handleEventDelete} handleAdd={handleAdd}/>
       </div>
