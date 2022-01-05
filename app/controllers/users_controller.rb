@@ -13,16 +13,30 @@ class UsersController < ApplicationController
   end
 
   def create
+    byebug
     user = User.create(user_params)
+
     if user
       render json: user, status: :created
     else
       render json: { error: 'validation error' }, status: :unprocessable_entity
     end
+  end
 
   private
 
   def user_params
-    params.permit(:full_name, :password, :username, :email, :phone_number, :DOB)
+    params.permit(
+      :full_name,
+      :password,
+      :username,
+      :email,
+      :phone_number,
+      :DOB,
+      :state,
+      :school,
+      :IDNUMBER,
+      :password_confirmation,
+    )
   end
 end
