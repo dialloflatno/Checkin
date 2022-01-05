@@ -2,13 +2,25 @@ import React from "react";
 import { useState, useEffect } from "react";
 import Header from "./Header.js";
 import { BrowserRouter } from "react-router-dom";
+import SignIn from "./SignIn.js";
 
 
 
 function App() {
 
+  const [user, setUser] = useState(null);
+
+   useEffect(() => {
+    fetch("/me").then((r) => {
+      if (r.ok) {
+        r.json().then((user) => setUser(user));
+      }
+    });
+  }, []);
+
+
   const [eventLists, setEventLists] = useState([]);
-  const events = "http://localhost:3000/events";
+  const events = "/events";
 
   useEffect(() => {
     fetch(events)
@@ -27,9 +39,11 @@ function App() {
     const addEvent = [...eventLists, newEvent];
     setEventLists(addEvent);
   }
+
   return (
     <BrowserRouter>
       <div className="App">
+        <SignIn setUser ={setUser}/>
         <Header handleEventDelete={handleEventDelete} handleAdd={handleAdd}/>
       </div>
     </BrowserRouter>
