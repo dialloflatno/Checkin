@@ -8,14 +8,16 @@ function Form({ event, handleAdd }) {
   const [location_id, setLocation] = useState("");
   const [time, setTime] = useState("");
   const [date, setDate] = useState("");
+
 // hello
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch("/events", {
+    fetch('/events', {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type" : "application/json",
       },
       body: JSON.stringify({
         title: title,
@@ -28,6 +30,8 @@ function Form({ event, handleAdd }) {
       .then((r) => r.json())
       .then((data) => console.log(data));
   };
+
+
 
   return (
     <div className="form">

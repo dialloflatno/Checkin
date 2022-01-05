@@ -4,6 +4,8 @@ import Header from "./Header.js";
 import { BrowserRouter } from "react-router-dom";
 import SignIn from "./SignIn.js";
 
+
+
 function App() {
   const [user, setUser] = useState(null);
 
@@ -14,6 +16,17 @@ function App() {
       }
     });
   }, []);
+
+  const [user, setUser] = useState(null);
+
+   useEffect(() => {
+    fetch("/me").then((r) => {
+      if (r.ok) {
+        r.json().then((user) => setUser(user));
+      }
+    });
+  }, []);
+
 
   const [eventLists, setEventLists] = useState([]);
   const events = "/events";
@@ -39,8 +52,8 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <SignIn setUser={setUser} />
-        <Header handleEventDelete={handleEventDelete} handleAdd={handleAdd} />
+        <SignIn setUser ={setUser}/>
+        <Header handleEventDelete={handleEventDelete} handleAdd={handleAdd}/>
       </div>
     </BrowserRouter>
   );
