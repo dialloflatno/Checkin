@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :events
+  resources :events,only: [:index, :create]
   resources :users, only: [:index]
   resources :subjects
   resources :periods
@@ -19,6 +19,9 @@ Rails.application.routes.draw do
 
   #user route
   get '/me', to: 'users#show'
+
+  #events routes
+  post '/events', to: 'events#create'
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

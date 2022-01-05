@@ -1,0 +1,48 @@
+# Query: ActiveRecord::Migration[7.0]
+# ContextLines: 1
+
+11 results - 11 files
+
+db/migrate/20211226012807_create_students.rb:
+  1: class CreateStudents < ActiveRecord::Migration[6.1]
+  2    def change
+
+db/migrate/20211226012832_create_schools.rb:
+  1: class CreateSchools < ActiveRecord::Migration[6.1]
+  2    def change
+
+db/migrate/20211226012950_create_semsters.rb:
+  1: class CreateSemsters < ActiveRecord::Migration[6.1]
+  2    def change
+
+db/migrate/20211226013006_create_grades.rb:
+  1: class CreateGrades < ActiveRecord::Migration[6.1]
+  2    def change
+
+db/migrate/20211226013114_create_locations.rb:
+  1: class CreateLocations < ActiveRecord::Migration[6.1]
+  2    def change
+
+db/migrate/20211226013428_create_schedules.rb:
+  1: class CreateSchedules < ActiveRecord::Migration[6.1]
+  2    def change
+
+db/migrate/20211226013635_create_errs.rb:
+  1: class CreateErrs < ActiveRecord::Migration[6.1]
+  2    def change
+
+db/migrate/20211226013837_create_periods.rb:
+  1: class CreatePeriods < ActiveRecord::Migration[6.1]
+  2    def change
+
+db/migrate/20211226025158_create_subjects.rb:
+  1: class CreateSubjects < ActiveRecord::Migration[6.1]
+  2    def change
+
+db/migrate/20211226042145_create_users.rb:
+  1: class CreateUsers < ActiveRecord::Migration[6.1]
+  2    def change
+
+db/migrate/20211228002412_create_events.rb:
+  1: class CreateEvents < ActiveRecord::Migration[6.1]
+  2    def change
