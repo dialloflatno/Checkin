@@ -1,33 +1,43 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
 function SignUp({ setUser }) {
-  const [username, setUsername] = useState('')
-  const [phone_number, setPhoneNumber] = useState('')
-  const [full_name, setFullName] = useState('')
-  const [password, setPassword] = useState('')
-  const [passwordConfirmation, setPasswordConfirmation] = useState('')
+  const [full_name, setFullName] = useState("");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
+  const [state, setState] = useState("");
+  const [school, setSchool] = useState("");
+  const [IDNUMBER, setIDnumber] = useState("");
+  const [phone_number, setPhoneNumber] = useState("");
+  const [passwordConfirmation, setPasswordConfirmation] = useState("");
 
   function handleSubmit(e) {
-    e.preventDefault()
-    fetch('/signup', {
-      method: 'POST',
+    e.preventDefault();
+    fetch("/signup", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
         username,
         password,
+        email,
+        state,
+        school,
+        IDNUMBER,
         full_name,
         phone_number,
         password_confirmation: passwordConfirmation,
       }),
     }).then((r) => {
       if (r.ok) {
-        r.json().then((user) => setUser(user))
+        r.json().then((user) => setUser(user));
       }
-    })
+    });
   }
-
+  const handleChange = (e) => {
+    console.log(e.target.value);
+  };
   return (
     <div className="signContainer">
       <form onSubmit={handleSubmit}>
@@ -35,53 +45,53 @@ function SignUp({ setUser }) {
         <input
           className="fullName"
           type="text"
-          onChange={handleChange}
+          onChange={(e) => setFullName(e.target.value)}
           placeholder="Full Name"
         />
         <br />
         <input
           className="email"
           type="email"
-          onChange={handleChange}
+          onChange={(e) => setEmail(e.target.value)}
           placeholder="123@me.com"
         />
         <br />
         <input
           className="phoneNumber"
           type="tel"
-          onChange={handleChange}
-          placeholder= "+(000)-000-0000"
+          onChange={(e) => setPhoneNumber(e.target.value)}
+          placeholder="+(000)-000-0000"
         />
         <br />
         <input
           className="state"
           type="text"
-          onChange={handleChange}
+          onChange={(e) => setState(e.target.value)}
           placeholder="State"
         />
         <br />
         <input
           className="school"
-          onChange={handleChange}
+          onChange={(e) => setSchool(e.target.value)}
           placeholder="School"
         />
         <br />
         <input
           className="idNumber"
-          onChange={handleChange}
+          onChange={(e) => setIDnumber(e.target.value)}
           placeholder="I.D Number"
         />
         <br />
         <input
           className="username"
-          onChange={handleChange}
+          onChange={(e) => setUsername(e.target.value)}
           placeholder="username"
         />
         <br />
         <input
           className="password"
           value={password}
-          onChange={handleChange}
+          onChange={(e) => setPassword(e.target.value)}
           placeholder="password"
         />
         <br />
@@ -96,7 +106,7 @@ function SignUp({ setUser }) {
         <button type="submit">Sign Up</button>
       </form>
     </div>
-  )
+  );
 }
 
-export default SignUp
+export default SignUp;
