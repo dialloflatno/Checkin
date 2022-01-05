@@ -8,7 +8,7 @@ import Events from "./Events";
 import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
 import React from "react";
 
-function Header({handleAdd}) {
+function Header({eventLists, handleAdd}) {
   return (
     <BrowserRouter>
       <nav>
@@ -25,7 +25,7 @@ function Header({handleAdd}) {
         <Route path="/Schedule"><Schedule /></Route>
         <Route path="/Profile"><Profile /></Route>
         <Route path="/Grades"><Grades /></Route>
-        <Route path="/Events"><Events handleAdd={handleAdd}/></Route>
+        <Route path="/Events"><Events eventLists={eventLists} handleAdd={handleAdd}/></Route>
       </Switch>
     </BrowserRouter>
   );

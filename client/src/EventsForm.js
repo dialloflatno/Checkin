@@ -9,8 +9,6 @@ function Form({ event, handleAdd }) {
   const [time, setTime] = useState("");
   const [date, setDate] = useState("");
 
-// hello
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -28,7 +26,7 @@ function Form({ event, handleAdd }) {
       }),
     })
       .then((r) => r.json())
-      .then((data) => console.log(data));
+      .then((data) => handleAdd(data));
   };
 
 
