@@ -3,7 +3,7 @@ class TeachersController < ApplicationController
     teachers = Teacher.all
     render json:
              teachers.to_json(
-               except: %i[user_name password created_at updated_at],
+               except: %i[username password created_at updated_at],
              ),
            status: :ok
   end
