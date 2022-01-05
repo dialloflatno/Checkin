@@ -13,9 +13,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    byebug
     user = User.create(user_params)
-
     if user
       render json: user, status: :created
     else
@@ -28,15 +26,15 @@ class UsersController < ApplicationController
   def user_params
     params.permit(
       :full_name,
-      :password,
       :username,
       :email,
       :phone_number,
+      :password,
+      :password_confirmation,
       :DOB,
       :state,
       :school,
       :IDNUMBER,
-      :password_confirmation,
     )
   end
 end
