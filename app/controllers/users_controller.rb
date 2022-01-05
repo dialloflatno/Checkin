@@ -11,4 +11,18 @@ class UsersController < ApplicationController
     session[:user_id] = user.id
     render json: user
   end
+
+  def create
+    user = User.create(user_params)
+    if user
+      render json: user, status: :created
+    else
+      render json: { error: 'validation error' }, status: :unprocessable_entity
+    end
+
+  private
+
+  def user_params
+    params.permit(:full_name, :password, :username, :email, :phone_number, :DOB)
+  end
 end
