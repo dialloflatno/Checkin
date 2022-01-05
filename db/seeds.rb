@@ -9,83 +9,83 @@ Grade.destroy_all
 
 dan_user =
   User.create(
-    first_name: 'Dan',
-    last_name: 'Mithcell',
+    full_name: 'Dan Mithcell',
     email: '12jkd3@gmail.com',
     phone_number: 1903093_390,
-    user_name: 'dan_usermchill',
-    password: 'm0ney123',
+    DOB:'6/01/21'
+    username: 'dan_usermchill',
+    password: 'm0ney123'
   )
+
 jack_user =
   User.create(
-    first_name: 'Jack',
-    last_name: 'Mithcell',
+     full_name: 'Jack Mithcell',
     email: '123jkd3@gmail.com',
     phone_number: 190329390,
-    user_name: 'jackmchill',
+    DOB:'10/01/21'
+    username: 'jackmchill',
     password: 'mskey123',
   )
 fin_user =
   User.create(
-    first_name: 'Fin',
-    last_name: 'Mithcell',
+    full_name: 'Fin Mithcell',
     email: '1203ak3@gmail.com',
+    DOB:'11/01/21'
     phone_number: 1900293390,
-    user_name: 'finnmchill',
+    username: 'finnmchill',
     password: 'mnyE123',
   )
 chris_user =
   User.create(
-    first_name: 'Chris',
-    last_name: 'Mithcell',
+    full_name: 'Chris Mithcell',
     email: '193jkd03@gmail.com',
     phone_number: 1900293390,
-    user_name: 'chrismchill',
+    DOB:'12/01/21'
+    username: 'chrismchill',
     password: 'Nesy123',
   )
 mick_user =
   User.create(
-    first_name: 'Mick',
-    last_name: 'Mithcell',
+    full_name: 'Mick Mithcell',
     email: '1ihkd93@gmail.com',
     phone_number: 1930993390,
-    user_name: 'ann123',
+    DOB:'04/01/01'
+    username: 'ann123',
     password: 'moyne123',
   )
 ann_user =
   User.create(
-    first_name: 'Ann',
-    last_name: 'Bilderbilt',
+    full_name: 'Ann Bilderbilt',
     email: '14edih3@gmail.com',
+    DOB:'6/01/21'
     phone_number: 1903093490,
-    user_name: 'jackiee123',
+    userame: 'jackiee123',
     password: 'nkdnf34',
   )
 jackiee_user =
   User.create(
-    first_name: 'Jackiee',
-    last_name: 'Vant',
+    full_name: 'Jackiee Vant',
     email: '14edih3@gmail.com',
     phone_number: 193093390,
-    user_name: 'vinny1223',
+    username: 'vinny1223',
     password: 'sdfnkjfd39',
   )
 vinny_user =
   User.create(
-    first_name: 'Vinny',
-    last_name: 'Bolskdi',
+    full_name: 'Vinny Bolskdi',
     email: '14edih3@gmail.com',
     phone_number: 19937293390,
-    user_name: 'vinny1233',
+    DOB:'11/01/21'
+    username: 'vinny1233',
     password: 'jek33',
   )
 paskini_user =
   User.create(
-    first_name: 'Paskini',
-    last_name: 'Koeirwash',
+    full_name: 'Paskini Koeirwash',
     email: '14edih3@gmail.com',
     phone_number: 1903293390,
-    user_name: 'pask909',
+    DOB:'3/21/21'
+    username: 'pask909',
     password: 'nkf9348',
   )
 
