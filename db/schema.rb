@@ -131,7 +131,10 @@ ActiveRecord::Schema.define(version: 2021_12_28_002412) do
     t.integer "phone_number"
     t.string "DOB"
     t.string "username"
-    t.string "password"
+    t.string "state"
+    t.string "school"
+    t.integer "IDNUMBER"
+    t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
