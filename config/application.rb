@@ -38,6 +38,13 @@ module ReactRailsApiProjectTemplate
       end
     end
 
+    config.middleware.use Rack::Cors do
+      allow do
+        origins '*'
+        resource '/*', headers: :any, methods: :patch
+      end
+    end
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
