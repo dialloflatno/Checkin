@@ -2,7 +2,7 @@
 
 function EventsList({
   handleEventDelete,
-  location_id,
+  location,
   title,
   time,
   date,
@@ -11,7 +11,7 @@ function EventsList({
   return (
     <div className="eventslist">
       <span>Title:{title}</span>
-      <span>Location:{location_id}</span> 
+      <span>Location:{location}</span> 
       <span>Date:{date}</span>
       <span>Time:{time}</span> 
       <span>Planner:{planner}</span>

@@ -30,9 +30,11 @@ function SignIn({ setUser }) {
             <form onSubmit = {handleSubmit}>
             <h1 className='logo'>Checkedin</h1>
             <input className ='username' type='text' value={user_name} onChange = { (e) => setUsername(e.target.value)}placeholder ='username'/>
+            <br/>
             <input className ='password' type='password' value={password} onChange = { (e) =>  setPassword(e.target.value)} placeholder ='password'/>
             <button className = 'signIn' type ='submit' >Sign In</button>
             </form>
+            <h2>Your not Checkedin Yet ?</h2>
         </div>
         );
 }

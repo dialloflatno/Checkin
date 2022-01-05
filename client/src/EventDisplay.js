@@ -9,7 +9,7 @@ function EventDisplay({ eventLists, handleEventDelete }) {
       <EventsList
         key={e.id}
         title={e.title}
-        location={e.location_id}
+        location={e.location.name}
         time={e.time}
         date={e.date}
         planner={e.planner}
@@ -22,3 +22,4 @@ function EventDisplay({ eventLists, handleEventDelete }) {
 }
 
 export default EventDisplay;
+

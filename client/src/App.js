@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Header from "./Header.js";
 import { BrowserRouter } from "react-router-dom";
 import SignIn from "./SignIn.js";
+import SignUp from "./SignUp copy.js";
 
 
 
@@ -43,6 +44,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
+        <SignUp />
         <SignIn setUser ={setUser}/>
         <Header eventLists={eventLists} handleEventDelete={handleEventDelete} handleAdd={handleAdd}/>
       </div>
