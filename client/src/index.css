@@ -27,6 +27,22 @@ code {
     'signIn';
 }
 
+.signIn {
+  margin-left: 16%;
+  margin-top: 2%;
+  position: absolute;
+  border: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-weight: 300;
+  color: darkgoldenrod;
+  font-kerning: none;
+}
 .signContainer username password button {
   position: absolute;
   align-items: center;
@@ -63,7 +79,8 @@ svg {
   background: #ffffff;
   border-radius: 3px;
   border: none;
-  height: 25px;
+  padding: 5px;
+  height: 30px;
   width: 305px;
   left: 893px;
   top: 690px;
@@ -79,7 +96,8 @@ svg {
   background: #ffffff;
   border-radius: 3px;
   border: none;
-  height: 25px;
+  padding: 9px;
+  height: 30px;
   width: 405px;
   left: 893px;
   top: 690px;
@@ -95,7 +113,8 @@ svg {
   border-radius: 3px;
   border: none;
   margin: 5px;
-  height: 25px;
+  padding: 9px;
+  height: 35px;
   width: 195px;
   left: 893px;
   top: 690px;
@@ -111,7 +130,8 @@ svg {
   border-radius: 3px;
   border: none;
   margin: 5px;
-  height: 25px;
+  padding: 5px;
+  height: 30px;
   width: 305px;
   left: 893px;
   top: 690px;
@@ -127,26 +147,23 @@ svg {
   border-radius: 3px;
   border: none;
   margin: 5px;
-  height: 25px;
-  width: 305px;
+  padding: 9px;
+  height: 30px;
+  width: 290px;
   left: 893px;
   top: 690px;
   border-radius: nullpx;
 }
 .dateOFbirth {
   /* position: absolute; */
-  left: 32.41%;
-  right: 36.04%;
-  top: 44.4%;
-  bottom: 50.71%;
   background: #ffffff;
   border-radius: 3px;
   border: none;
   margin: 5px;
-  height: 25px;
+  padding: 9px;
+  height: 29px;
+  margin-top: 3px;
   width: 89px;
-  left: 893px;
-  top: 690px;
   border-radius: nullpx;
 }
 .email {
@@ -159,7 +176,8 @@ svg {
   border-radius: 3px;
   border: none;
   margin: 5px;
-  height: 25px;
+  padding: 9px;
+  height: 30px;
   width: 405px;
   left: 893px;
   top: 690px;
@@ -175,7 +193,8 @@ svg {
   border-radius: 3px;
   border: none;
   margin: 5px;
-  height: 25px;
+  padding: 9px;
+  height: 30px;
   width: 405px;
   left: 893px;
   top: 690px;
@@ -191,7 +210,8 @@ svg {
   border-radius: 3px;
   border: none;
   margin: 5px;
-  height: 25px;
+  padding: 9px;
+  height: 30px;
   width: 405px;
   left: 893px;
   top: 690px;
@@ -207,7 +227,8 @@ svg {
   border-radius: 3px;
   border: none;
   margin: 5px;
-  height: 25px;
+  padding: 9px;
+  height: 30px;
   width: 405px;
   left: 893px;
   top: 690px;
@@ -223,8 +244,9 @@ svg {
   border-radius: 3px;
   border: none;
   margin: 5px;
-  height: 25px;
-  width: 195px;
+  padding: 9px;
+  height: 30px;
+  width: 182px;
   left: 893px;
   top: 690px;
   border-radius: nullpx;
@@ -239,7 +261,8 @@ svg {
   border-radius: 3px;
   border: none;
   margin: 5px;
-  height: 25px;
+  padding: 9px;
+  height: 30px;
   width: 405px;
   left: 893px;
   top: 690px;
@@ -268,4 +291,52 @@ svg {
   color: darkgoldenrod;
   font-kerning: none;
   margin-top: auto;
+}
+
+.closeButton {
+  margin-left: 388px;
+  margin-bottom: 20px;
+  border: none;
+  background: none;
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0em;
+  text-align: left;
+  font-weight: 300;
+  justify-content: center;
+  color: darkgoldenrod;
+  font-kerning: none;
+}
+.logoSUP {
+  margin-top: -10px;
+  height: 20%;
+  margin-inline-end: 30px;
+}
+
+.signupFORM {
+  display: inline-block;
+  justify-content: center;
+  margin-top: 40%;
+}
+
+.signUP {
+  margin-left: 150px;
+  border: none;
+  background: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-weight: 300;
+  justify-content: center;
+  color: darkgoldenrod;
+  font-kerning: none;
 }
