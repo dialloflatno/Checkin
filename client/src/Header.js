@@ -39,6 +39,7 @@ function Header() {
           <li><Link to="/Grades">Grades</Link></li>
           <li><Link to="/Emergency">Emergency</Link></li>
           <li><Link to="/Events">Events</Link></li>
+          <li><Link to="/SignIn">LogOut</Link></li>
         </ul>
       </nav>
       <Switch>

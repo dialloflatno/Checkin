@@ -1,5 +1,5 @@
 class ScheduleSerializer < ActiveModel::Serializer
-  attributes :periods, :student
+  attributes :id, :periods, :student
 
   belongs_to :student
   has_many :periods

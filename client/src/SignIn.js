@@ -22,9 +22,7 @@ function SignIn({ setUser }) {
     });
   }
 
-  // const handleChange = (e) => {
-  //     console.log(e.target.value)
-  // }
+
 
   return (
       <div className="signContainer">
@@ -49,7 +47,8 @@ function SignIn({ setUser }) {
             Sign In
           </button>
         </form>
-
+        
+          <Link to="/Header"><h2>PRACTICE TEST</h2></Link>
           <Link to="/SignUp"><h2>Your not Checkedin Yet ?</h2></Link>
 
       </div>
