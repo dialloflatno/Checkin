@@ -1,9 +1,10 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { BrowserRouter, Route, Switch, Link, Redirect } from "react-router-dom";
-import SignIn from "./SignIn.js";
-import SignUp from "./SignUp.js";
+import SignIn from "./SignIn";
+import SignUp from "./SignUp";
 import Header from "./Header";
+import Grades from "./Grades";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -23,14 +24,13 @@ function App() {
           exact
           path="/"
           render={() => {
-            return  (
-              <Redirect to="/signin" />
-            );
+            return <Redirect to="/signin" />;
           }}
         />
+        
         <Route exact path="/signin" component={SignIn} />
         <Route exact path="/signup" component={SignUp} />
-        <Route exact path="/header" component={Header} />
+        <Route exact path="/header" component={Header } />
       </Switch>
     </BrowserRouter>
   );

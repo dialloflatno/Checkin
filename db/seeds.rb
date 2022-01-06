@@ -11,7 +11,7 @@ dan_user =
   User.create(
     full_name: 'Dan Mithcell',
     email: '12jkd3@gmail.com',
-    phone_number: 1903093_390,
+    phone_number: 1903093390,
     DOB:'6/01/21',
     username: 'dan_usermchill',
     password: 'm0ney123'
@@ -59,7 +59,7 @@ ann_user =
     email: '14edih3@gmail.com',
     DOB:'6/01/21',
     phone_number: 1903093490,
-    userame: 'jackiee123',
+    username: 'jackiee123',
     password: 'nkdnf34',
   )
 jackiee_user =
@@ -67,7 +67,8 @@ jackiee_user =
     full_name: 'Jackiee Vant',
     email: '14edih3@gmail.com',
     phone_number: 193093390,
-    username: 'jacke223',
+    DOB: '6/10/19',
+    username: 'vinny1223',
     password: 'sdfnkjfd39',
   )
   vinny_user =
@@ -168,27 +169,27 @@ puts 'New School......🏫🏫🏫🏫🏫'
 
 dan_student =
   Student.create(
-    user_id: User.find_by(userame: 'dan_usermchill').id
-    school_id: School.find_by(name:'Becaon HighSchool').id,
+    user_id: dan_user.id,
+    school_id: milliardHighSchool.id,
     student_school_id: 9833892039,
   )
 jack =
   Student.create(
-    user_id: User.find_by(username:'jackmchill'),
-    school_id: School.find_by(name:'Becaon HighSchool').id,
+    user_id: jack_user.id,
+    school_id: frankDillardHighSchool.id,
     student_school_id: 9387839080,
   )
 fin =
   Student.create(
     user_id: fin_user.id,
-    school_id: School.find_by(name:'Becaon HighSchool').id,
+    school_id: pickmanJonesHighSchool.id,
     student_school_id: 38932893903,
   )
 chris =
   Student.create(
     user_id: chris_user.id,
-    school_id: School.find_by(name:'Becaon HighSchool'),
-    student_school_id: 8378789383,
+    school_id: postaicVanderbiltHighSchool.id,
+    student_school_id: 837878,
   )
 
 puts 'New Locations......🗺🗺🗺'
@@ -229,7 +230,7 @@ gym = Subject.create(name: 'Gym', teacher_id: Teacher.find_by(teacher_school_id:
 puts 'New Schedule.....'
 
 Schedule.create(
-  student_id: 5,
+  student_id: 1,
   period_id: 1,
   period_second: 2,
   period_thrid: 3,
@@ -239,24 +240,24 @@ Schedule.create(
 
 puts 'New Periods.....'
 
-Period.create(subject_id: 6, schedule_id: 1, start_time: 9, end_time: 11)
-Period.create(subject_id: 32, schedule_id: 2, start_time: 9, end_time: 11)
-Period.create(subject_id: 33, schedule_id: 2, start_time: 9, end_time: 11)
-Period.create(subject_id: 34, schedule_id: 2, start_time: 9, end_time: 11)
-Period.create(subject_id: 35, schedule_id: 2, start_time: 9, end_time: 11)
+Period.create(subject_id: 1, schedule_id: 1, start_time: 9, end_time: 11)
+Period.create(subject_id: 1, schedule_id: 1, start_time: 9, end_time: 11)
+Period.create(subject_id: 1, schedule_id: 1, start_time: 9, end_time: 11)
+Period.create(subject_id: 1, schedule_id: 1, start_time: 9, end_time: 11)
+Period.create(subject_id: 1, schedule_id: 1, start_time: 9, end_time: 11)
 
 puts 'Ruining Students Day ....🙍🙍🙍'
 
-Grade.create(grade: 90, comment: 'Great Work', teacher_id: 10, student_id: 8)
-Grade.create(grade: 80, comment: 'Amazing', teacher_id: 21, student_id: 20)
-Grade.create(grade: 75, comment: 'Very Focused', teacher_id: 24, student_id: 20)
+Grade.create(grade: 90, comment: 'Great Work', teacher_id: 3, student_id: 1)
+Grade.create(grade: 80, comment: 'Amazing', teacher_id: 1, student_id: 1)
+Grade.create(grade: 75, comment: 'Very Focused', teacher_id: 2, student_id: 1)
 Grade.create(
   grade: 85,
   comment: 'Oustanding Work',
-  teacher_id: 22,
-  student_id: 20,
+  teacher_id: 2,
+  student_id: 1,
 )
-Grade.create(grade: 200, comment: 'The Future', teacher_id: 23, student_id: 20)
+Grade.create(grade: 200, comment: 'The Future', teacher_id: 3, student_id: 1)
 
 puts 'Funtime......🥳'
 

@@ -1,14 +1,23 @@
-function ScheduleSheet({student,period_id,period_first,period_second,period_thrid,period_fourth,period_fifth}){
+function ScheduleSheet({periods}){
+
+   const eachClass = periods.map(period=> {
+       
+        return(
+    <div>
+    <h3>Period#{period.id}</h3>
+    <h3>Start:{period.start_time}:00am End:{period.end_time}:00pm</h3>
+    <h3>Subject:{period.subject.name}</h3>
+    <h3>Room:{period.subject.location}</h3>
+    <h3>Teacher:{period.subject.teacher}</h3>
+</div>
+   )}
+)
 
 
     return(
         <div>
-            <h1> ${student}Schedule</h1>
-            <h3>{period_first}</h3>
-            <h3>{period_second}</h3>
-            <h3>{period_thrid}</h3>
-            <h3>{period_fourth}</h3>
-            <h3>{period_fifth}</h3>
+            <h1>Schedule</h1>
+            {eachClass}
         </div>
     )
 }

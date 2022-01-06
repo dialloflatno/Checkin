@@ -5,10 +5,10 @@ import ScheduleSheet from "./ScheduleSheet";
 
 function Schedule() {
     const [schedules, setSchedule] = useState([]);
-    const schedule = "/schedules";
+    const schedule_url = "/schedules";
   
     useEffect(() => {
-      fetch(schedule)
+      fetch(schedule_url)
         .then((res) => res.json())
         .then((data) => setSchedule(data));
     }, []);
@@ -18,15 +18,17 @@ function Schedule() {
       return (
         <ScheduleSheet
           key={p.id}
-          student = {p.student_id.name}
-          period_id={p.period_id}
-          period_second ={p.period_second}
-          period_thrid={p.period_thrid}
-          period_fourth={p.period_fourth}
-          period_fifth={p.period_fifth}
+          student = {p.student_id}
+          periods ={p.periods}
+          // period_second ={p.period_second}
+          // period_thrid={p.period_thrid}
+          // period_fourth={p.period_fourth}
+          // period_fifth={p.period_fifth}
 
         />
       );
+
+
     });
     return (
         <div>

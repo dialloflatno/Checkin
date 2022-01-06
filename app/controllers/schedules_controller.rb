@@ -1,7 +1,14 @@
 class SchedulesController < ApplicationController
+
+    def index
+        schedules = Schedule.all
+        render json: schedules, status: :ok
+      end
+
+
     def show 
-        user = User.find_by(username: params[:username])
-        user_schedule = user.schedules
+        student = Student.find_by!(id: params[:id])
+        user_schedule = student.schedules
         render json: user_schedule.to_json(except: [:password, :created_at, :updated_at]) , status: :ok
      end
      
