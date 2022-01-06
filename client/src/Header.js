@@ -8,6 +8,7 @@ import Profile from "./Profile";
 import Events from "./Events";
 import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
 import React from "react";
+import logo from "../image.png";
 
 function Header() {
   const [eventLists, setEventLists] = useState([]);
@@ -33,20 +34,45 @@ function Header() {
   return (
     <BrowserRouter>
       <nav>
+        <img src={require("./image.png")} alt="checkedin logo"></img>
         <ul>
-          <li><Link to="/Schedule">Schedule</Link></li>
-          <li><Link to="/Profile">Profile</Link></li>
-          <li><Link to="/Grades">Grades</Link></li>
-          <li><Link to="/Emergency">Emergency</Link></li>
-          <li><Link to="/Events">Events</Link></li>
+          <li>
+            <Link to="/Schedule">Schedule</Link>
+          </li>
+          <li>
+            <Link to="/Profile">Profile</Link>
+          </li>
+          <li>
+            <Link to="/Grades">Grades</Link>
+          </li>
+          <li>
+            <Link to="/Emergency">Emergency</Link>
+          </li>
+          <li>
+            <Link to="/Events">Events</Link>
+          </li>
         </ul>
       </nav>
       <Switch>
-        <Route path="/Emergency"><Emergency /></Route>
-        <Route path="/Schedule"><Schedule /></Route>
-        <Route path="/Profile"><Profile /></Route>
-        <Route path="/Grades"><Grades /></Route>
-        <Route path="/Events"><Events eventLists={eventLists} handleEventDelete={handleEventDelete} handleAdd={handleAdd}/></Route>
+        <Route path="/Emergency">
+          <Emergency />
+        </Route>
+        <Route path="/Schedule">
+          <Schedule />
+        </Route>
+        <Route path="/Profile">
+          <Profile />
+        </Route>
+        <Route path="/Grades">
+          <Grades />
+        </Route>
+        <Route path="/Events">
+          <Events
+            eventLists={eventLists}
+            handleEventDelete={handleEventDelete}
+            handleAdd={handleAdd}
+          />
+        </Route>
       </Switch>
     </BrowserRouter>
   );
