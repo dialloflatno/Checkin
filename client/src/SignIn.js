@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 // import SignUp from "./SignUp";
 
-function SignIn({ setUser }) {
+function Login({ setUser }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -17,7 +17,7 @@ function SignIn({ setUser }) {
       body: JSON.stringify({ username, password }),
     }).then((r) => {
       if (r.ok) {
-        r.json().then((user) => setUser(user));
+        r.json().then((user) => setUsername(user));
       }
     });
   }
@@ -152,4 +152,4 @@ function SignIn({ setUser }) {
   );
 }
 
-export default SignIn;
+export default Login;
