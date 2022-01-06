@@ -1,6 +1,6 @@
-import { useState } from "react";
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
-import SignUp from "./SignUp";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+// import SignUp from "./SignUp";
 
 function SignIn({ setUser }) {
   const [username, setUsername] = useState("");
@@ -144,11 +144,10 @@ function SignIn({ setUser }) {
           <button className="signIn" type="submit">
             Sign In
           </button>
+          <Link to="/header"><button>Main Page</button></Link>
         </form>
         
-          {/* <Link to="/header"><h2>PRACTICE TEST</h2></Link> */}
           <Link to="/SignUp"className ='signUp'><h5>Your not Checkedin Yet ?</h5></Link>
-
       </div>
   );
 }

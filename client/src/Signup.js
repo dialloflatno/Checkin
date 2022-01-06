@@ -125,6 +125,7 @@ function SignUp({ setUser }) {
           autoComplete="current-password"
           placeholder="password"
         />
+
         <br/>
        
         <button type="submit" className="signUP">Sign Up</button>
