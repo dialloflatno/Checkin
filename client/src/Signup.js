@@ -44,27 +44,31 @@ function SignUp({ setUser }) {
 
   return (
     <div className="signContainer">
+      <h1 >Checkedin</h1>
       <form onSubmit={handleSubmit}>
-        <h1 className="logo">Checkedin</h1>
+      <Link to="/SignIn">
+          <button>X</button>
+        </Link>
+        <br/>
         <input
           className="fullName"
           type="text"
           onChange={(e) => setFullName(e.target.value)}
           placeholder="Full Name"
         />
+        <input
+          className="dateOFbirth"
+          type="month"
+          onChange={(e) => setDOB(e.target.value)}
+          placeholder="mm/dd/yyyy"
+        />
+        
         <br />
         <input
           className="email"
           type="email"
           onChange={(e) => setEmail(e.target.value)}
           placeholder="123@me.com"
-        />
-        <br />
-        <input
-          className="email"
-          type="month"
-          onChange={(e) => setDOB(e.target.value)}
-          placeholder="mm/dd/yyyy"
         />
         <br />
         <input
@@ -94,29 +98,27 @@ function SignUp({ setUser }) {
         />
         <br />
         <input
-          className="username"
+          className="usernameSU"
           onChange={(e) => setUsername(e.target.value)}
           placeholder="username"
         />
         <br />
         <input
-          className="password"
+          className="passwordSU"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           placeholder="password"
         />
-        <br />
-        <label htmlFor="password">Password Confirmation</label>
         <input
           type="password"
           id="password_confirmation"
           value={passwordConfirmation}
           onChange={(e) => setPasswordConfirmation(e.target.value)}
           autoComplete="current-password"
+          placeholder="password"
         />
-        <Link to="/SignIn">
-          <button>X</button>
-        </Link>
+        <br/>
+       
         <button type="submit">Sign Up</button>
       </form>
     </div>

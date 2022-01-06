@@ -67,7 +67,38 @@ svg {
   width: 305px;
   left: 893px;
   top: 690px;
-
+  border-radius: nullpx;
+}
+.usernameSU {
+  /* position: absolute; */
+  margin: 5px;
+  left: 32.41%;
+  right: 36.04%;
+  top: 44.4%;
+  bottom: 50.71%;
+  background: #ffffff;
+  border-radius: 3px;
+  border: none;
+  height: 25px;
+  width: 405px;
+  left: 893px;
+  top: 690px;
+  border-radius: nullpx;
+}
+.passwordSU {
+  /* position: absolute; */
+  left: 32.41%;
+  right: 36.04%;
+  top: 44.4%;
+  bottom: 50.71%;
+  background: #ffffff;
+  border-radius: 3px;
+  border: none;
+  margin: 5px;
+  height: 25px;
+  width: 195px;
+  left: 893px;
+  top: 690px;
   border-radius: nullpx;
 }
 .password {
@@ -82,6 +113,134 @@ svg {
   margin: 5px;
   height: 25px;
   width: 305px;
+  left: 893px;
+  top: 690px;
+  border-radius: nullpx;
+}
+.fullName {
+  /* position: absolute; */
+  left: 32.41%;
+  right: 36.04%;
+  top: 44.4%;
+  bottom: 50.71%;
+  background: #ffffff;
+  border-radius: 3px;
+  border: none;
+  margin: 5px;
+  height: 25px;
+  width: 305px;
+  left: 893px;
+  top: 690px;
+  border-radius: nullpx;
+}
+.dateOFbirth {
+  /* position: absolute; */
+  left: 32.41%;
+  right: 36.04%;
+  top: 44.4%;
+  bottom: 50.71%;
+  background: #ffffff;
+  border-radius: 3px;
+  border: none;
+  margin: 5px;
+  height: 25px;
+  width: 89px;
+  left: 893px;
+  top: 690px;
+  border-radius: nullpx;
+}
+.email {
+  /* position: absolute; */
+  left: 32.41%;
+  right: 36.04%;
+  top: 44.4%;
+  bottom: 50.71%;
+  background: #ffffff;
+  border-radius: 3px;
+  border: none;
+  margin: 5px;
+  height: 25px;
+  width: 405px;
+  left: 893px;
+  top: 690px;
+  border-radius: nullpx;
+}
+.phoneNumber {
+  /* position: absolute; */
+  left: 32.41%;
+  right: 36.04%;
+  top: 44.4%;
+  bottom: 50.71%;
+  background: #ffffff;
+  border-radius: 3px;
+  border: none;
+  margin: 5px;
+  height: 25px;
+  width: 405px;
+  left: 893px;
+  top: 690px;
+  border-radius: nullpx;
+}
+.state {
+  /* position: absolute; */
+  left: 32.41%;
+  right: 36.04%;
+  top: 44.4%;
+  bottom: 50.71%;
+  background: #ffffff;
+  border-radius: 3px;
+  border: none;
+  margin: 5px;
+  height: 25px;
+  width: 405px;
+  left: 893px;
+  top: 690px;
+  border-radius: nullpx;
+}
+.school {
+  /* position: absolute; */
+  left: 32.41%;
+  right: 36.04%;
+  top: 44.4%;
+  bottom: 50.71%;
+  background: #ffffff;
+  border-radius: 3px;
+  border: none;
+  margin: 5px;
+  height: 25px;
+  width: 405px;
+  left: 893px;
+  top: 690px;
+  border-radius: nullpx;
+}
+#password_confirmation {
+  /* position: absolute; */
+  left: 32.41%;
+  right: 36.04%;
+  top: 44.4%;
+  bottom: 50.71%;
+  background: #ffffff;
+  border-radius: 3px;
+  border: none;
+  margin: 5px;
+  height: 25px;
+  width: 195px;
+  left: 893px;
+  top: 690px;
+  border-radius: nullpx;
+}
+.idNumber {
+  /* position: absolute; */
+  left: 32.41%;
+  right: 36.04%;
+  top: 44.4%;
+  bottom: 50.71%;
+  background: #ffffff;
+  border-radius: 3px;
+  border: none;
+  margin: 5px;
+  height: 25px;
+  width: 405px;
   left: 893px;
   top: 690px;
   border-radius: nullpx;
