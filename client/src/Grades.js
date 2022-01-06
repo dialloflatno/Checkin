@@ -14,14 +14,21 @@ function Grades() {
     return (
       <GradeCard
         key={e.id}
-        student={e.student_id}
+        student={e.student.student_school_id}
         grade={e.grade}
         comment={e.comment}
-        teacher={e.teacher_id}
+        teacher={e.teacher.user.full_name}
       />
     );
   });
-  return <div>{mappedGrades}</div>;
+  return (
+    <div className="gradesbox">
+      <div className="gradestitle">
+        <h1>Grades 2022 Spring</h1>
+      </div>
+      <div className="mappedgrades">{mappedGrades}</div>
+    </div>
+  );
 }
 
 export default Grades;

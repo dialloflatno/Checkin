@@ -27,9 +27,13 @@ function App() {
             return <Redirect to="/signin" />;
           }}
         />
+
         <Route exact path="/signin" component={SignIn} />
         <Route exact path="/signup" component={SignUp} />
-        <Route exact path="/header" component={Header} />
+        {/* <Route exact path="/header" component={Header} /> */}
+        <Route>
+          <Header user={user} setUser={setUser} />
+        </Route>
       </Switch>
     </BrowserRouter>
   );

@@ -12,81 +12,593 @@ code {
     monospace;
 }
 
+.container {
+  background-color: #ffd600;
+  box-shadow: rgba(53, 51, 51, 0.315) 0px 2px 1px 1px;
+  height: 8vh;
+  padding: 0px;
+  justify-items: end;
+  display: grid;
+  grid-template: 1fr 5fr 1fr / 1fr 4fr;
+  grid-template-areas:
+    "logoMain content nav  "
+    "content content content";
+}
+
 .signContainer {
   height: 100vh;
-  background-color: yellow;
+  background-color: #ffd600;
   width: 100vw;
   display: grid;
   grid-template: 1fr 5fr 1fr;
   align-items: center;
   justify-content: center;
   grid-template-areas:
+    "logo"
     "username"
     "password"
     "signIn";
 }
-
+.eigth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signIn {
+  margin-left: 16%;
+  margin-top: 2%;
+  position: absolute;
+  border: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-weight: 300;
+  color: darkgoldenrod;
+  font-kerning: none;
+}
 .signContainer username password button {
   position: absolute;
   align-items: center;
 }
 
-.username {
-  margin: 10px;
-  width: 20vw;
+.errButton {
+  color: #ffffff;
+  background-color: brown;
+  margin-top: 5px;
   height: 30px;
+  padding: 7px;
+  width: 90px;
+  border: none;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: flex-start;
+  margin-right: 203px;
+}
+
+.errButton:hover {
+  background-color: rgb(235, 14, 14);
+  margin-top: 5px;
+  height: 30px;
+  padding: 7px;
+  width: 90px;
+  border: none;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: flex-start;
+  margin-right: 203px;
+}
+
+.logo {
+  margin-top: 8px;
+  position: absolute;
+  display: block;
+  height: 20vh;
+  width: 39vw;
+}
+.logoMain {
+  margin-left: 20px;
+  margin-top: 18px;
+  margin-bottom: 3px;
+  display: block;
+  height: 9.5vh;
+  width: 30vw;
+}
+
+svg {
+  margin-bottom: -64px;
+  text-align: justify;
+  /* position: absolute; */
+  display: flex;
+  height: 34vh;
+  /* width: 34vw; */
+  flex-wrap: nowrap;
+  align-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: -60px;
+  margin-top: 52px;
+}
+.username {
+  /* position: absolute; */
+  margin: 5px;
+  left: 32.41%;
+  right: 36.04%;
+  top: 44.4%;
+  bottom: 50.71%;
+  background: #ffffff;
+  border-radius: 3px;
+  border: none;
+  padding: 5px;
+  height: 30px;
+  width: 305px;
+  left: 893px;
+  top: 690px;
+  border-radius: nullpx;
+}
+.usernameSU {
+  /* position: absolute; */
+  margin: 5px;
+  left: 32.41%;
+  right: 36.04%;
+  top: 44.4%;
+  bottom: 50.71%;
+  background: #ffffff;
+  border-radius: 3px;
+  border: none;
+  padding: 9px;
+  height: 30px;
+  width: 405px;
+  left: 893px;
+  top: 690px;
+  border-radius: nullpx;
+}
+.passwordSU {
+  /* position: absolute; */
+  left: 32.41%;
+  right: 36.04%;
+  top: 44.4%;
+  bottom: 50.71%;
+  background: #ffffff;
+  border-radius: 3px;
+  border: none;
+  margin: 5px;
+  padding: 9px;
+  height: 35px;
+  width: 195px;
+  left: 893px;
+  top: 690px;
+  border-radius: nullpx;
 }
 .password {
-  margin: 10px;
-  width: 20vw;
+  /* position: absolute; */
+  left: 32.41%;
+  right: 36.04%;
+  top: 44.4%;
+  bottom: 50.71%;
+  background: #ffffff;
+  border-radius: 3px;
+  border: none;
+  margin: 5px;
+  padding: 5px;
   height: 30px;
+  width: 305px;
+  left: 893px;
+  top: 690px;
+  border-radius: nullpx;
+}
+.fullName {
+  /* position: absolute; */
+  left: 32.41%;
+  right: 36.04%;
+  top: 44.4%;
+  bottom: 50.71%;
+  background: #ffffff;
+  border-radius: 3px;
+  border: none;
+  margin: 5px;
+  padding: 9px;
+  height: 30px;
+  width: 290px;
+  left: 893px;
+  top: 690px;
+  border-radius: nullpx;
+}
+.dateOFbirth {
+  /* position: absolute; */
+  background: #ffffff;
+  border-radius: 3px;
+  border: none;
+  margin: 5px;
+  padding: 9px;
+  height: 29px;
+  margin-top: 3px;
+  width: 89px;
+  border-radius: nullpx;
+}
+.email {
+  /* position: absolute; */
+  left: 32.41%;
+  right: 36.04%;
+  top: 44.4%;
+  bottom: 50.71%;
+  background: #ffffff;
+  border-radius: 3px;
+  border: none;
+  margin: 5px;
+  padding: 9px;
+  height: 30px;
+  width: 405px;
+  left: 893px;
+  top: 690px;
+  border-radius: nullpx;
+}
+.phoneNumber {
+  /* position: absolute; */
+  left: 32.41%;
+  right: 36.04%;
+  top: 44.4%;
+  bottom: 50.71%;
+  background: #ffffff;
+  border-radius: 3px;
+  border: none;
+  margin: 5px;
+  padding: 9px;
+  height: 30px;
+  width: 405px;
+  left: 893px;
+  top: 690px;
+  border-radius: nullpx;
+}
+.state {
+  /* position: absolute; */
+  left: 32.41%;
+  right: 36.04%;
+  top: 44.4%;
+  bottom: 50.71%;
+  background: #ffffff;
+  border-radius: 3px;
+  border: none;
+  margin: 5px;
+  padding: 9px;
+  height: 30px;
+  width: 405px;
+  left: 893px;
+  top: 690px;
+  border-radius: nullpx;
+}
+.school {
+  /* position: absolute; */
+  left: 32.41%;
+  right: 36.04%;
+  top: 44.4%;
+  bottom: 50.71%;
+  background: #ffffff;
+  border-radius: 3px;
+  border: none;
+  margin: 5px;
+  padding: 9px;
+  height: 30px;
+  width: 405px;
+  left: 893px;
+  top: 690px;
+  border-radius: nullpx;
+}
+#password_confirmation {
+  /* position: absolute; */
+  left: 32.41%;
+  right: 36.04%;
+  top: 44.4%;
+  bottom: 50.71%;
+  background: #ffffff;
+  border-radius: 3px;
+  border: none;
+  margin: 5px;
+  padding: 9px;
+  height: 30px;
+  width: 182px;
+  left: 893px;
+  top: 690px;
+  border-radius: nullpx;
+}
+.idNumber {
+  /* position: absolute; */
+  left: 32.41%;
+  right: 36.04%;
+  top: 44.4%;
+  bottom: 50.71%;
+  background: #ffffff;
+  border-radius: 3px;
+  border: none;
+  margin: 5px;
+  padding: 9px;
+  height: 30px;
+  width: 405px;
+  left: 893px;
+  top: 690px;
+  border-radius: nullpx;
 }
 .signIn {
-  background-color: red;
-  width: 5pc;
+  position: relative;
+  left: 59.06%;
+  right: 36.04%;
+  top: 70.26%;
+}
+
+.signUp {
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  color: darkgoldenrod;
+  font-kerning: none;
+  margin-top: auto;
+}
+
+.closeButton {
+  margin-left: 388px;
+  margin-bottom: 20px;
+  border: none;
+  background: none;
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0em;
+  text-align: left;
+  font-weight: 300;
+  justify-content: center;
+  color: darkgoldenrod;
+  font-kerning: none;
+}
+.logoSUP {
+  margin-top: -10px;
+  height: 20%;
+  margin-inline-end: 30px;
+}
+
+.signupFORM {
+  display: inline-block;
+  justify-content: center;
+  margin-top: 40%;
+}
+
+.signUP {
+  margin-left: 150px;
+  border: none;
+  background: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-weight: 300;
+  justify-content: center;
+  color: darkgoldenrod;
+  font-kerning: none;
 }
 
 nav {
   position: absolute;
-  width: 1512px;
-  height: 138px;
-  left: 0px;
-  top: 0px;
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-weight: bold;
-  background-color: #ffd600;
-}
-
-ul {
-  list-style: none;
   display: flex;
-  align-content: center;
-  gap: 20px;
-  justify-content: flex-end;
-  flex-direction: row;
+  justify-content: center;
+  padding: 15px;
 }
 
-li {
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  list-style: none;
+  gap: 10px;
+}
+
+nav h3 {
+  list-style: none;
+  color: aliceblue;
+  font-size: larger;
+  font-weight: 600;
+}
+.content {
+  background-color: yellow;
+  height: 100vh;
+}
+
+nav a:hover {
+  color: rgb(65, 61, 4);
+}
+
+.nav-toggle {
+  display: none;
+}
+.logout {
+  font-size: small;
+}
+@media only screen and (max-width: 550px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+    grid-template-areas:
+      "logo  "
+      "menu"
+      "content";
+  }
+
+  .eventslist {
+    display: flex;
+    padding: 10px;
+    background: red;
+  }
+
+  .errButton {
+    background-color: brown;
+    margin-bottom: 60px;
+    height: 30px;
+    padding: 7px;
+    width: 90px;
+    border: none;
+    border-radius: 30px;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: flex-start;
+    gap: 200px;
+    margin-right: 23px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .signContainer {
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 11.2fr 1.2fr;
+    grid-template-areas:
+      "username"
+      "password"
+      "signIn";
+  }
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 23px;
-  margin-right: 25px;
+  font-size: 29px;
+  line-height: 47px;
+  background-color: #9e9c8d;
 }
 
-.gradecards {
+.profilebox {
+  height: 844px;
+  width: 753px;
+  left: 346px;
+  top: 138px;
+  border-radius: 2px;
+  background-color: #ffd600;
+  margin-top: 3px;
+}
+
+.profileicon {
+  height: auto;
+  width: 100px;
+  left: 612px;
+  top: 202px;
+  border-radius: 0px;
+  margin-top: 20px;
+}
+
+.mascot {
+  margin: 10px;
+  height: 100px;
+  width: 75px;
+  left: 181px;
+  top: 242px;
+  border-radius: 0px;
+}
+
+.gradesbox {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mappedgrades {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.gradestitle {
+  display: flex;
+  width: 500px;
+}
+
+.err {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #ee1414;
+  color: white;
+  height: 844px;
+  width: 753px;
+  left: 376px;
+  top: 138px;
+  border-radius: 0px;
+}
+
+.errfullpage {
+  background-color: #fa2a00;
   display: flex;
   align-content: center;
   justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 200px;
 }
 
-div {
+textarea {
+  height: 122px;
+  width: 523px;
+  left: 466px;
+  top: 378px;
+  border-radius: 0px;
+}
+
+.newTitle {
+  height: 66px;
+  width: 523px;
+  left: 467px;
+  top: 506px;
+  border-radius: 0px;
+}
+
+.helpbutton {
+  width: 214px;
+  height: 64px;
+  left: 621px;
+  top: 607px;
+
+  background: #ffd600;
+  border-radius: 20px;
+}
+
+form {
   display: flex;
   justify-content: center;
-  flex-direction: row;
-  gap: 40px;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
 }
