@@ -12,7 +12,7 @@ dan_user =
     full_name: 'Dan Mithcell',
     email: '12jkd3@gmail.com',
     phone_number: 1903093_390,
-    DOB:'6/01/21'
+    DOB:'6/01/21',
     username: 'dan_usermchill',
     password: 'm0ney123'
   )
@@ -22,7 +22,7 @@ jack_user =
      full_name: 'Jack Mithcell',
     email: '123jkd3@gmail.com',
     phone_number: 190329390,
-    DOB:'10/01/21'
+    DOB:'10/01/21',
     username: 'jackmchill',
     password: 'mskey123',
   )
@@ -30,7 +30,7 @@ fin_user =
   User.create(
     full_name: 'Fin Mithcell',
     email: '1203ak3@gmail.com',
-    DOB:'11/01/21'
+    DOB:'11/01/21',
     phone_number: 1900293390,
     username: 'finnmchill',
     password: 'mnyE123',
@@ -40,7 +40,7 @@ chris_user =
     full_name: 'Chris Mithcell',
     email: '193jkd03@gmail.com',
     phone_number: 1900293390,
-    DOB:'12/01/21'
+    DOB:'12/01/21',
     username: 'chrismchill',
     password: 'Nesy123',
   )
@@ -49,7 +49,7 @@ mick_user =
     full_name: 'Mick Mithcell',
     email: '1ihkd93@gmail.com',
     phone_number: 1930993390,
-    DOB:'04/01/01'
+    DOB:'04/01/01',
     username: 'ann123',
     password: 'moyne123',
   )
@@ -57,7 +57,7 @@ ann_user =
   User.create(
     full_name: 'Ann Bilderbilt',
     email: '14edih3@gmail.com',
-    DOB:'6/01/21'
+    DOB:'6/01/21',
     phone_number: 1903093490,
     userame: 'jackiee123',
     password: 'nkdnf34',
@@ -67,147 +67,164 @@ jackiee_user =
     full_name: 'Jackiee Vant',
     email: '14edih3@gmail.com',
     phone_number: 193093390,
-    username: 'vinny1223',
+    username: 'jacke223',
     password: 'sdfnkjfd39',
   )
-vinny_user =
+  vinny_user =
   User.create(
     full_name: 'Vinny Bolskdi',
     email: '14edih3@gmail.com',
     phone_number: 19937293390,
-    DOB:'11/01/21'
+    DOB:'11/01/21',
     username: 'vinny1233',
     password: 'jek33',
   )
-paskini_user =
+  paskini_user =
   User.create(
     full_name: 'Paskini Koeirwash',
     email: '14edih3@gmail.com',
     phone_number: 1903293390,
-    DOB:'3/21/21'
+    DOB:'3/21/21',
     username: 'pask909',
     password: 'nkf9348',
   )
 
-puts 'New Users.....👥👥👥'
+  puts 'New Users.....👥👥👥'
+  # SCHOOL
 
-milliardHighSchool =
-  School.create(
-    name: 'Milliard HighSchool',
-    address: '9383 ParkSide Central W',
-    school_authorization_code: 928030,
-  )
-frankDillardHighSchool =
-  School.create(
-    name: 'FrankDillard HighSchool',
-    address: '3483 ParkSide Central S',
-    school_authorization_code: 203_030,
-  )
-pickmanJonesHighSchool =
-  School.create(
-    name: 'Pickman Jones HighSchool',
-    address: '90390 ParkSide Central N',
-    school_authorization_code: 303_900,
-  )
-postaicVanderbiltHighSchool =
-  School.create(
-    name: 'Postaic Vanderbilt HighSchool',
-    address: '2023 ParkSide Central E',
-    school_authorization_code: 428_030,
-  )
+  milliardHighSchool =
+    School.create(
+      name: 'Milliard HighSchool',
+      address: '9383 ParkSide Central W',
+      school_authorization_code: 928030,
+    )
+  frankDillardHighSchool =
+    School.create(
+      name: 'FrankDillard HighSchool',
+      address: '3483 ParkSide Central S',
+      school_authorization_code: 203030,
+    )
+  pickmanJonesHighSchool =
+    School.create(
+      name: 'Pickman Jones HighSchool',
+      address: '90390 ParkSide Central N',
+      school_authorization_code: 303900,
+    )
+  postaicVanderbiltHighSchool =
+    School.create(
+      name: 'Postaic Vanderbilt HighSchool',
+      address: '2023 ParkSide Central E',
+      school_authorization_code: 428030,
+    )
+  
+  
+    becaon =
+    School.create(
+      name: 'Becaon HighSchool',
+      address: '2023 ParkSide Central E',
+      school_authorization_code:428030,
+    )
+  puts 'New Staff.....🧑‍🏫 🧑‍🏫 🧑‍🏫 '
+  
+  mithcell =
+    Teacher.create(
+      user_id: User.find_by(username: "vinny1233").id,
+      school_id: School.find_by(name:'Becaon HighSchool').id,
+      teacher_school_id: 8349879393,
+      school_authorization_code: 428030,
+    )
+  bilderbilt =
+    Teacher.create(
+      user_id: User.find_by(username: "jacke223").id,
+      school_id: School.find_by(name:'Becaon HighSchool').id,
+      teacher_school_id: 393039303,
+      school_authorization_code: 203030,
+    )
+  vant =
+    Teacher.create(
+      user_id: User.find_by(username: "jackiee123").id,
+      school_id: School.find_by(name:'Becaon HighSchool').id,
+      teacher_school_id: 707980899,
+      school_authorization_code: 428030,
+    )
+  bolskdi =
+    Teacher.create(
+      user_id: User.find_by(username: "chrismchill").id,
+      school_id: School.find_by(name:'Becaon HighSchool').id,
+      teacher_school_id: 4675767867,
+      school_authorization_code: 428030,
+    )
+  koeirwash =
+    Teacher.create(
+      user_id: User.find_by(username: "pask909").id,
+      school_id: School.find_by(name:'Becaon HighSchool').id,
+      teacher_school_id: 5647656889,
+      school_authorization_code: 428030,
+    )
+
+
 
 puts 'New School......🏫🏫🏫🏫🏫'
 
 dan_student =
   Student.create(
-    user_id: dan_user.id,
-    school_id: milliardHighSchool.id,
-    student_school_id: 9_833_892_039,
+    user_id: User.find_by(userame: 'dan_usermchill').id
+    school_id: School.find_by(name:'Becaon HighSchool').id,
+    student_school_id: 9833892039,
   )
 jack =
   Student.create(
-    user_id: jack_user.id,
-    school_id: frankDillardHighSchool.id,
-    student_school_id: 9_387_839_080,
+    user_id: User.find_by(username:'jackmchill'),
+    school_id: School.find_by(name:'Becaon HighSchool').id,
+    student_school_id: 9387839080,
   )
 fin =
   Student.create(
     user_id: fin_user.id,
-    school_id: pickmanJonesHighSchool.id,
-    student_school_id: 38_932_893_903,
+    school_id: School.find_by(name:'Becaon HighSchool').id,
+    student_school_id: 38932893903,
   )
 chris =
   Student.create(
     user_id: chris_user.id,
-    school_id: postaicVanderbiltHighSchool.id,
-    student_school_id: 8_378_789_383,
+    school_id: School.find_by(name:'Becaon HighSchool'),
+    student_school_id: 8378789383,
   )
 
 puts 'New Locations......🗺🗺🗺'
 
-room8 = Location.create(name: 'room 8')
+room8 = Location.create(name: 'Room 8')
 gym = Location.create(name: 'Gym')
 cafetriea = Location.create(name: 'Cafetriea')
-room12 = Location.create(name: 'room 12')
-room212 = Location.create(name: 'room 212')
+room12 = Location.create(name: 'Room 12')
+room212 = Location.create(name: 'Room 212')
 
-puts 'New Staff.....🧑‍🏫 🧑‍🏫 🧑‍🏫 '
-
-mithcell =
-  Teacher.create(
-    user_id: mick_user.id,
-    school_id: postaicVanderbiltHighSchool.id,
-    teacher_school_id: 8_349_879_393,
-    school_authorization_code: 428_030,
-  )
-bilderbilt =
-  Teacher.create(
-    user_id: ann_user.id,
-    school_id: frankDillardHighSchool.id,
-    teacher_school_id: 393_039_303,
-    school_authorization_code: 203_030,
-  )
-vant =
-  Teacher.create(
-    user_id: jackiee_user.id,
-    school_id: postaicVanderbiltHighSchool.id,
-    teacher_school_id: 707_980_899,
-    school_authorization_code: 428_030,
-  )
-bolskdi =
-  Teacher.create(
-    user_id: vinny_user.id,
-    school_id: postaicVanderbiltHighSchool.id,
-    teacher_school_id: 4_675_767_867,
-    school_authorization_code: 428_030,
-  )
-koeirwash =
-  Teacher.create(
-    user_id: paskini_user.id,
-    school_id: postaicVanderbiltHighSchool.id,
-    teacher_school_id: 5_647_656_889,
-    school_authorization_code: 428_030,
-  )
 
 puts 'New Subjects.....🖇️'
 
 math =
-  Subject.create(name: 'Math', teacher_id: mithcell.id, location_id: room8.id)
+  Subject.create(
+   name: 'Math', teacher_id: Teacher.find_by(teacher_school_id: 8349879393).id,
+   location_id: Location.find_by(name: 'Room 8').id
+)
 science =
-  Subject.create(name: 'Science', teacher_id: vant.id, location_id: room12.id)
+  Subject.create(
+  name: 'Science', teacher_id:Teacher.find_by(teacher_school_id: 393039303).id, 
+  location_id: Location.find_by(name: 'Room 12').id)
 english =
   Subject.create(
     name: 'English',
-    teacher_id: bolskdi.id,
-    location_id: room212.id,
+    teacher_id: Teacher.find_by(teacher_school_id: 707980899).id,
+    location_id: Location.find_by(name: 'Room 212').id
   )
 spanish =
   Subject.create(
     name: 'Spanish',
-    teacher_id: koeirwash.id,
-    location_id: room12.id,
+    teacher_id: Teacher.find_by(teacher_school_id: 4675767867).id,
+    location_id:Location.find_by(name: 'Room 12')
   )
-gym = Subject.create(name: 'Gym', teacher_id: bolskdi.id, location_id: gym.id)
+
+gym = Subject.create(name: 'Gym', teacher_id: Teacher.find_by(teacher_school_id: 5647656889).id, location_id: Location.find_by(name: 'Gym').id)
 
 puts 'New Schedule.....'
 
