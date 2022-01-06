@@ -6,18 +6,13 @@ import EventDisplay from './EventDisplay'
 
 function Events({eventLists, handleAdd,handleEventDelete}) {
 
-    // useEffect(() =>{
-    //     fetch('/events')
-    //     .then(res => res.json())
-    //     .then(data => console.log(data))
-    //   },[])
 
       
     return (
-        <div>
-            <EventsForm handleEventDelete={handleEventDelete} handleAdd={handleAdd} />
-            {/* <EventsList eventLists={eventLists}/> */}
+        <div> 
+            <h2>Events</h2>
             <EventDisplay eventLists={eventLists}/>
+            <EventsForm handleEventDelete={handleEventDelete} handleAdd={handleAdd} />
         </div>
     );
     }
