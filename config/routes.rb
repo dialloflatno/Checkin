@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   resources :errs
   resources :schedules
   resources :locations
-  resources :grades, only: %i[show index]
+  resources :grades, only: %i[index show]
   resources :semsters
   resources :schools
   resources :teachers, only: [:index]
@@ -23,6 +23,8 @@ Rails.application.routes.draw do
 
   #events routes
   post '/events', to: 'events#create'
+
+  get '/grades', to: 'grades#show'
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

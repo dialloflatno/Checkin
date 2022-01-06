@@ -12,7 +12,7 @@ dan_user =
     full_name: 'Dan Mithcell',
     email: '12jkd3@gmail.com',
     phone_number: 1903093_390,
-    DOB:'6/01/21'
+    DOB:'6/01/21',
     username: 'dan_usermchill',
     password: 'm0ney123'
   )
@@ -22,7 +22,7 @@ jack_user =
      full_name: 'Jack Mithcell',
     email: '123jkd3@gmail.com',
     phone_number: 190329390,
-    DOB:'10/01/21'
+    DOB:'10/01/21',
     username: 'jackmchill',
     password: 'mskey123',
   )
@@ -30,7 +30,7 @@ fin_user =
   User.create(
     full_name: 'Fin Mithcell',
     email: '1203ak3@gmail.com',
-    DOB:'11/01/21'
+    DOB:'11/01/21',
     phone_number: 1900293390,
     username: 'finnmchill',
     password: 'mnyE123',
@@ -40,7 +40,7 @@ chris_user =
     full_name: 'Chris Mithcell',
     email: '193jkd03@gmail.com',
     phone_number: 1900293390,
-    DOB:'12/01/21'
+    DOB:'12/01/21',
     username: 'chrismchill',
     password: 'Nesy123',
   )
@@ -49,7 +49,7 @@ mick_user =
     full_name: 'Mick Mithcell',
     email: '1ihkd93@gmail.com',
     phone_number: 1930993390,
-    DOB:'04/01/01'
+    DOB:'04/01/01',
     username: 'ann123',
     password: 'moyne123',
   )
@@ -57,9 +57,9 @@ ann_user =
   User.create(
     full_name: 'Ann Bilderbilt',
     email: '14edih3@gmail.com',
-    DOB:'6/01/21'
+    DOB:'6/01/21',
     phone_number: 1903093490,
-    userame: 'jackiee123',
+    username: 'jackiee123',
     password: 'nkdnf34',
   )
 jackiee_user =
@@ -67,6 +67,7 @@ jackiee_user =
     full_name: 'Jackiee Vant',
     email: '14edih3@gmail.com',
     phone_number: 193093390,
+    DOB: '6/10/19',
     username: 'vinny1223',
     password: 'sdfnkjfd39',
   )
@@ -75,7 +76,7 @@ vinny_user =
     full_name: 'Vinny Bolskdi',
     email: '14edih3@gmail.com',
     phone_number: 19937293390,
-    DOB:'11/01/21'
+    DOB:'11/01/21',
     username: 'vinny1233',
     password: 'jek33',
   )
@@ -84,7 +85,7 @@ paskini_user =
     full_name: 'Paskini Koeirwash',
     email: '14edih3@gmail.com',
     phone_number: 1903293390,
-    DOB:'3/21/21'
+    DOB:'3/21/21',
     username: 'pask909',
     password: 'nkf9348',
   )
