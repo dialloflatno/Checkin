@@ -22,17 +22,12 @@ function App() {
     {/* <SignIn setUser={setUser}/> */}
       <div>
         {user ? (
-          <Switch>
-            <Route path="/">
-              <SignIn setUser={setUser} />
-            </Route>
-            <Route path="/signup">
-              <SignUp setUser={setUser} />
-            </Route>
-            <Route path="/header">
-              <Header />
-            </Route>
-          </Switch>
+          <h1>Hello World</h1>
+          // <Switch>
+          //   <Route path="/header">
+          //     <Header />
+          //   </Route>
+          // </Switch>
         ) : (
           <Switch>
             <Route path="/signin">
@@ -40,9 +35,6 @@ function App() {
             </Route>
             <Route path="/signup">
               <SignUp setUser={setUser} />
-            </Route>
-            <Route path="/header">
-              <Header />
             </Route>
           </Switch>
         )}
