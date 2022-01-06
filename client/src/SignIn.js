@@ -1,6 +1,6 @@
-import { useState } from "react";
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
-import SignUp from "./SignUp";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+// import SignUp from "./SignUp";
 
 function SignIn({ setUser }) {
   const [username, setUsername] = useState("");
@@ -50,7 +50,7 @@ function SignIn({ setUser }) {
           </button>
         </form>
 
-          <Link to="/SignUp"><h2>Your not Checkedin Yet ?</h2></Link>
+          <Link to="/signup"><button>Your not Checkedin Yet ?</button></Link>
 
       </div>
   );

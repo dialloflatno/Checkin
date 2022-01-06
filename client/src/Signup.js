@@ -114,7 +114,7 @@ function SignUp({ setUser }) {
           onChange={(e) => setPasswordConfirmation(e.target.value)}
           autoComplete="current-password"
         />
-        <Link to="/SignIn">
+        <Link to="/signin">
           <button>X</button>
         </Link>
         <button type="submit">Sign Up</button>
