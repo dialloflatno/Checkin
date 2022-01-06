@@ -1,5 +1,5 @@
 class SubjectSerializer < ActiveModel::Serializer
-  attributes :name, :teacher, :location
+  attributes :id, :name, :teacher, :location
 
   belongs_to :teacher
   belongs_to :location

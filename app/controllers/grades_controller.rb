@@ -7,7 +7,6 @@ class GradesController < ApplicationController
   def show
     student = Student.find_by!(id: params[:id])
     
-
     student_grade = student.grades
     render json:
              student_grade.to_json(except: %i[password created_at updated_at]),

@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   resources :events, only: %i[index create]
   resources :users, only: %i[index show create]
-  resources :subjects
-  resources :periods
+  resources :subjects, only: %i[index show create]
+  resources :periods 
   resources :errs
-  resources :schedules
+  resources :schedules, only: %i[index show create]
   resources :locations
   resources :grades, only: %i[index show]
   resources :semsters

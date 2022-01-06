@@ -19,7 +19,7 @@ function App() {
 
   return (
     <BrowserRouter>
-    {/* <SignIn setUser={setUser}/> */}
+         {/* <SignIn setUser={setUser}/> */}
       <div>
         {user ? (
           <h1>Hello World</h1>
@@ -39,6 +39,7 @@ function App() {
           </Switch>
         )}
       </div>
+
     </BrowserRouter>
 
     // <BrowserRouter>

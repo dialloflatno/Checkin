@@ -1,10 +1,10 @@
 function GradeCard({ student, grade, comment, teacher }) {
   return (
     <div>
-      <h1>${student} Grades</h1>
-      <h3>${grade}</h3>
-      <h3>${comment}</h3>
-      <h3>${teacher}</h3>
+      <h2>STUDENTID#{student}</h2>
+      <h3>Grade: {grade}</h3>
+      <h3>Comment: {comment}</h3>
+      <h3>Teacher: {teacher}</h3>
     </div>
   );
 }

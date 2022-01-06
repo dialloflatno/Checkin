@@ -6,9 +6,6 @@ import { useState, useEffect } from 'react';
 
 function Events() {
 
-const [eventLists, setEventLists] = useState([]);
-const events = "/events";
-
   useEffect(() => {
     fetch(events)
       .then((res) => res.json())
@@ -28,12 +25,11 @@ const events = "/events";
   }
       
     return (
-        <div>
-            {/* <EventsForm handleEventDelete={handleEventDelete} handleAdd={handleAdd} /> */}
-            {/* <EventsList eventLists={eventLists}/> */}
-            {/* <EventDisplay eventLists={eventLists}/> */}
-            <EventsForm />
-            <EventDisplay />
+
+        <div> 
+            <h2>Events</h2>
+            <EventDisplay eventLists={eventLists}/>
+            <EventsForm handleEventDelete={handleEventDelete} handleAdd={handleAdd} />
         </div>
     );
     }
