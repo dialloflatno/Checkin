@@ -12,6 +12,19 @@ code {
     monospace;
 }
 
+.container {
+  background-color:#ffd600;
+  box-shadow: rgba(53, 51, 51, 0.315) 0px 2px 1px 1px;
+  height: 8vh;
+  padding: 0px;
+  justify-items: end;
+  display: grid;
+  grid-template: 1fr 5fr 1fr / 1fr 4fr;
+  grid-template-areas:
+    'logoMain content nav  '
+    'content content content'
+}
+
 .signContainer {
   height: 100vh;
   background-color: #ffd600;
@@ -26,7 +39,11 @@ code {
     'password'
     'signIn';
 }
-
+.eigth{
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
 .signIn {
   margin-left: 16%;
   margin-top: 2%;
@@ -47,12 +64,55 @@ code {
   position: absolute;
   align-items: center;
 }
+
+
+
+.errButton {
+  color: #ffffff;
+  background-color: brown;
+  margin-top: 5px;
+  height: 30px;
+  padding: 7px;
+  width: 90px;
+  border:none;
+  border-radius:30px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: flex-start;
+  margin-right: 203px;}
+
+
+.errButton:hover{
+
+  background-color: rgb(235, 14, 14);
+  margin-top: 5px;
+  height: 30px;
+  padding: 7px;
+  width: 90px;
+  border:none;
+  border-radius:30px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: flex-start;
+  margin-right: 203px;}
+
+
 .logo {
   margin-top: 8px;
   position: absolute;
   display: block;
   height: 20vh;
   width: 39vw;
+}
+.logoMain {
+  margin-left: 20px;
+  margin-top: 18px;
+  margin-bottom: 3px;
+  display: block;
+  height: 9.5vh;
+  width: 30vw;
 }
 
 svg {
@@ -339,4 +399,89 @@ svg {
   justify-content: center;
   color: darkgoldenrod;
   font-kerning: none;
+}
+
+nav {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  list-style: none;
+  gap: 10px;
+}
+
+nav h3 {
+  list-style: none;
+  color: aliceblue;
+  font-size: larger;
+  font-weight: 600;
+}
+.content {
+  background-color: yellow;
+  height: 100vh;
+}
+
+nav a:hover {
+  color: rgb(65, 61, 4);
+}
+
+
+.nav-toggle {
+  display: none;
+}
+.logout {
+  font-size: small;
+}
+@media only screen and (max-width: 550px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+    grid-template-areas:
+      'logo  '
+      'menu'
+      'content';
+  }
+  
+  .eventslist{
+    display: flex;
+    padding: 10px;
+    background: red;
+  }
+
+  .errButton{
+    background-color: brown;
+    margin-bottom: 60px;
+    height: 30px;
+    padding: 7px;
+    width: 90px;
+    border:none;
+    border-radius:30px;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: flex-start;
+    gap: 200px;
+    margin-right: 23px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .signContainer {
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 11.2fr 1.2fr;
+    grid-template-areas:
+      'username'
+      'password'
+      'signIn';
+  }
 }

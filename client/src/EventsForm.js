@@ -33,6 +33,7 @@ function Form({ event, handleAdd }) {
 
   return (
     <div className="form">
+     
       <form onSubmit={handleSubmit}>
         <div className="formHolder">
           <hr className="vl" />
@@ -63,6 +64,7 @@ function Form({ event, handleAdd }) {
               onChange={(e) => setTime(e.target.value)}
               className="newTime"
             />
+            <br/>
             <button className="addEvent" type="submit">
               ADD EVENT
             </button>
