@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-
 function SignUp({ setUser }) {
   const [full_name, setFullName] = useState("");
   const [username, setUsername] = useState("");
@@ -42,9 +41,6 @@ function SignUp({ setUser }) {
   // const handleChange = (e) => {
   //   console.log(e.target.value);
   // };
-
-
-
 
   return (
     <div className="signContainer">
@@ -118,11 +114,13 @@ function SignUp({ setUser }) {
           onChange={(e) => setPasswordConfirmation(e.target.value)}
           autoComplete="current-password"
         />
-          <Link to="/SignIn"><button type="submit">Sign Up</button></Link>
+        <Link to="/SignIn">
+          <button>X</button>
+        </Link>
+        <button type="submit">Sign Up</button>
       </form>
     </div>
   );
 }
-
 
 export default SignUp;

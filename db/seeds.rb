@@ -11,8 +11,8 @@ dan_user =
   User.create(
     full_name: 'Dan Mithcell',
     email: '12jkd3@gmail.com',
-    phone_number: 1903093_390,
-    DOB:'6/01/21'
+    phone_number: 1903093390,
+    DOB:'6/01/21',
     username: 'dan_usermchill',
     password: 'm0ney123'
   )
@@ -22,7 +22,7 @@ jack_user =
      full_name: 'Jack Mithcell',
     email: '123jkd3@gmail.com',
     phone_number: 190329390,
-    DOB:'10/01/21'
+    DOB:'10/01/21',
     username: 'jackmchill',
     password: 'mskey123',
   )
@@ -30,7 +30,7 @@ fin_user =
   User.create(
     full_name: 'Fin Mithcell',
     email: '1203ak3@gmail.com',
-    DOB:'11/01/21'
+    DOB:'11/01/21',
     phone_number: 1900293390,
     username: 'finnmchill',
     password: 'mnyE123',
@@ -40,7 +40,7 @@ chris_user =
     full_name: 'Chris Mithcell',
     email: '193jkd03@gmail.com',
     phone_number: 1900293390,
-    DOB:'12/01/21'
+    DOB:'12/01/21',
     username: 'chrismchill',
     password: 'Nesy123',
   )
@@ -49,7 +49,7 @@ mick_user =
     full_name: 'Mick Mithcell',
     email: '1ihkd93@gmail.com',
     phone_number: 1930993390,
-    DOB:'04/01/01'
+    DOB:'04/01/01',
     username: 'ann123',
     password: 'moyne123',
   )
@@ -57,9 +57,9 @@ ann_user =
   User.create(
     full_name: 'Ann Bilderbilt',
     email: '14edih3@gmail.com',
-    DOB:'6/01/21'
+    DOB:'6/01/21',
     phone_number: 1903093490,
-    userame: 'jackiee123',
+    username: 'jackiee123',
     password: 'nkdnf34',
   )
 jackiee_user =
@@ -67,6 +67,7 @@ jackiee_user =
     full_name: 'Jackiee Vant',
     email: '14edih3@gmail.com',
     phone_number: 193093390,
+    DOB: '6/10/19',
     username: 'vinny1223',
     password: 'sdfnkjfd39',
   )
@@ -75,7 +76,7 @@ vinny_user =
     full_name: 'Vinny Bolskdi',
     email: '14edih3@gmail.com',
     phone_number: 19937293390,
-    DOB:'11/01/21'
+    DOB:'11/01/21',
     username: 'vinny1233',
     password: 'jek33',
   )
@@ -84,7 +85,7 @@ paskini_user =
     full_name: 'Paskini Koeirwash',
     email: '14edih3@gmail.com',
     phone_number: 1903293390,
-    DOB:'3/21/21'
+    DOB:'3/21/21',
     username: 'pask909',
     password: 'nkf9348',
   )
@@ -122,25 +123,25 @@ dan_student =
   Student.create(
     user_id: dan_user.id,
     school_id: milliardHighSchool.id,
-    student_school_id: 9_833_892_039,
+    student_school_id: 9833892039,
   )
 jack =
   Student.create(
     user_id: jack_user.id,
     school_id: frankDillardHighSchool.id,
-    student_school_id: 9_387_839_080,
+    student_school_id: 9387839080,
   )
 fin =
   Student.create(
     user_id: fin_user.id,
     school_id: pickmanJonesHighSchool.id,
-    student_school_id: 38_932_893_903,
+    student_school_id: 38932893903,
   )
 chris =
   Student.create(
     user_id: chris_user.id,
     school_id: postaicVanderbiltHighSchool.id,
-    student_school_id: 8_378_789_383,
+    student_school_id: 837878,
   )
 
 puts 'New Locations......🗺🗺🗺'
@@ -230,16 +231,16 @@ Period.create(subject_id: 35, schedule_id: 2, start_time: 9, end_time: 11)
 
 puts 'Ruining Students Day ....🙍🙍🙍'
 
-Grade.create(grade: 90, comment: 'Great Work', teacher_id: 10, student_id: 8)
-Grade.create(grade: 80, comment: 'Amazing', teacher_id: 21, student_id: 20)
-Grade.create(grade: 75, comment: 'Very Focused', teacher_id: 24, student_id: 20)
+Grade.create(grade: 90, comment: 'Great Work', teacher_id: 3, student_id: 5)
+Grade.create(grade: 80, comment: 'Amazing', teacher_id: 3, student_id: 5)
+Grade.create(grade: 75, comment: 'Very Focused', teacher_id: 4, student_id: 5)
 Grade.create(
   grade: 85,
   comment: 'Oustanding Work',
-  teacher_id: 22,
-  student_id: 20,
+  teacher_id: 4,
+  student_id: 5,
 )
-Grade.create(grade: 200, comment: 'The Future', teacher_id: 23, student_id: 20)
+Grade.create(grade: 200, comment: 'The Future', teacher_id: 4, student_id: 5)
 
 puts 'Funtime......🥳'
 
