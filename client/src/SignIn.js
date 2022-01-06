@@ -48,6 +48,7 @@ function SignIn({ setUser }) {
           <button className="signIn" type="submit">
             Sign In
           </button>
+          <Link to="/header"><button>Main Page</button></Link>
         </form>
 
           <Link to="/signup"><button>Your not Checkedin Yet ?</button></Link>

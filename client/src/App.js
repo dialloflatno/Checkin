@@ -3,11 +3,11 @@ import { useState, useEffect } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
-// import Header from "./Header";
-// import Grades from "./Grades";
+import Header from "./Header";
+import Home from "./Home"
 
 function App() {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState("");
 
   useEffect(() => {
     fetch("/me").then((r) => {
@@ -19,11 +19,18 @@ function App() {
 
   return (
     <BrowserRouter>
+    {/* <SignIn setUser={setUser}/> */}
       <div>
         {user ? (
           <Switch>
             <Route path="/">
+              <SignIn setUser={setUser} />
+            </Route>
+            <Route path="/signup">
               <SignUp setUser={setUser} />
+            </Route>
+            <Route path="/header">
+              <Header />
             </Route>
           </Switch>
         ) : (
@@ -33,6 +40,9 @@ function App() {
             </Route>
             <Route path="/signup">
               <SignUp setUser={setUser} />
+            </Route>
+            <Route path="/header">
+              <Header />
             </Route>
           </Switch>
         )}

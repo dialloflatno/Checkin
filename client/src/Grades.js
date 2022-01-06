@@ -12,13 +12,15 @@ function Grades() {
 
   const mappedGrades = grades.map((e) => {
     return (
-      <GradeCard
-        key={e.id}
-        student={e.student_id}
-        grade={e.grade}
-        comment={e.comment}
-        teacher={e.teacher_id}
-      />
+      <div>
+        <GradeCard
+          key={e.id}
+          student={e.student_id}
+          grade={e.grade}
+          comment={e.comment}
+          teacher={e.teacher_id}
+        />
+      </div>
     );
   });
   return <div>{mappedGrades}</div>;

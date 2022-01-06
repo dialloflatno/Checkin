@@ -2,22 +2,38 @@ import React from 'react';
 import EventsForm from './EventsForm'
 // import EventsList from './EventsList'
 import EventDisplay from './EventDisplay'
-// import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
-function Events({eventLists, handleAdd,handleEventDelete}) {
+function Events() {
 
-    // useEffect(() =>{
-    //     fetch('/events')
-    //     .then(res => res.json())
-    //     .then(data => console.log(data))
-    //   },[])
+const [eventLists, setEventLists] = useState([]);
+const events = "/events";
 
+  useEffect(() => {
+    fetch(events)
+      .then((res) => res.json())
+      .then((data) => setEventLists(data));
+  }, []);
+
+  function handleEventDelete(title) {
+    console.log("Delete button has been clicked!");
+    const newEventLists = eventLists.filter((e) => e.title !== title);
+    setEventLists(newEventLists);
+  }
+
+  function handleAdd(newEvent) {
+    console.log("Submit button has been clicked!");
+    const addEvent = [...eventLists, newEvent];
+    setEventLists(addEvent);
+  }
       
     return (
         <div>
-            <EventsForm handleEventDelete={handleEventDelete} handleAdd={handleAdd} />
+            {/* <EventsForm handleEventDelete={handleEventDelete} handleAdd={handleAdd} /> */}
             {/* <EventsList eventLists={eventLists}/> */}
-            <EventDisplay eventLists={eventLists}/>
+            {/* <EventDisplay eventLists={eventLists}/> */}
+            <EventsForm />
+            <EventDisplay />
         </div>
     );
     }
