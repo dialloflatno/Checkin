@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+import SignUp from "./SignUp";
 
 function SignIn({ setUser }) {
   const [username, setUsername] = useState("");
@@ -25,30 +27,32 @@ function SignIn({ setUser }) {
   // }
 
   return (
-    <div className="signContainer">
-      <form onSubmit={handleSubmit}>
-        <h1 className="logo">Checkedin</h1>
-        <input
-          className="username"
-          type="text"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          placeholder="username"
-        />
-        <br />
-        <input
-          className="password"
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          placeholder="password"
-        />
-        <button className="signIn" type="submit">
-          Sign In
-        </button>
-      </form>
-      <h2>Your not Checkedin Yet ?</h2>
-    </div>
+      <div className="signContainer">
+        <form onSubmit={handleSubmit}>
+          <h1 className="logo">Checkedin</h1>
+          <input
+            className="username"
+            type="text"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            placeholder="username"
+          />
+          <br />
+          <input
+            className="password"
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="password"
+          />
+          <button className="signIn" type="submit">
+            Sign In
+          </button>
+        </form>
+
+          <Link to="/SignUp"><h2>Your not Checkedin Yet ?</h2></Link>
+
+      </div>
   );
 }
 

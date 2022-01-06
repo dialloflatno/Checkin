@@ -11,7 +11,7 @@ dan_user =
   User.create(
     full_name: 'Dan Mithcell',
     email: '12jkd3@gmail.com',
-    phone_number: 1903093_390,
+    phone_number: 1903093390,
     DOB:'6/01/21',
     username: 'dan_usermchill',
     password: 'm0ney123'
@@ -123,25 +123,25 @@ dan_student =
   Student.create(
     user_id: dan_user.id,
     school_id: milliardHighSchool.id,
-    student_school_id: 9_833_892_039,
+    student_school_id: 9833892039,
   )
 jack =
   Student.create(
     user_id: jack_user.id,
     school_id: frankDillardHighSchool.id,
-    student_school_id: 9_387_839_080,
+    student_school_id: 9387839080,
   )
 fin =
   Student.create(
     user_id: fin_user.id,
     school_id: pickmanJonesHighSchool.id,
-    student_school_id: 38_932_893_903,
+    student_school_id: 38932893903,
   )
 chris =
   Student.create(
     user_id: chris_user.id,
     school_id: postaicVanderbiltHighSchool.id,
-    student_school_id: 8_378_789_383,
+    student_school_id: 837878,
   )
 
 puts 'New Locations......🗺🗺🗺'
@@ -231,16 +231,16 @@ Period.create(subject_id: 35, schedule_id: 2, start_time: 9, end_time: 11)
 
 puts 'Ruining Students Day ....🙍🙍🙍'
 
-Grade.create(grade: 90, comment: 'Great Work', teacher_id: 10, student_id: 8)
-Grade.create(grade: 80, comment: 'Amazing', teacher_id: 21, student_id: 20)
-Grade.create(grade: 75, comment: 'Very Focused', teacher_id: 24, student_id: 20)
+Grade.create(grade: 90, comment: 'Great Work', teacher_id: 3, student_id: 5)
+Grade.create(grade: 80, comment: 'Amazing', teacher_id: 3, student_id: 5)
+Grade.create(grade: 75, comment: 'Very Focused', teacher_id: 4, student_id: 5)
 Grade.create(
   grade: 85,
   comment: 'Oustanding Work',
-  teacher_id: 22,
-  student_id: 20,
+  teacher_id: 4,
+  student_id: 5,
 )
-Grade.create(grade: 200, comment: 'The Future', teacher_id: 23, student_id: 20)
+Grade.create(grade: 200, comment: 'The Future', teacher_id: 4, student_id: 5)
 
 puts 'Funtime......🥳'
 

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function SignUp({ setUser }) {
   const [full_name, setFullName] = useState("");
@@ -40,6 +41,7 @@ function SignUp({ setUser }) {
   // const handleChange = (e) => {
   //   console.log(e.target.value);
   // };
+
   return (
     <div className="signContainer">
       <form onSubmit={handleSubmit}>
@@ -57,11 +59,11 @@ function SignUp({ setUser }) {
           onChange={(e) => setEmail(e.target.value)}
           placeholder="123@me.com"
         />
-        <br/>
+        <br />
         <input
           className="email"
-          type="month"         
-           onChange={(e) => setDOB(e.target.value)}
+          type="month"
+          onChange={(e) => setDOB(e.target.value)}
           placeholder="mm/dd/yyyy"
         />
         <br />
@@ -112,6 +114,9 @@ function SignUp({ setUser }) {
           onChange={(e) => setPasswordConfirmation(e.target.value)}
           autoComplete="current-password"
         />
+        <Link to="/SignIn">
+          <button>X</button>
+        </Link>
         <button type="submit">Sign Up</button>
       </form>
     </div>

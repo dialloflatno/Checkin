@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   resources :schools
   resources :teachers, only: [:index]
 
-  resources :students, only: [:index]
+  resources :students, only: %i[index show update]
 
   #session routes for login / logout
   post '/login', to: 'sessions#create'
