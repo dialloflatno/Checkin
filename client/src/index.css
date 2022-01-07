@@ -51,6 +51,7 @@ code {
   border-spacing: revert;
   gap: 10px;
   background: #777974;
+
 }
 div.eigth {
   overflow: scroll;
@@ -160,6 +161,7 @@ div.schdule-sheet {
   margin-top: 14px;
   margin-bottom: 7px;
   display: block;
+
   width: 19vw;
   height: 5vh;
 }
@@ -757,6 +759,7 @@ form {
   background: none;
 }
 .schedulebackground {
+
   display: flex;
   height: 100vh;
   flex-direction: column;
@@ -770,6 +773,7 @@ form {
   flex-wrap: wrap;
   justify-content: flex-start;
 }
+
 .schedule-content {
 }
 

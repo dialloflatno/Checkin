@@ -15,6 +15,7 @@ function handleDeleteClick() {
   return (
 
     <div className="eventslist">
+
         <hr className ='vr'/>
       <div className ='column'>
       <span className='title'>{date}</span>
@@ -24,6 +25,7 @@ function handleDeleteClick() {
       <br/>
       <span>{planner}</span>
       <br/>
+
       <button className="canceled" name="Delete" onClick={handleDeleteClick}> X
       </button>
     </div>

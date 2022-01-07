@@ -1,6 +1,5 @@
 // This is the Navigation Bar
 import "./App.css";
-// import { useState, useEffect } from "react";
 import Emergency from "./Emergency";
 import Schedule from "./Schedule";
 import Grades from "./Grades";
@@ -25,6 +24,7 @@ function Header({ user, setUser }) {
       <div></div>
       <BrowserRouter>
         <div className="container">
+
           <img src="logo.png" alt="checkedin Logo" className="logo" />
           <nav>
             <Link to="/Emergency">
