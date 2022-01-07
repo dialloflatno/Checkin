@@ -6,6 +6,7 @@ function GradeCard({ student, subject, grade, comment, teacher }) {
       <span>Grade: {grade}</span>
       <span>Comment: {comment}</span>
       <span>Teacher: {teacher}</span>
+
     </div>
   );
 }
