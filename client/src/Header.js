@@ -25,7 +25,6 @@ function Header({ user, setUser }) {
       <div></div>
       <BrowserRouter>
         <div className="container">
-          {/* <h1 className='logoMain'>Checkedin</h1> */}
           <img src="logo.png" alt="checkedin Logo" className="logo" />
           <nav>
             <Link to="/Emergency">
@@ -50,15 +49,10 @@ function Header({ user, setUser }) {
                   <button onClick={handleLogoutClick} className="logout">Logout</button>
                 ) : (
                   <>
-                    Hello
-                    {/* <Link to="/signin">Please Login</Link> */}
-                    {/* <Link to="/signup">Signup</Link>
-        <Link to="/signin">Login</Link> */}
                   </>
                 )}
               </li>
 
-              {/* <li className ="logout"><Link to="/SignIn">LogOut</Link></li> */}
             </ul>
           </nav>
         </div>

@@ -12,6 +12,9 @@ code {
     monospace;
 }
 
+:root {
+  height: 100vh;
+}
 .container {
   background-color: #ffd600;
   box-shadow: rgba(53, 51, 51, 0.315) 0px 2px 1px 1px;
@@ -65,6 +68,10 @@ div.list-content {
   height: 737px;
   display: flex;
 }
+div.schdule-sheet {
+  height: 737px;
+  display: flex;
+}
 
 .column {
   height: 75px;
@@ -83,7 +90,7 @@ div.list-content {
   justify-content: space-around;
 }
 .column hr {
-  background:gray;
+  background: gray;
 }
 .column span {
   font-weight: 600;
@@ -92,7 +99,6 @@ div.list-content {
   font-size: large;
   font-weight: 600;
 }
-
 
 .signIn {
   margin-left: 16%;
@@ -154,7 +160,8 @@ div.list-content {
   margin-top: 14px;
   margin-bottom: 7px;
   display: block;
-  width: 21vw;
+  width: 19vw;
+  height: 5vh;
 }
 .logoSIGNUP {
   margin-bottom: -64px;
@@ -550,13 +557,18 @@ nav a:hover {
 }
 
 .profilebox {
-  height: 844px;
+  height: 100vh;
   width: 753px;
   left: 346px;
   top: 138px;
   border-radius: 2px;
   background-color: #ffd600;
   margin-top: 3px;
+}
+
+.profile-content {
+  margin: 10%;
+  padding: auto;
 }
 
 .profileicon {
@@ -626,8 +638,15 @@ nav a:hover {
   width: 500px;
 }
 
-.err {
+.err-content {
+  margin-top: 10%;
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.err {
+ 
   flex-direction: column;
   align-content: center;
   justify-content: center;
@@ -635,7 +654,7 @@ nav a:hover {
   align-items: center;
   background-color: #ee1414;
   color: white;
-  height: 844px;
+  height: 100vh;
   width: 753px;
   left: 376px;
   top: 138px;
@@ -647,6 +666,7 @@ nav a:hover {
   display: flex;
   align-content: center;
   justify-content: center;
+  height: 100vh;
 }
 
 textarea {
@@ -655,7 +675,7 @@ textarea {
   left: 466px;
   top: 378px;
   border: none;
-  border-radius: 0px;
+  border-radius: 3px;
 }
 
 .newTitle {
@@ -663,6 +683,7 @@ textarea {
   width: 523px;
   left: 467px;
   top: 506px;
+  border: none;
   border-radius: 0px;
 }
 
@@ -688,26 +709,27 @@ form {
   height: 36vh;
   width: 42vw;
   margin-top: -5%;
-  padding: -1px;;
-  
+  padding: -1px;
 }
-.canceled{
-  border:none;
+.canceled {
+  border: none;
   background: none;
 }
-.schedulebox {
-  width: 753px;
-  height: 844px;
-  left: 381px;
-  top: 138px;
-  background: #c4c4c4;
+
+.row {
   display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-/* #l */
+.schedulebox {
+  margin-top: 5%;
+  padding: 10px;
+  background: whitesmoke;
+  border-radius: 2px;
+}
+
 .input-const {
   height: 144px;
   display: inline-flex;
@@ -723,8 +745,6 @@ form {
   box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 }
 
-
-
 .input-const input {
   height: 30px;
   border: none;
@@ -737,10 +757,20 @@ form {
   background: none;
 }
 .schedulebackground {
-  background: #9e9c8d;
   display: flex;
-  align-content: center;
-  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  border-spacing: revert;
+  grid-gap: 10px;
+  grid-gap: 10px;
+  gap: 10px;
+  background: #777974;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.schedule-content {
 }
 
 .eventsbackground {

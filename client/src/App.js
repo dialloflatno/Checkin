@@ -4,7 +4,6 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import SignIn from "./SignIn";
 import SignUp from "./SignUp.js";
 import Header from "./Header";
-// import Events from "./Events";
 
 function App() {
   const [user, setUser] = useState("");
@@ -19,15 +18,12 @@ function App() {
 
   return (
     <>
-      {/* <SignIn setUser={setUser}/> */}
       {user ? (
-        // <h1>Hello World</h1>
         <Switch>
           <Route path="/">
             <Redirect to="/Events" />
             <Header user={user} setUser={setUser} />
-            {/* <Events user={user} setUser={setUser}/> */}
-          </Route>
+\          </Route>
         </Switch>
       ) : (
         <Switch>
@@ -42,20 +38,6 @@ function App() {
       )}
     </>
 
-    // <BrowserRouter>
-    //   <Switch>
-    //     <Route
-    //       exact
-    //       path="/"
-    //       render={() => {
-    //         return <Redirect to="/signin" />;
-    //       }}
-    //     />
-    //     <Route exact path="/signin" component={SignIn} />
-    //     <Route exact path="/signup" component={SignUp} />
-    //     <Route exact path="/header" component={Header} />
-    //   </Switch>
-    // </BrowserRouter>
   );
 }
 
