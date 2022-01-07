@@ -1,13 +1,13 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { BrowserRouter, Route, Switch, Link, Redirect } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import SignIn from "./SignIn";
-import SignUp from "./SignUp";
+import SignUp from "./SignUp.js";
 import Header from "./Header";
-import Grades from "./Grades";
+import Events from "./Events";
 
 function App() {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState("");
 
   useEffect(() => {
     fetch("/me").then((r) => {
@@ -18,24 +18,43 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route
-          exact
-          path="/"
-          render={() => {
-            return <Redirect to="/signin" />;
-          }}
-        />
+    <>
+      {/* <SignIn setUser={setUser}/> */}
+      {user ? (
+        // <h1>Hello World</h1>
+        <Switch>
+          <Route path="/">
+            <Header user={user} setUser={setUser} />
+            {/* <Events user={user} setUser={setUser}/> */}
+          </Route>
+        </Switch>
+      ) : (
+        <Switch>
+          <Route path="/signin">
+            <SignIn setUser={setUser} />
+          </Route>
+          <Route>
+            <SignUp user={user} setUser={setUser} />
+          </Route>
+          <Redirect to="/signin" />
+        </Switch>
+      )}
+    </>
 
-        <Route exact path="/signin" component={SignIn} />
-        <Route exact path="/signup" component={SignUp} />
-        {/* <Route exact path="/header" component={Header} /> */}
-        <Route>
-          <Header user={user} setUser={setUser} />
-        </Route>
-      </Switch>
-    </BrowserRouter>
+    // <BrowserRouter>
+    //   <Switch>
+    //     <Route
+    //       exact
+    //       path="/"
+    //       render={() => {
+    //         return <Redirect to="/signin" />;
+    //       }}
+    //     />
+    //     <Route exact path="/signin" component={SignIn} />
+    //     <Route exact path="/signup" component={SignUp} />
+    //     <Route exact path="/header" component={Header} />
+    //   </Switch>
+    // </BrowserRouter>
   );
 }
 
