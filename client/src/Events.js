@@ -1,5 +1,5 @@
-import React from 'react';
-import EventsForm from './EventsForm'
+import React from "react";
+import EventsForm from "./EventsForm";
 // import EventsList from './EventsList'
 import EventDisplay from './EventDisplay'
 import { useState, useEffect } from 'react';

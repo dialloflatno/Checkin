@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 import SignIn from "./SignIn";
-import SignUp from "./SignUp";
+import SignUp from "./SignUp.js";
 import Header from "./Header";
 import Events from "./Events";
 
@@ -34,7 +34,7 @@ function App() {
             <SignIn setUser={setUser} />
           </Route>
           <Route>
-            <SignUp user={user} setUser={setUser}/>
+            <SignUp user={user} setUser={setUser} />
           </Route>
           <Redirect to="/signin" />
         </Switch>

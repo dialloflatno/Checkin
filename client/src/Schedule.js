@@ -26,7 +26,14 @@ function Schedule() {
       />
     );
   });
-  return <div>{sheet}</div>;
+  return (
+    <div className="schedulebackground">
+      <div className="schedulebox">
+        {sheet}
+        <img src="mascot.png" alt="checkedin mascot" className="mascot" />
+      </div>
+    </div>
+  );
 }
 
 export default Schedule;
