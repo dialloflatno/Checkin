@@ -588,6 +588,7 @@ nav a:hover {
 }
 
 .gradestitlecontainer {
+  width: 600px;
 }
 
 .gradestitle h1 {
@@ -598,7 +599,7 @@ nav a:hover {
 
   background: #374782;
   color: whitesmoke;
-  width: 600px;
+  width: auto;
 }
 .mappedgrades {
   display: flex;
