@@ -29,12 +29,18 @@ function Events() {
       
     return (
 
-        <div> 
+    
+        <div className="eventsbackground">
+          <div className="eventsbox">
             <h2>Events</h2>
-            <EventDisplay eventLists={eventLists}/>
-            <EventsForm handleEventDelete={handleEventDelete} handleAdd={handleAdd} />
+            <EventDisplay eventLists={eventLists} />
+            <EventsForm
+              handleEventDelete={handleEventDelete}
+              handleAdd={handleAdd}
+            />
+          </div>
         </div>
-    );
+      );
     }
   
   
