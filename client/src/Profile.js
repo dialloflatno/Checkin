@@ -1,11 +1,9 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import User from "./User";
-// import ProfileIcon from "public/profile_icon.png";
+// import User from "./User";
 
 function Profile() {
   const [profile, setProfile] = useState([]);
-
   const profile_url = "/me";
 
   useEffect(() => {
