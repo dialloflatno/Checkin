@@ -24,13 +24,15 @@ function App() {
         // <h1>Hello World</h1>
         <Switch>
           <Route path="/">
+            <Redirect to="/" />
             <Header user={user} setUser={setUser} />
+            <Events />
             {/* <Events user={user} setUser={setUser}/> */}
           </Route>
         </Switch>
       ) : (
         <Switch>
-          <Route path="/signin">
+          <Route path="/">
             <SignIn setUser={setUser} />
           </Route>
           <Route>
