@@ -55,6 +55,7 @@ function Header({ user, setUser }) {
                   </>
                 )}
               </li>
+
               {/* <li className ="logout"><Link to="/SignIn">LogOut</Link></li> */}
             </ul>
           </nav>
