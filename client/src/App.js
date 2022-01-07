@@ -24,6 +24,8 @@ function App() {
             <Redirect to="/Events" />
             <Header user={user} setUser={setUser} />
 
+        </Route>
+
         </Switch>
       ) : (
         <Switch>
