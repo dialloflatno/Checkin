@@ -15,12 +15,15 @@ function handleDeleteClick() {
   return (
 
     <div className="eventslist">
+        <hr className ='vr'/>
       <div className ='column'>
-      <span>Title:{title}</span>
-      <span>Location:{location}</span>
-      <span>Date:{date}</span>
-      <span>Time:{time}</span>
-      <span>Planner:{planner}</span>
+      <span className='title'>{date}</span>
+      <span  className='date' >{title}</span>
+      <span>{location}</span>
+      <span>{time}</span>
+      <br/>
+      <span>{planner}</span>
+      <br/>
       <button className="canceled" name="Delete" onClick={handleDeleteClick}> X
       </button>
     </div>
