@@ -25,7 +25,7 @@ function Profile() {
         <br />
         Phone Number:{values[3]}
         <br></br>
-        <img src="mascot.png" alt="checkedin mascot" className="mascot" />
+       <img src="mascot.png" alt="checkedin mascot" className="mascot" />
       </div>
     </div>
   );

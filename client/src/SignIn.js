@@ -24,6 +24,12 @@ function Login({ setUser }) {
 
   return (
      <div>
+        <div className="signContainer">
+        <div>
+        <img src="logo.png" alt="checkedin Logo" className="logo" />
+        <img src="mascot.png" alt="checkedin mascot" className="mascotSIGNIN" />
+
+          </div>
         <form onSubmit={handleSubmit}>
           <input
             className="username"
@@ -44,10 +50,11 @@ function Login({ setUser }) {
           <button className="signIn" type="submit">
             Sign In
           </button>
-          <Link to="/header"><button>Main Page</button></Link>
+          {/* <Link to="/header"><button>Main Page</button></Link> */}
         </form>
         
           <Link to="/SignUp"className ='signUp'><h5>Your not Checkedin Yet ?</h5></Link>
+        </div>
       </div>
   );
 }
