@@ -4,7 +4,7 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import SignIn from "./SignIn";
 import SignUp from "./SignUp.js";
 import Header from "./Header";
-import Events from "./Events";
+// import Events from "./Events";
 
 function App() {
   const [user, setUser] = useState("");
