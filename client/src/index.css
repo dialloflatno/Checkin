@@ -1,14 +1,14 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -24,8 +24,8 @@ code {
   display: grid;
   grid-template: 1fr 5fr 1fr / 1fr 4fr;
   grid-template-areas:
-    'logoMain content nav  '
-    'content content content';
+    "logoMain content nav  "
+    "content content content";
 }
 
 .signContainer {
@@ -37,10 +37,10 @@ code {
   align-items: center;
   justify-content: center;
   grid-template-areas:
-    'logo'
-    'username'
-    'password'
-    'signIn';
+    "logo"
+    "username"
+    "password"
+    "signIn";
 }
 .eigth {
   display: flex;
@@ -105,8 +105,8 @@ div.schdule-sheet {
   margin-top: 2%;
   position: absolute;
   border: none;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 18px;
   font-style: normal;
   line-height: 28px;
@@ -389,8 +389,8 @@ div.schdule-sheet {
 
 .signUp {
   text-decoration: none;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 300;
@@ -411,8 +411,8 @@ div.schdule-sheet {
   border: none;
   background: none;
   text-decoration: none;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 300;
@@ -439,8 +439,8 @@ div.schdule-sheet {
   margin-left: 150px;
   border: none;
   background: none;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 300;
@@ -505,9 +505,9 @@ nav a:hover {
     grid-template-columns: 1fr;
     grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
     grid-template-areas:
-      'logo  '
-      'menu'
-      'content';
+      "logo  "
+      "menu"
+      "content";
   }
 
   .eventslist {
@@ -538,9 +538,9 @@ nav a:hover {
     grid-template-columns: 1fr;
     grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 11.2fr 1.2fr;
     grid-template-areas:
-      'username'
-      'password'
-      'signIn';
+      "username"
+      "password"
+      "signIn";
   }
 }
 
@@ -601,42 +601,70 @@ nav a:hover {
 }
 
 .gradesbox {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 19px;
-  letter-spacing: 0em;
-  text-align: left;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #9e9c8d;
+  flex-direction: column;
+  align-items: center;
+  background-color: gray;
+  height: 100vh;
 }
 
 .gradestitle {
-  width: 753px;
-  height: 844px;
-  left: 381px;
-  top: 138px;
+  height: fit-content;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  align-content: center;
 
-  background: #c4c4c4;
+  background: #374782;
+  color: whitesmoke;
+  width: 600px;
 }
 
-.mappedgrades {
-  margin-top: 100px;
-  display: flex;
-  justify-content: center;
+.gradestitlecontainer {
+  width: 600px;
+}
+
+.gradestitle h1 {
+  height: fit-content;
   flex-direction: column;
-  flex-wrap: wrap;
+  justify-content: center;
   align-content: center;
+
+  background: #374782;
+  color: whitesmoke;
+  width: auto;
+}
+.mappedgrades {
+  display: flex;
   align-items: center;
+  width: 600px;
+  height: 350px;
+  left: 400px;
+  top: 227px;
+  background: #ffffff;
+  font-size: medium;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.gradecards {
+  display: flex;
+  padding: 5px;
+}
+
+.gradescontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .gradestitle {
   display: flex;
   width: 500px;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
 }
 
 .err-content {

@@ -12,17 +12,16 @@ class EventsController < ApplicationController
       render json: { error: 'validation error' }, status: :unprocessable_entity
     end
   end
-
   def destroy
     event = Event.find_by(id: params[:id])
     if event
       event.destroy
       head :no_content
     else
-      render json: { error: "Event was not found" }, status: :not_found
+      render json: { error: 'Event was not found' }, status: :not_found
     end
   end
-  
+
   private
 
   def event_params

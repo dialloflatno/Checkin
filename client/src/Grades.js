@@ -14,7 +14,8 @@ function Grades() {
     return (
       <GradeCard
         key={e.id}
-        student={e.student.student_school_id}
+        // student={e.student}
+        subject={e.subject}
         grade={e.grade}
         comment={e.comment}
         teacher={e.teacher.user.full_name}
@@ -23,11 +24,16 @@ function Grades() {
   });
   return (
     <div className="gradesbox">
-      <div className="gradestitle">
-        <h1>Grades 2022 Spring</h1>
-
+      <div className="gradescontainer">
+        <div className="gradestitlecontainer">
+          <div className="gradestitle">
+            <h1>Grades</h1>
+            <h3>Spring 2022</h3>
+          </div>
+        </div>
         <div className="mappedgrades">
           {mappedGrades}
+          <br></br>
           <img src="mascot.png" alt="checkedin mascot" className="mascot" />
         </div>
       </div>
