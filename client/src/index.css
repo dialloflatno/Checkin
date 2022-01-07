@@ -1,19 +1,19 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 .container {
-  background-color:#ffd600;
+  background-color: #ffd600;
   box-shadow: rgba(53, 51, 51, 0.315) 0px 2px 1px 1px;
   height: 8vh;
   padding: 0px;
@@ -21,8 +21,8 @@ code {
   display: grid;
   grid-template: 1fr 5fr 1fr / 1fr 4fr;
   grid-template-areas:
-    'logoMain content nav  '
-    'content content content'
+    "logoMain content nav  "
+    "content content content";
 }
 
 .signContainer {
@@ -34,23 +34,23 @@ code {
   align-items: center;
   justify-content: center;
   grid-template-areas:
-    'logo'
-    'username'
-    'password'
-    'signIn';
+    "logo"
+    "username"
+    "password"
+    "signIn";
 }
-.eigth{
+.eigth {
   display: flex;
   flex-direction: column;
-  align-items: center
+  align-items: center;
 }
 .signIn {
   margin-left: 16%;
   margin-top: 2%;
   position: absolute;
   border: none;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 18px;
   font-style: normal;
   line-height: 28px;
@@ -65,8 +65,6 @@ code {
   align-items: center;
 }
 
-
-
 .errButton {
   color: #ffffff;
   background-color: brown;
@@ -74,38 +72,44 @@ code {
   height: 30px;
   padding: 7px;
   width: 90px;
-  border:none;
-  border-radius:30px;
+  border: none;
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   align-content: flex-start;
-  margin-right: 203px;}
+  margin-right: 203px;
+}
 
-
-.errButton:hover{
-
+.errButton:hover {
   background-color: rgb(235, 14, 14);
   margin-top: 5px;
   height: 30px;
   padding: 7px;
   width: 90px;
-  border:none;
-  border-radius:30px;
+  border: none;
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   align-content: flex-start;
-  margin-right: 203px;}
-
+  margin-right: 203px;
+}
 
 .logo {
   margin-top: 8px;
   position: absolute;
   display: block;
-  height: 20vh;
-  width: 39vw;
+  height: auto;
+  width: auto;
 }
+.logoSIGNUP {
+  margin-bottom: -64px; 
+  display: flex;
+  margin-left: -60px;
+  margin-bottom: -4%;
+}
+
 .logoMain {
   margin-left: 20px;
   margin-top: 18px;
@@ -115,20 +119,6 @@ code {
   width: 30vw;
 }
 
-svg {
-  margin-bottom: -64px;
-  text-align: justify;
-  /* position: absolute; */
-  display: flex;
-  height: 34vh;
-  /* width: 34vw; */
-  flex-wrap: nowrap;
-  align-content: space-between;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-left: -60px;
-  margin-top: 52px;
-}
 .username {
   /* position: absolute; */
   margin: 5px;
@@ -329,16 +319,17 @@ svg {
   border-radius: nullpx;
 }
 .signIn {
-  position: relative;
-  left: 59.06%;
+  position: absolute;
   right: 36.04%;
   top: 70.26%;
+  margin-top: 3.5%;
+  margin-right: 1.5%;
 }
 
 .signUp {
   text-decoration: none;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 300;
@@ -359,8 +350,8 @@ svg {
   border: none;
   background: none;
   text-decoration: none;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 300;
@@ -387,8 +378,8 @@ svg {
   margin-left: 150px;
   border: none;
   background: none;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 300;
@@ -408,7 +399,7 @@ nav {
   padding: 15px;
 }
 
-a{
+a {
   text-decoration: none;
   color: black;
 }
@@ -436,7 +427,6 @@ nav a:hover {
   color: rgb(65, 61, 4);
 }
 
-
 .nav-toggle {
   display: none;
 }
@@ -448,25 +438,25 @@ nav a:hover {
     grid-template-columns: 1fr;
     grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
     grid-template-areas:
-      'logo  '
-      'menu'
-      'content';
+      "logo  "
+      "menu"
+      "content";
   }
-  
-  .eventslist{
+
+  .eventslist {
     display: flex;
     padding: 10px;
     background: red;
   }
 
-  .errButton{
+  .errButton {
     background-color: brown;
     margin-bottom: 60px;
     height: 30px;
     padding: 7px;
     width: 90px;
-    border:none;
-    border-radius:30px;
+    border: none;
+    border-radius: 30px;
     flex-direction: column;
     align-items: stretch;
     align-content: flex-start;
@@ -480,8 +470,197 @@ nav a:hover {
     grid-template-columns: 1fr;
     grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 11.2fr 1.2fr;
     grid-template-areas:
-      'username'
-      'password'
-      'signIn';
+      "username"
+      "password"
+      "signIn";
   }
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 29px;
+  line-height: 47px;
+  background-color: #9e9c8d;
+}
+
+.profilebox {
+  height: 844px;
+  width: 753px;
+  left: 346px;
+  top: 138px;
+  border-radius: 2px;
+  background-color: #ffd600;
+  margin-top: 3px;
+}
+
+.profileicon {
+  height: auto;
+  width: 100px;
+  left: 612px;
+  top: 202px;
+  border-radius: 0px;
+  margin-top: 20px;
+}
+
+.mascotSIGNIN {
+  margin: 26%;
+  margin-bottom: -6%;
+  height: 241px;
+  width: 179px;
+  left: 184px;
+  top: 242px;
+  border-radius: 0px;
+  margin-left: 61px;
+}
+.mascot {
+  margin: 10px;
+  height: 100px;
+  width: 75px;
+  left: 181px;
+  top: 242px;
+  border-radius: 0px;
+}
+
+.gradesbox {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #9e9c8d;
+}
+
+.gradestitle {
+  width: 753px;
+  height: 844px;
+  left: 381px;
+  top: 138px;
+  flex-direction: column;
+  align-items: center;
+
+  background: #c4c4c4;
+}
+
+.mappedgrades {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+.gradestitle {
+  display: flex;
+  width: 500px;
+}
+
+.err {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #ee1414;
+  color: white;
+  height: 844px;
+  width: 753px;
+  left: 376px;
+  top: 138px;
+  border-radius: 0px;
+}
+
+.errfullpage {
+  background-color: #fa2a00;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+textarea {
+  height: 122px;
+  width: 523px;
+  left: 466px;
+  top: 378px;
+  border-radius: 0px;
+}
+
+.newTitle {
+  height: 66px;
+  width: 523px;
+  left: 467px;
+  top: 506px;
+  border-radius: 0px;
+}
+
+.helpbutton {
+  width: 214px;
+  height: 64px;
+  left: 621px;
+  top: 607px;
+
+  background: #ffd600;
+  border-radius: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.schedulebox {
+  width: 753px;
+  height: 844px;
+  left: 381px;
+  top: 138px;
+
+  background: #c4c4c4;
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.schedulebackground {
+  background: #9e9c8d;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.eventsbackground {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background: #9e9c8d;
+}
+
+.eventsbox {
+  width: 753px;
+  height: 844px;
+  left: 381px;
+  top: 138px;
+  background: #c4c4c4;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }

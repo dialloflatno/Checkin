@@ -74,8 +74,8 @@ jackiee_user =
   vinny_user =
   User.create(
     full_name: 'Vinny Bolskdi',
-    email: '14edih3@gmail.com',
-    phone_number: 19937293390,
+    email: '1452edih3@gmail.com',
+    phone_number: 1993729339,
     DOB:'11/01/21',
     username: 'vinny1233',
     password: 'jek33',
