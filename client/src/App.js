@@ -32,11 +32,11 @@ function App() {
         </Switch>
       ) : (
         <Switch>
-          <Route path="/signin">
-            <SignIn setUser={setUser} />
+          <Route path="/signup">
+            <SignUp user={user} setUser={setUser} />
           </Route>
           <Route>
-            <SignUp user={user} setUser={setUser} />
+            <SignIn setUser={setUser} />
           </Route>
           <Redirect to="/signin" />
         </Switch>

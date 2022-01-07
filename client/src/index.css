@@ -100,9 +100,16 @@ code {
   margin-top: 8px;
   position: absolute;
   display: block;
-  height: 20vh;
-  width: 39vw;
+  height: auto;
+  width: auto;
 }
+.logoSIGNUP {
+  margin-bottom: -64px; 
+  display: flex;
+  margin-left: -60px;
+  margin-bottom: -4%;
+}
+
 .logoMain {
   margin-left: 20px;
   margin-top: 18px;
@@ -112,20 +119,6 @@ code {
   width: 30vw;
 }
 
-svg {
-  margin-bottom: -64px;
-  text-align: justify;
-  /* position: absolute; */
-  display: flex;
-  height: 34vh;
-  /* width: 34vw; */
-  flex-wrap: nowrap;
-  align-content: space-between;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-left: -60px;
-  margin-top: 52px;
-}
 .username {
   /* position: absolute; */
   margin: 5px;
@@ -326,10 +319,11 @@ svg {
   border-radius: nullpx;
 }
 .signIn {
-  position: relative;
-  left: 59.06%;
+  position: absolute;
   right: 36.04%;
   top: 70.26%;
+  margin-top: 3.5%;
+  margin-right: 1.5%;
 }
 
 .signUp {
@@ -514,6 +508,16 @@ nav a:hover {
   margin-top: 20px;
 }
 
+.mascotSIGNIN {
+  margin: 26%;
+  margin-bottom: -6%;
+  height: 241px;
+  width: 179px;
+  left: 184px;
+  top: 242px;
+  border-radius: 0px;
+  margin-left: 61px;
+}
 .mascot {
   margin: 10px;
   height: 100px;
@@ -653,9 +657,7 @@ form {
   height: 844px;
   left: 381px;
   top: 138px;
-
   background: #c4c4c4;
-
   display: flex;
   flex-direction: column;
   align-content: center;

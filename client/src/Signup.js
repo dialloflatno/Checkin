@@ -38,14 +38,11 @@ function SignUp({ setUser }) {
       }
     });
   }
-  // const handleChange = (e) => {
-  //   console.log(e.target.value);
-  // };
 
   return (
     <div className="signContainer">
       <form className ="signupFORM" onSubmit={handleSubmit}>
-            
+      <img src="logo.png" alt="checkedin Logo" className="logoSIGNUP" />
       <Link to="/SignIn">
           <button className="closeButton">X</button>
         </Link>
@@ -117,7 +114,6 @@ function SignUp({ setUser }) {
           autoComplete="current-password"
           placeholder="password"
         />
-
         <br/>
        
         <button type="submit" className="signUP">Sign Up</button>
