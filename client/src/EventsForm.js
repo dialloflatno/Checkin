@@ -12,10 +12,10 @@ function Form({ event, handleAdd }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch('/events', {
+    fetch("/events", {
       method: "POST",
       headers: {
-        "Content-Type" : "application/json",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
         title: title,
@@ -29,19 +29,16 @@ function Form({ event, handleAdd }) {
       .then((data) => handleAdd(data));
   };
 
-
-
   return (
     <div className="form">
-     
       <form onSubmit={handleSubmit}>
         <div className="formHolder">
           <hr className="vl" />
-          <div className="formHolder">
+          <div className="formbox">
             <input
               placeholder="Title"
               onChange={(e) => setTitle(e.target.value)}
-              className="newTitle"
+              className="eventTitle"
             />
             <input
               placeholder="Planner"
@@ -64,7 +61,7 @@ function Form({ event, handleAdd }) {
               onChange={(e) => setTime(e.target.value)}
               className="newTime"
             />
-            <br/>
+            <br />
             <button className="addEvent" type="submit">
               ADD EVENT
             </button>
