@@ -11,16 +11,17 @@ function EventsList({
   return (
     <div className="eventslist">
       <span>Title:{title}</span>
-      <span>Location:{location}</span> 
+      <span>Location:{location}</span>
       <span>Date:{date}</span>
-      <span>Time:{time}</span> 
+      <span>Time:{time}</span>
       <span>Planner:{planner}</span>
       <button
         className="Delete"
         name="Delete"
         onClick={() => handleEventDelete(title)}
       >
-        {" "}X{" "}
+        {" "}
+        X{" "}
       </button>
     </div>
   );

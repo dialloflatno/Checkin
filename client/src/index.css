@@ -664,3 +664,15 @@ form {
   justify-content: center;
   align-items: center;
 }
+
+.eventTitle {
+  height: auto;
+  width: auto;
+}
+
+.formbox {
+  display: flex;
+}
+
+.addEvent {
+}
