@@ -1,36 +1,28 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import User from "./User";
+// import User from "./User";
 
 function Profile() {
+  const [profile, setProfile] = useState([]);
+  const profile_url = "/me";
 
-    const [profile, setProfile] = useState([]);
+  useEffect(() => {
+    fetch(profile_url)
+      .then((res) => res.json())
+      .then((data) => setProfile(data));
+  }, []);
 
-    const profile_url = "/me"
+  const values = Object.values(profile);
 
-    useEffect(() => {
-        fetch(profile_url)
-            .then((res) => res.json())
-            .then((data) => setProfile(data));
-    }, []);
-
-
-    const values = Object.values(profile)
-
-
-    return (
-        <div className="App">
-        
-            Name:{values[1]}
-            <br/>
-           Email: {values[2]}
-           <br/>
-            Phone Number:{values[3]}
-          
-        </div>
-    );
-
+  return (
+    <div className="App">
+      Name:{values[1]}
+      <br />
+      Email: {values[2]}
+      <br />
+      Phone Number:{values[3]}
+    </div>
+  );
 }
-
 
 export default Profile;
