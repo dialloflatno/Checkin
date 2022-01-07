@@ -44,7 +44,7 @@ function Login({ setUser }) {
           <button className="signIn" type="submit">
             Sign In
           </button>
-          <Link to="/header"><button>Main Page</button></Link>
+          {/* <Link to="/header"><button>Main Page</button></Link> */}
         </form>
         
           <Link to="/SignUp"className ='signUp'><h5>Your not Checkedin Yet ?</h5></Link>
