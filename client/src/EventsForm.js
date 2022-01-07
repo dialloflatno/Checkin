@@ -37,7 +37,7 @@ function Form({ event, handleAdd }) {
             <hr className="vl" />
             <div className="formbox">
               <div className="input-const">
-                <span>New Event</span>
+                <span id='titleE'>New Event</span>
                 
               <input
                 placeholder="Title"
