@@ -97,11 +97,11 @@ code {
 }
 
 .logo {
-  margin-top: 8px;
-  position: absolute;
+  margin-left: 20px;
+  margin-top: 14px;
+  margin-bottom: 7px;
   display: block;
-  height: auto;
-  width: auto;
+  width: 21vw;
 }
 .logoSIGNUP {
   margin-bottom: -64px; 
@@ -663,4 +663,16 @@ form {
   align-content: center;
   justify-content: center;
   align-items: center;
+}
+
+.eventTitle {
+  height: auto;
+  width: auto;
+}
+
+.formbox {
+  display: flex;
+}
+
+.addEvent {
 }

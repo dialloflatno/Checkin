@@ -26,7 +26,7 @@ function Header({ user, setUser }) {
       <BrowserRouter>
         <div className="container">
           {/* <h1 className='logoMain'>Checkedin</h1> */}
-
+          <img src="logo.png" alt="checkedin Logo" className="logo" />
           <nav>
             <Link to="/Emergency">
               <button className="errButton">Emergency</button>
