@@ -1,18 +1,15 @@
 //Displays the Events on the Page
 
-function EventsList({events, handleEventDelete, title, location, time, date, planner}) {
+function EventsList({event, handleEventDelete, title, location, time, date, planner}) {
 
 
 function handleDeleteClick() {
 
-  fetch(`/events/${events.id}`, {
+  fetch(`/events/${event.id}`, {
     method: 'DELETE'
   })
-    .then((r) => r.json())
-    .then(() => handleEventDelete(events));
+    .then(() => handleEventDelete(event));
 }
-
-
 
 {
   return (

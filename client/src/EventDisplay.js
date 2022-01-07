@@ -7,7 +7,7 @@ function EventDisplay({ eventLists, handleEventDelete }) {
   const eventDrawn = eventLists.map((e) => {
     return (
       <EventsList
-      events = {e}
+        event = {e}
         key={e.id}
         title={e.title}
         location={e.location.name}
