@@ -26,7 +26,6 @@ function App() {
           <Route path="/">
             <Redirect to="/" />
             <Header user={user} setUser={setUser} />
-            <Events />
             {/* <Events user={user} setUser={setUser}/> */}
           </Route>
         </Switch>

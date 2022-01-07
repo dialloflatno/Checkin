@@ -1,4 +1,4 @@
-class SchoolsController < ApplicationController
+class Api::SchoolsController < ApplicationController
   def index
     schools = School.all
     render json:

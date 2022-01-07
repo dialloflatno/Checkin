@@ -1,2 +1,0 @@
-class SemstersController < ApplicationController
-end
