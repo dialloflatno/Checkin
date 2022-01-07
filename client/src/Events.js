@@ -4,6 +4,7 @@ import EventsForm from "./EventsForm";
 import EventDisplay from "./EventDisplay";
 import { useState, useEffect } from "react";
 
+
 function Events() {
   const [eventLists, setEventLists] = useState([]);
   const events = "/events";
