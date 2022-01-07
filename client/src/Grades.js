@@ -25,8 +25,12 @@ function Grades() {
     <div className="gradesbox">
       <div className="gradestitle">
         <h1>Grades 2022 Spring</h1>
+
+        <div className="mappedgrades">
+          {mappedGrades}
+          <img src="mascot.png" alt="checkedin mascot" className="mascot" />
+        </div>
       </div>
-      <div className="mappedgrades">{mappedGrades}</div>
     </div>
   );
 }

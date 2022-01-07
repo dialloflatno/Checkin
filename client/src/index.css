@@ -533,12 +533,28 @@ nav a:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color: #9e9c8d;
+}
+
+.gradestitle {
+  width: 753px;
+  height: 844px;
+  left: 381px;
+  top: 138px;
+  flex-direction: column;
+  align-items: center;
+
+  background: #c4c4c4;
 }
 
 .mappedgrades {
   margin-top: 100px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
 }
 
 .gradestitle {
@@ -600,5 +616,49 @@ form {
   justify-content: center;
   align-content: center;
   flex-direction: column;
+  align-items: center;
+}
+
+.schedulebox {
+  width: 753px;
+  height: 844px;
+  left: 381px;
+  top: 138px;
+
+  background: #c4c4c4;
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.schedulebackground {
+  background: #9e9c8d;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.eventsbackground {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background: #9e9c8d;
+}
+
+.eventsbox {
+  width: 753px;
+  height: 844px;
+  left: 381px;
+  top: 138px;
+
+  background: #c4c4c4;
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
   align-items: center;
 }
