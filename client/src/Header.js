@@ -44,9 +44,10 @@ function Header({ user, setUser }) {
               <li>
                 <Link to="/Events">Events</Link>
               </li>
+              <li id='user_name'>Hello,{user.full_name}</li>
               <li>
                 {user ? (
-                  <button onClick={handleLogoutClick}>Logout</button>
+                  <button onClick={handleLogoutClick} className="logout">Logout</button>
                 ) : (
                   <>
                     Hello

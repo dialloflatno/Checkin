@@ -41,12 +41,12 @@ function SignUp({ setUser }) {
 
   return (
     <div className="signContainer">
-      <form className ="signupFORM" onSubmit={handleSubmit}>
-      <img src="logo.png" alt="checkedin Logo" className="logoSIGNUP" />
-      <Link to="/SignIn">
+      <form className="signupFORM" onSubmit={handleSubmit}>
+        <img src="logo.png" alt="checkedin Logo" className="logoSIGNUP" />
+        <Link to="/SignIn">
           <button className="closeButton">X</button>
         </Link>
-        <br/>
+        <br />
         <input
           className="fullName"
           type="text"
@@ -59,7 +59,7 @@ function SignUp({ setUser }) {
           onChange={(e) => setDOB(e.target.value)}
           placeholder="mm/dd/yyyy"
         />
-        
+
         <br />
         <input
           className="email"
@@ -114,8 +114,17 @@ function SignUp({ setUser }) {
           autoComplete="current-password"
           placeholder="password"
         />
-        <br/>
-       
+
+        <div className="PasswordReq">
+        <h4>Password requirements</h4>
+        <ul>
+          <li>Must be a minimum of 6 characters.</li>
+          <li>Must contain letters, numbers, and symbols.</li>
+          <li>Passwords must match.</li>
+          </ul>
+          </div>
+        <br />
+
         <button type="submit" className="signUP">Sign Up</button>
       </form>
     </div>

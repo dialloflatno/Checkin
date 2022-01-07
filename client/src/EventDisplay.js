@@ -7,6 +7,7 @@ function EventDisplay({ eventLists, handleEventDelete }) {
   const eventDrawn = eventLists.map((e) => {
     return (
       <EventsList
+      events = {e}
         key={e.id}
         title={e.title}
         location={e.location.name}
@@ -18,7 +19,14 @@ function EventDisplay({ eventLists, handleEventDelete }) {
     );
   });
 
-  return <div className="eigth">{eventDrawn}</div>;
+  return <div className ='list-content'>
+  <div className="eigth">
+    <div className="eventslist">
+      {eventDrawn}
+    </div>
+    <footer></footer>
+  </div>
+  </div>;
 }
 
 export default EventDisplay;

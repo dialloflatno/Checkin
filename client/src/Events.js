@@ -1,6 +1,5 @@
 import React from "react";
 import EventsForm from "./EventsForm";
-// import EventsList from './EventsList'
 import EventDisplay from "./EventDisplay";
 import { useState, useEffect } from "react";
 
@@ -16,9 +15,9 @@ function Events() {
       .then((data) => setEventLists(data));
   }, []);
 
-  function handleEventDelete(title) {
-    console.log("Delete button has been clicked!");
-    const newEventLists = eventLists.filter((e) => e.title !== title);
+  function handleEventDelete(deletedEvent) {
+    console.log("Event Canceled");
+    const newEventLists = eventLists.filter((e) => e.id !== deletedEvent.id);
     setEventLists(newEventLists);
   }
 
@@ -30,6 +29,7 @@ function Events() {
 
   return (
     <div className="eventsbackground">
+      <div className="placement">
       <div className="eventsbox">
         <div>
           <h2>Events</h2>
@@ -40,6 +40,7 @@ function Events() {
           handleAdd={handleAdd}
         />
       </div>
+    </div>
     </div>
   );
 }

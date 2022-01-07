@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :events, only: %i[index create]
+  resources :events, only: %i[index create destroy]
   resources :users, only: %i[index show create]
   resources :subjects, only: %i[index show create]
   resources :periods 
@@ -23,6 +23,8 @@ Rails.application.routes.draw do
 
   #events routes
   post '/events', to: 'events#create'
+
+ delete '/events', to: 'events#destroy'
 
   get '/grades', to: 'grades#show'
 
