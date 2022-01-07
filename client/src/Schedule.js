@@ -19,21 +19,18 @@ function Schedule() {
         key={p.id}
         student={p.student_id}
         periods={p.periods}
-        // period_second ={p.period_second}
-        // period_thrid={p.period_thrid}
-        // period_fourth={p.period_fourth}
-        // period_fifth={p.period_fifth}
       />
     );
   });
-  return (
+  return <div className='schdule-sheet'>
     <div className="schedulebackground">
       <div className="schedulebox">
         {sheet}
-        <img src="mascot.png" alt="checkedin mascot" className="mascot" />
+        {/* <img src="mascot.png" alt="checkedin mascot" className="mascot" /> */}
+      </div>
       </div>
     </div>
-  );
+  ;
 }
 
 export default Schedule;
