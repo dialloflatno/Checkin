@@ -1,4 +1,4 @@
-class Api::PeriodsController < ApplicationController
+class PeriodsController < ApplicationController
   def index
     periods = Period.all
     render json: periods, status: :ok

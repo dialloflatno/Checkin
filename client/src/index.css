@@ -41,9 +41,40 @@ code {
 }
 .eigth {
   display: flex;
+  height: 83%;
   flex-direction: column;
   align-items: center;
+  width: 652px;
+  border-spacing: revert;
+  gap: 10px;
+  background: #777974;
 }
+div.eigth {
+  overflow: scroll;
+  display: flex;
+  height: 83%;
+  flex-direction: column;
+  align-items: center;
+  width: 652px;
+  border-spacing: revert;
+  gap: 10px;
+  padding: 20px;
+  background: #777974;
+}
+div.list-content {
+  height: 737px;
+  display: flex;
+}
+
+.column {
+  height: 35px;
+  background: white;
+  font-size: medium;
+  display: inline-flex;
+  font-weight: 500;
+  gap: 21px;
+}
+
 .signIn {
   margin-left: 16%;
   margin-top: 2%;
@@ -64,7 +95,10 @@ code {
   position: absolute;
   align-items: center;
 }
-
+.PasswordReq {
+  color: rgba(53, 51, 51, 0.315);
+  margin: 10px;
+}
 .errButton {
   color: #ffffff;
   background-color: brown;
@@ -97,11 +131,11 @@ code {
 }
 
 .logo {
-  margin-top: 8px;
-  position: absolute;
+  margin-left: 20px;
+  margin-top: 14px;
+  margin-bottom: 7px;
   display: block;
-  height: auto;
-  width: auto;
+  width: 21vw;
 }
 .logoSIGNUP {
   margin-bottom: -64px;
@@ -111,7 +145,7 @@ code {
 }
 
 .logoMain {
-  margin-left: 20px;
+  margin-left: 18px;
   margin-top: 18px;
   margin-bottom: 3px;
   display: block;
@@ -430,8 +464,14 @@ nav a:hover {
 .nav-toggle {
   display: none;
 }
+#user_name {
+  font-size: larger;
+  font-weight: 700;
+}
 .logout {
+  background: none;
   font-size: small;
+  border: none;
 }
 @media only screen and (max-width: 550px) {
   .container {
@@ -444,9 +484,10 @@ nav a:hover {
   }
 
   .eventslist {
-    display: flex;
     padding: 10px;
-    background: red;
+    background: whitesmoke;
+    border-radius: 2px;
+    box-shadow: black 1px 7px 3px 0px;
   }
 
   .errButton {
@@ -528,42 +569,69 @@ nav a:hover {
 }
 
 .gradesbox {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 19px;
-  letter-spacing: 0em;
-  text-align: left;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #9e9c8d;
+  flex-direction: column;
+  align-items: center;
+  background-color: gray;
+  height: 100vh;
 }
 
 .gradestitle {
-  width: 753px;
-  height: 844px;
-  left: 381px;
-  top: 138px;
+  height: fit-content;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  align-content: center;
 
-  background: #c4c4c4;
+  background: #374782;
+  color: whitesmoke;
+  width: 600px;
 }
 
-.mappedgrades {
-  margin-top: 100px;
-  display: flex;
-  justify-content: center;
+.gradestitlecontainer {
+}
+
+.gradestitle h1 {
+  height: fit-content;
   flex-direction: column;
-  flex-wrap: wrap;
+  justify-content: center;
   align-content: center;
+
+  background: #374782;
+  color: whitesmoke;
+  width: 600px;
+}
+.mappedgrades {
+  display: flex;
   align-items: center;
+  width: 600px;
+  height: 350px;
+  left: 400px;
+  top: 227px;
+  background: #ffffff;
+  font-size: medium;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.gradecards {
+  display: flex;
+  padding: 5px;
+}
+
+.gradescontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .gradestitle {
   display: flex;
   width: 500px;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
 }
 
 .err {
@@ -594,6 +662,7 @@ textarea {
   width: 523px;
   left: 466px;
   top: 378px;
+  border: none;
   border-radius: 0px;
 }
 
@@ -610,7 +679,7 @@ textarea {
   height: 64px;
   left: 621px;
   top: 607px;
-
+  border: none;
   background: #ffd600;
   border-radius: 20px;
 }
@@ -622,15 +691,23 @@ form {
   flex-direction: column;
   align-items: center;
 }
-
+.form-content {
+  margin-right: 4%;
+  height: 36vh;
+  width: 42vw;
+  margin-top: -5%;
+  padding: -1px;
+}
+.canceled {
+  border: none;
+  background: none;
+}
 .schedulebox {
   width: 753px;
   height: 844px;
   left: 381px;
   top: 138px;
-
   background: #c4c4c4;
-
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -638,6 +715,35 @@ form {
   align-items: center;
 }
 
+.input-const {
+  margin-left: -15px;
+  height: 144px;
+  display: inline-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  flex-direction: row;
+  background: #fed700;
+  padding: 20px;
+  width: 52%;
+  height: 152px;
+  left: 496px;
+  top: 779px;
+  background: #ffd600;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.input-const input {
+  height: 30px;
+  border: none;
+  gap: 10px;
+}
+.input-const button {
+  height: 30px;
+  border: none;
+  gap: 10px;
+  background: none;
+}
 .schedulebackground {
   background: #9e9c8d;
   display: flex;
@@ -654,7 +760,7 @@ form {
 
 .eventsbox {
   width: 753px;
-  height: 844px;
+  height: 100vh;
   left: 381px;
   top: 138px;
   background: #c4c4c4;
@@ -671,8 +777,10 @@ form {
 }
 
 .formbox {
+  width: 199%;
+}
+.placement {
   display: flex;
 }
-
 .addEvent {
 }

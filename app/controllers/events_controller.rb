@@ -1,4 +1,4 @@
-class Api::EventsController < ApplicationController
+class EventsController < ApplicationController
   def index
     events = Event.all
     render json: events, status: :ok
@@ -10,6 +10,15 @@ class Api::EventsController < ApplicationController
       render json: event, status: :created
     else
       render json: { error: 'validation error' }, status: :unprocessable_entity
+    end
+  end
+  def destroy
+    event = Event.find_by(id: params[:id])
+    if event
+      event.destroy
+      head :no_content
+    else
+      render json: { error: 'Event was not found' }, status: :not_found
     end
   end
 

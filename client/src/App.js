@@ -4,7 +4,7 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import SignIn from "./SignIn";
 import SignUp from "./SignUp.js";
 import Header from "./Header";
-import Events from "./Events";
+// import Events from "./Events";
 
 function App() {
   const [user, setUser] = useState("");
@@ -24,7 +24,7 @@ function App() {
         // <h1>Hello World</h1>
         <Switch>
           <Route path="/">
-            <Redirect to="/" />
+            <Redirect to="/Events" />
             <Header user={user} setUser={setUser} />
             {/* <Events user={user} setUser={setUser}/> */}
           </Route>

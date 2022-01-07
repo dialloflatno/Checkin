@@ -1,4 +1,4 @@
-class Api::SessionsController < ApplicationController
+class SessionsController < ApplicationController
   # before_action :authorize
 
   def create

@@ -202,31 +202,31 @@ math =
   Subject.create(
     name: 'Math',
     teacher_id: Teacher.find_by(teacher_school_id: 8_349_879_393).id,
-    location_id: Location.find_by(name: 'Room 8').id,
+    location_id: Location.find_by(name: 'Room 12').id,
   )
 science =
   Subject.create(
     name: 'Science',
-    teacher_id: Teacher.find_by(teacher_school_id: 393_039_303).id,
+    teacher_id: Teacher.find_by(teacher_school_id: 8_349_879_393).id,
     location_id: Location.find_by(name: 'Room 12').id,
   )
 english =
   Subject.create(
     name: 'English',
-    teacher_id: Teacher.find_by(teacher_school_id: 707_980_899).id,
+    teacher_id: Teacher.find_by(teacher_school_id: 8_349_879_393).id,
     location_id: Location.find_by(name: 'Room 212').id,
   )
 spanish =
   Subject.create(
     name: 'Spanish',
-    teacher_id: Teacher.find_by(teacher_school_id: 4_675_767_867).id,
-    location_id: Location.find_by(name: 'Room 12'),
+    teacher_id: Teacher.find_by(teacher_school_id: 8_349_879_393).id,
+    location_id: Location.find_by(name: 'Room 212'),
   )
 
 gym =
   Subject.create(
     name: 'Gym',
-    teacher_id: Teacher.find_by(teacher_school_id: 5_647_656_889).id,
+    teacher_id: Teacher.find_by(teacher_school_id: 8_349_879_393).id,
     location_id: Location.find_by(name: 'Gym').id,
   )
 
@@ -251,14 +251,14 @@ Period.create(subject_id: 1, schedule_id: 1, start_time: 9, end_time: 11)
 
 puts 'Ruining Students Day ....🙍🙍🙍'
 
-Grade.create(grade: 90, comment: 'Great Work', teacher_id: 3, student_id: 1)
-Grade.create(grade: 80, comment: 'Amazing', teacher_id: 1, student_id: 1)
-Grade.create(grade: 75, comment: 'Very Focused', teacher_id: 2, student_id: 1)
+Grade.create(grade: 90, comment: 'Great Work', teacher_id: 7, student_id: 8)
+Grade.create(grade: 80, comment: 'Amazing', teacher_id: 7, student_id: 8)
+Grade.create(grade: 75, comment: 'Very Focused', teacher_id: 7, student_id: 8)
 Grade.create(
   grade: 85,
   comment: 'Oustanding Work',
-  teacher_id: 2,
-  student_id: 1,
+  teacher_id: 7,
+  student_id: 8,
 )
 Grade.create(grade: 200, comment: 'The Future', teacher_id: 3, student_id: 1)
 

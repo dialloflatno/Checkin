@@ -1,4 +1,4 @@
-class Api::GradesController < ApplicationController
+class GradesController < ApplicationController
   def index
     grades = Grade.all
     render json: grades, status: :ok

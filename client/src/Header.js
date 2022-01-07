@@ -26,7 +26,7 @@ function Header({ user, setUser }) {
       <BrowserRouter>
         <div className="container">
           {/* <h1 className='logoMain'>Checkedin</h1> */}
-
+          <img src="logo.png" alt="checkedin Logo" className="logo" />
           <nav>
             <Link to="/Emergency">
               <button className="errButton">Emergency</button>
@@ -44,9 +44,10 @@ function Header({ user, setUser }) {
               <li>
                 <Link to="/Events">Events</Link>
               </li>
+              <li id='user_name'>Hello,{user.full_name}</li>
               <li>
                 {user ? (
-                  <button onClick={handleLogoutClick}>Logout</button>
+                  <button onClick={handleLogoutClick} className="logout">Logout</button>
                 ) : (
                   <>
                     Hello

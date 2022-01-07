@@ -1,4 +1,4 @@
-class Api::ErrsController < ApplicationController
+class ErrsController < ApplicationController
   def index
     errs = Err.all
     render json: errs, status: :ok

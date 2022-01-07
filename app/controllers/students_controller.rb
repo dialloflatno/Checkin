@@ -1,4 +1,4 @@
-class Api::StudentsController < ApplicationController
+class StudentsController < ApplicationController
   def index
     students = Student.all
     render json: students.to_json(except: %i[password created_at updated_at]),
