@@ -183,35 +183,35 @@ puts 'New Periods.....'
 
 Period.create(
   subject_id: Subject.find_by(name: 'Math').id,
-  schedule_id: Schedule.find_by(id: 1).id,
+  schedule_id: Schedule.find_by(id: 3).id,
   start_time: 9,
   end_time: 11,
 )
 
 Period.create(
   subject_id: Subject.find_by(name: 'Science').id,
-  schedule_id: Schedule.find_by(id: 1).id,
+  schedule_id: Schedule.find_by(id: 3).id,
   start_time: 9,
   end_time: 11,
 )
 
 Period.create(
   subject_id: Subject.find_by(name: 'English').id,
-  schedule_id: Schedule.find_by(id: 1).id,
+  schedule_id: Schedule.find_by(id: 3).id,
   start_time: 9,
   end_time: 11,
 )
 
 Period.create(
   subject_id: Subject.find_by(name: 'Spanish').id,
-  schedule_id: Schedule.find_by(id: 1).id,
+  schedule_id: Schedule.find_by(id: 3).id,
   start_time: 9,
   end_time: 11,
 )
 
 Period.create(
   subject_id: Subject.find_by(name: 'Gym').id,
-  schedule_id: Schedule.find_by(id: 1).id,
+  schedule_id: Schedule.find_by(id: 3).id,
   start_time: 9,
   end_time: 11,
 )
@@ -224,87 +224,53 @@ Schedule.create(
   # period_second: 2, # period_thrid: 3, # period_fourth: 4, # period_fifth: 5,
 )
 
-# puts 'Ruining Students Day ....🙍🙍🙍'
+puts 'Ruining Students Day ....🙍🙍🙍'
 
-# Grade.create(grade: 90, comment: 'Great Work', teacher_id: 7, student_id: 8)
-# Grade.create(grade: 80, comment: 'Amazing', teacher_id: 7, student_id: 8)
-# Grade.create(grade: 75, comment: 'Very Focused', teacher_id: 7, student_id: 8)
-# Grade.create(
-#   grade: 85,
-#   comment: 'Oustanding Work',
-#   teacher_id: 7,
-#   student_id: 8,
-# )
-# Grade.create(grade: 200, comment: 'The Future', teacher_id: 3, student_id: 1)
+Grade.create(
+  grade: 90,
+  comment: 'Great Work',
+  teacher_id: Teacher.find_by(teacher_school_id: '5').id,
+  student_id: Student.find_by(student_school_id: '1').id,
+)
+Grade.create(
+  grade: 80,
+  comment: 'Amazing',
+  teacher_id: Teacher.find_by(teacher_school_id: '5').id,
+  student_id: Student.find_by(student_school_id: '1').id,
+)
+Grade.create(
+  grade: 75,
+  comment: 'Very Focused',
+  teacher_id: Teacher.find_by(teacher_school_id: '5').id,
+  student_id: Student.find_by(student_school_id: '1').id,
+)
+Grade.create(
+  grade: 85,
+  comment: 'Oustanding Work',
+  teacher_id: Teacher.find_by(teacher_school_id: '5').id,
+  student_id: Student.find_by(student_school_id: '1').id,
+)
 
-# puts 'Funtime......🥳'
+puts 'Funtime......🥳'
 
-# puts 'Funtime......🥳'
+Event.create(
+  title: 'MEET AND TREAT',
+  planner: 'BobCat Club',
+  time: Time.new(2022, 1, 1, 0, 9, 0, 0),
+  date: DateTime.new(2022, 1, 1, 0, 0, 0),
+  location_id: Location.find_by(name: 'Room 8').id,
+)
+Event.create(
+  title: 'RACK CATS VS NEW CHARTER BASKET BALL',
+  planner: 'BobCat Club',
+  time: Time.new(2022, 1, 1, 0, 9, 0, 0),
+  date: DateTime.new(2022, 1, 1, 0, 0, 0),
+  location_id: Location.find_by(name: 'Gym').id,
+)
 
-# Event.create(
-#   title: 'MEET AND TREAT',
-#   planner: 'BobCat Club',
-#   time: Time.new(2022, 1, 1, 0, 9, 0, 0),
-#   date: DateTime.new(2022, 1, 1, 0, 0, 0),
-#   location_id: 31,
-# )
-# Event.create(
-#   title: 'RACK CATS VS NEW CHARTER BASKET BALL',
-#   planner: 'BobCat Club',
-#   time: Time.new(2022, 1, 1, 0, 9, 0, 0),
-#   date: DateTime.new(2022, 1, 1, 0, 0, 0),
-#   location_id: 32,
-# )
-# Event.create(
-#   title: 'MEET AND TREAT',
-#   planner: 'BobCat Club',
-#   time: Time.new(2022, 1, 1, 0, 9, 0, 0).strftime('%H:%M'),
-#   date: DateTime.new(2022, 1, 1, 0, 0, 0),
-#   location_id: 33,
-# )
-# Event.create(
-#   title: 'RACK CATS VS NEW CHARTER BASKET BALL',
-#   planner: 'BobCat Club',
-#   time: Time.new(2022, 1, 1, 0, 9, 0, 0).strftime('%H:%M'),
-#   date: DateTime.new(2022, 1, 1, 0, 0, 0),
-#   location_id: 34,
-# )
-# Event.create(
-#   title: 'MEET AND TREAT',
-#   planner: 'BobCat Club',
-#   time: Time.new(2022, 1, 1, 0, 9, 0, 0).strftime('%H:%M'),
-#   date: DateTime.new(2022, 1, 1, 0, 0, 0),
-#   location_id: 15,
-# )
-# Event.create(
-#   title: 'RACK CATS VS NEW CHARTER BASKET BALL',
-#   planner: 'BobCat Club',
-#   time: Time.new(2022, 1, 1, 0, 9, 0, 0),
-#   date: DateTime.new(2022, 1, 1, 0, 0, 0),
-#   location_id: 12,
-# )
-# Event.create(
-#   title: 'MEET AND TREAT',
-#   planner: 'BobCat Club',
-#   time: Time.new(2022, 1, 1, 0, 9, 0, 0).strftime('%H:%M'),
-#   date: DateTime.new(2022, 1, 1, 0, 0, 0),
-#   location_id: 13,
-# )
-# Event.create(
-#   title: 'RACK CATS VS NEW CHARTER BASKET BALL',
-#   planner: 'BobCat Club',
-#   time: Time.new(2022, 1, 1, 0, 9, 0, 0).strftime('%H:%M'),
-#   date: DateTime.new(2022, 1, 1, 0, 0, 0),
-#   location_id: 14,
-# )
-# Event.create(
-#   title: 'MEET AND TREAT',
-#   planner: 'BobCat Club',
-#   time: Time.new(2022, 1, 1, 0, 9, 0, 0).strftime('%H:%M'),
-#   date: DateTime.new(2022, 1, 1, 0, 0, 0),
-#   location_id: 15,
-# )
-
-# #  Time.new.localtime.ctime.to_time.hour
-
-# Err.create(emergency: 'STUDENT WITH WEAPON', student_id: 7, location_id: 8)
+puts 'EMERGENCIES!!!'
+Err.create(
+  emergency: 'STUDENT WITH WEAPON',
+  student_id: Student.find_by(student_school_id: '1').id,
+  location_id: Location.find_by(name: 'Room 12').id,
+)
