@@ -1,10 +1,11 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
-import SignIn from "./SignIn";
+import Login from "./Login";
 import SignUp from "./SignUp.js";
-import Navigator from "./Navigator";
-// import Header from "./Header";
+import NavBar from "./NavBar";
+// import Errorpage from "./ErrorPage";
+// import Home from "./Home";
 
 function App() {
   const [user, setUser] = useState("");
@@ -26,7 +27,7 @@ function App() {
       <main>
         {user ? (
           <Switch>
-            <Navigator user={user} setUser={setUser} />
+            <NavBar user={user} setUser={setUser} />
             <Route exact path="/">
             </Route>
           </Switch>
@@ -36,15 +37,41 @@ function App() {
               <SignUp user={user} setUser={setUser} />
             </Route>
             <Route>
-              <SignIn handleLogin={handleLogin} />
+              <Login handleLogin={handleLogin} />
             </Route>
-            <Redirect to="/signin" />
+            <Redirect to="/login" />
           </Switch>
         )}
       </main>
     </>
-
   );
 }
+//   return (
+//     <>
+//       <NavBar user={user} setUser={setUser} />
+//       <main>
+//         {user ? (
+//           <Switch>
+//             <Route exact path="/home">
+//               <Home user={user} setUser={setUser} />
+//             </Route>
+//           </Switch>
+//         ) : (
+//           <Switch>
+//             <Route path="/signup">
+//               <SignUp setUser={setUser} />
+//             </Route>
+//             <Route path="/login">
+//               <Login setUser={setUser} />
+//             </Route>
+//             <Route path="/">
+//               <Home />
+//             </Route>
+//           </Switch>
+//         )}
+//       </main>
+//     </>
+//   );
+// }
 
 export default App;

@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-// import SignUp from "./SignUp";
 
 function Login({ handleLogin }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+
+  function handleClick() {
+    console.log("Ready");
+  }
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -27,20 +30,20 @@ function  handleClick() {
 }
 
   return (
-     <div>
-        <div className="signContainer">
+    <div>
+      <div className="signContainer">
         <div>
-        <img src="checkedinLogo.svg" alt="checkedin Logo" className="logo" />
-        <img src="mascot.png" alt="checkedin mascot" className="mascotSIGNIN" />
-
-          </div>
+          <img src="logo.png" alt="checkedin Logo" className="logo" />
+          <img
+            src="mascot.png"
+            alt="checkedin mascot"
+            className="mascotSIGNIN"
+          />
+        </div>
         <form onSubmit={handleSubmit}>
           <input
             className="username"
-            type='text-area'
-            autoComplete="off"
-
-            // value={username}
+            type="text"
             onChange={(e) => setUsername(e.target.value)}
             placeholder="username"
           />
@@ -48,7 +51,6 @@ function  handleClick() {
           <input
             className="password"
             type="password"
-            // value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder="password"
           />
@@ -57,10 +59,12 @@ function  handleClick() {
             Sign In
           </button>
         </form>
-        
-          <Link to="/SignUp"className ='signUp'><h5>Your not Checkedin Yet ?</h5></Link>
-        </div>
+
+        <Link to="/SignUp" className="signUp">
+          <h5>Your not Checkedin Yet ?</h5>
+        </Link>
       </div>
+    </div>
   );
 }
 

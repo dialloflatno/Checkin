@@ -19,6 +19,7 @@ function Schedule() {
         key={p.id}
         student={p.student_id}
         periods={p.periods}
+        teacher={p.periods.subject.name}
       />
     );
   });

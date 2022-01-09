@@ -7,9 +7,9 @@ import Profile from "./Profile";
 import Events from "./Events";
 import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
 import React from "react";
-import SignIn from "./SignIn";
+import Login from "./Login";
 
-function Navigator({ user, setUser }) {
+function NavBar({ user, setUser }) {
   function handleLogoutClick() {
     fetch("/logout", { method: "DELETE" }).then((r) => {
       if (r.ok) {
@@ -17,13 +17,14 @@ function Navigator({ user, setUser }) {
       }
     });
   }
- 
 
   return (
     <>
       <BrowserRouter>
         <div className="container">
-          <img src="checkedinLogo.svg" alt="checkedin Logo" className="logo" />
+          <Link to="/home">
+            <img src="logo.png" alt="checkedin Logo" className="logo" />{" "}
+          </Link>
           <nav>
             <Link to="/Emergency">
               <button className="errButton">Emergency</button>
@@ -41,16 +42,16 @@ function Navigator({ user, setUser }) {
               <li>
                 <Link to="/Events">Events</Link>
               </li>
-              <li id='user_name'>Hello,{user.full_name}</li>
+              <li id="user_name">Hello,{user.full_name}</li>
               <li>
                 {user ? (
-                  <button onClick={handleLogoutClick} className="logout">Logout</button>
+                  <button onClick={handleLogoutClick} className="logout">
+                    Logout
+                  </button>
                 ) : (
-                  <>
-                  </>
+                  <></>
                 )}
               </li>
-
             </ul>
           </nav>
                   
@@ -72,8 +73,8 @@ function Navigator({ user, setUser }) {
           <Route path="/Events">
             <Events />
           </Route>
-          <Route path="/signin">
-            <SignIn />
+          <Route path="/login">
+            <Login />
           </Route>
         </Switch>
       </BrowserRouter>
@@ -81,4 +82,4 @@ function Navigator({ user, setUser }) {
   );
 }
 
-export default Navigator;
+export default NavBar;

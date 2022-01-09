@@ -30,50 +30,48 @@ function Form({ event, handleAdd }) {
   };
 
   return (
-    <div className='form-content'>
+    <div className="form-content">
       <div className="form">
         <form onSubmit={handleSubmit}>
           <div className="formHolder">
             <hr className="vl" />
             <div className="formbox">
               <div className="input-const">
+                <span id="titleE">New Event</span>
 
-                <span id='titleE'>New Event</span>
+                <input
+                  placeholder="Title"
+                  onChange={(e) => setTitle(e.target.value)}
+                  className="eventTitle"
+                />
 
-                
-              <input
-                placeholder="Title"
-                onChange={(e) => setTitle(e.target.value)}
-                className="eventTitle"
-              />
-
-              <input
-                placeholder="Planner"
-                onChange={(e) => setPlanner(e.target.value)}
-              />
-              <input
-                placeholder="Location"
-                onChange={(e) => setLocation(e.target.value)}
-                className="newLocation"
-              />
-              <br/>
-              <input
-                type="date"
-                placeholder="Date"
-                onChange={(e) => setDate(e.target.value)}
-                className="newDate"
-              />
-              <br/>
-              <input
-                type="time"
-                placeholder="Time"
-                onChange={(e) => setTime(e.target.value)}
-                className="newTime"
-              />
-              <br />
-              <button className="addEvent" type="submit">
-                ADD EVENT
-              </button>
+                <input
+                  placeholder="Planner"
+                  onChange={(e) => setPlanner(e.target.value)}
+                />
+                <input
+                  placeholder="Location"
+                  onChange={(e) => setLocation(e.target.value)}
+                  className="newLocation"
+                />
+                <br />
+                <input
+                  type="date"
+                  placeholder="Date"
+                  onChange={(e) => setDate(e.target.value)}
+                  className="newDate"
+                />
+                <br />
+                <input
+                  type="time"
+                  placeholder="Time"
+                  onChange={(e) => setTime(e.target.value)}
+                  className="newTime"
+                />
+                <br />
+                <button className="addEvent" type="submit">
+                  ADD EVENT
+                </button>
               </div>
             </div>
           </div>
