@@ -5,6 +5,7 @@ function Emergency() {
   return (
     <div className="errfullpage">
       <div className="err">
+      <div className="err-content">
         <h1>Emergency Response Request</h1>
         <form>
           <textarea
@@ -25,6 +26,7 @@ function Emergency() {
           </button>
         </form>
         <img src="mascot.png" alt="checkedin mascot" className="mascot" />
+      </div>
       </div>
     </div>
   );

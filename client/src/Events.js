@@ -34,9 +34,8 @@ function Events() {
         <div>
           <h2>Events</h2>
         </div>
-        <EventDisplay eventLists={eventLists} />
+        <EventDisplay  handleEventDelete={handleEventDelete} eventLists={eventLists} />
         <EventsForm
-          handleEventDelete={handleEventDelete}
           handleAdd={handleAdd}
         />
       </div>

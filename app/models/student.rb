@@ -8,12 +8,9 @@ class Student < ApplicationRecord
 
   validates :student_school_id,
             presence: true,
-            uniqueness: true,
-            length: {
-              is: 10,
-            }
+            uniqueness: true
+           
   validates :user_id, presence: true, uniqueness: true
   validates :school_id, presence: true
 end
 
-Student.create(user_id: 11, school_id: 0, student_school_id: 9_833_892_089089999999999999939)

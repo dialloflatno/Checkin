@@ -4,6 +4,7 @@ School.destroy_all
 Teacher.destroy_all
 Location.destroy_all
 Subject.destroy_all
+Schedule.destroy_all
 Event.destroy_all
 Grade.destroy_all
 
@@ -125,13 +126,6 @@ becaon =
   )
 puts 'New Staff.....🧑‍🏫 🧑‍🏫 🧑‍🏫 '
 
-mithcell =
-  Teacher.create(
-    user_id: User.find_by(username: 'vinny1233').id,
-    school_id: School.find_by(name: 'Postaic Vanderbilt HighSchool').id,
-    teacher_school_id: 8_349_879_393,
-    school_authorization_code: 428_030,
-  )
 bilderbilt =
   Teacher.create(
     user_id: User.find_by(username: 'jacke223').id,
@@ -201,49 +195,51 @@ puts 'New Subjects.....🖇️'
 math =
   Subject.create(
     name: 'Math',
-    teacher_id: Teacher.find_by(teacher_school_id: 8_349_879_393).id,
-    location_id: Location.find_by(name: 'Room 8').id,
+    teacher_id: Teacher.find_by(teacher_school_id: 8349879393).id,
+    location_id: Location.find_by(name: 'Room 12').id,
   )
 science =
   Subject.create(
     name: 'Science',
-    teacher_id: Teacher.find_by(teacher_school_id: 393_039_303).id,
+    teacher_id: Teacher.find_by(teacher_school_id: 8_349_879_393).id,
     location_id: Location.find_by(name: 'Room 12').id,
   )
 english =
   Subject.create(
     name: 'English',
-    teacher_id: Teacher.find_by(teacher_school_id: 707_980_899).id,
+    teacher_id: Teacher.find_by(teacher_school_id: 8_349_879_393).id,
     location_id: Location.find_by(name: 'Room 212').id,
   )
 spanish =
   Subject.create(
     name: 'Spanish',
-    teacher_id: Teacher.find_by(teacher_school_id: 4_675_767_867).id,
-    location_id: Location.find_by(name: 'Room 12'),
+    teacher_id: Teacher.find_by(teacher_school_id: 8_349_879_393).id,
+    location_id: Location.find_by(name: 'Room 212'),
   )
 
 gym =
   Subject.create(
     name: 'Gym',
-    teacher_id: Teacher.find_by(teacher_school_id: 5_647_656_889).id,
+    teacher_id: Teacher.find_by(teacher_school_id: 8_349_879_393).id,
     location_id: Location.find_by(name: 'Gym').id,
   )
 
 puts 'New Schedule.....'
 
 Schedule.create(
-  student_id: 1,
-  period_id: 1,
+  student_id: ,
+  period_id: Period.find_by(id:1) ,
   period_second: 2,
-  period_thrid: 3,
-  period_fourth: 4,
-  period_fifth: 5,
+  # period_thrid: 3,
+  # period_fourth: 4,
+  # period_fifth: 5,
 )
 
 puts 'New Periods.....'
 
-Period.create(subject_id: 1, schedule_id: 1, start_time: 9, end_time: 11)
+Period.create(subject_id:Subject.find_by(name:"Math") , schedule_id: Schedule.find_by(id:1) , start_time: 9, end_time: 11)
+Period.create(subject_id:Subject.find_by(name:"Math") , schedule_id: Schedule.find_by(id:1) , start_time: 9, end_time: 11)
+Period.create(subject_id:Subject.find_by(name:"Math") , schedule_id: Schedule.find_by(id:1) , start_time: 9, end_time: 11)
 Period.create(subject_id: 1, schedule_id: 1, start_time: 9, end_time: 11)
 Period.create(subject_id: 1, schedule_id: 1, start_time: 9, end_time: 11)
 Period.create(subject_id: 1, schedule_id: 1, start_time: 9, end_time: 11)
@@ -251,14 +247,14 @@ Period.create(subject_id: 1, schedule_id: 1, start_time: 9, end_time: 11)
 
 puts 'Ruining Students Day ....🙍🙍🙍'
 
-Grade.create(grade: 90, comment: 'Great Work', teacher_id: 3, student_id: 1)
-Grade.create(grade: 80, comment: 'Amazing', teacher_id: 1, student_id: 1)
-Grade.create(grade: 75, comment: 'Very Focused', teacher_id: 2, student_id: 1)
+Grade.create(grade: 90, comment: 'Great Work', teacher_id: 7, student_id: 8)
+Grade.create(grade: 80, comment: 'Amazing', teacher_id: 7, student_id: 8)
+Grade.create(grade: 75, comment: 'Very Focused', teacher_id: 7, student_id: 8)
 Grade.create(
   grade: 85,
   comment: 'Oustanding Work',
-  teacher_id: 2,
-  student_id: 1,
+  teacher_id: 7,
+  student_id: 8,
 )
 Grade.create(grade: 200, comment: 'The Future', teacher_id: 3, student_id: 1)
 

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 // import SignUp from "./SignUp";
 
-function Login({ setUser }) {
+function Login({ handleLogin }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -17,24 +17,30 @@ function Login({ setUser }) {
       body: JSON.stringify({ username, password }),
     }).then((r) => {
       if (r.ok) {
-        r.json().then((user) => setUsername(user));
+        r.json().then((user) => handleLogin(user));
       }
     });
   }
+function  handleClick() {
+  console.log('Ready');
+  
+}
 
   return (
      <div>
         <div className="signContainer">
         <div>
-        <img src="logo.png" alt="checkedin Logo" className="logo" />
+        <img src="checkedinLogo.svg" alt="checkedin Logo" className="logo" />
         <img src="mascot.png" alt="checkedin mascot" className="mascotSIGNIN" />
 
           </div>
         <form onSubmit={handleSubmit}>
           <input
             className="username"
-            type="text"
-            value={username}
+            type='text-area'
+            autoComplete="off"
+
+            // value={username}
             onChange={(e) => setUsername(e.target.value)}
             placeholder="username"
           />
@@ -42,12 +48,12 @@ function Login({ setUser }) {
           <input
             className="password"
             type="password"
-            value={password}
+            // value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder="password"
           />
           <br/>
-          <button className="signIn" type="submit">
+          <button onClick={handleClick} className="signIn" type="submit">
             Sign In
           </button>
         </form>
