@@ -1,14 +1,8 @@
 //Displays the Events on the Page
 
-function EventsList({
-  event,
-  handleEventDelete,
-  title,
-  location,
-  time,
-  date,
-  planner,
-}) {
+function EventsList({event, handleEventDelete,title,location,time,date, planner}) {
+
+
   function handleDeleteClick() {
     fetch(`/events/${event.id}`, {
       method: "DELETE",
@@ -34,6 +28,6 @@ function EventsList({
       </div>
     </div>
   );
-}
 
+  }
 export default EventsList;

@@ -23,7 +23,7 @@ function NavBar({ user, setUser }) {
       <BrowserRouter>
         <div className="container">
           <Link to="/home">
-            <img src="logo.png" alt="checkedin Logo" className="logo" />{" "}
+            <img src="checkedinLogo.svg" alt="checkedin Logo" className="logo" />{" "}
           </Link>
           <nav>
             <Link to="/Emergency">

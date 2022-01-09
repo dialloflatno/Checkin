@@ -28,7 +28,7 @@ function App() {
         {user ? (
           <Switch>
             <NavBar user={user} setUser={setUser} />
-            <Route exact path="/">
+            <Route exact path="/home">
             </Route>
           </Switch>
         ) : (

@@ -19,13 +19,17 @@ function Schedule() {
         key={p.id}
         student={p.student_id}
         periods={p.periods}
-        teacher={p.periods.subject.name}
+        // teacher={p.periods.subject.name}
       />
     );
+
   });
+
+  
   return <div className='schdule-sheet'>
     <div className="schedulebackground">
       <div className="schedulebox">
+        
         {sheet}
         {/* <img src="mascot.png" alt="checkedin mascot" className="mascot" /> */}
       </div>

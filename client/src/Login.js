@@ -24,16 +24,13 @@ function Login({ handleLogin }) {
       }
     });
   }
-function  handleClick() {
-  console.log('Ready');
-  
-}
+
 
   return (
     <div>
       <div className="signContainer">
         <div>
-          <img src="logo.png" alt="checkedin Logo" className="logo" />
+          <img src="checkedinLogo.svg" alt="checkedin Logo" className="logo" />
           <img
             src="mascot.png"
             alt="checkedin mascot"

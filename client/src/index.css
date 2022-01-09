@@ -617,15 +617,14 @@ nav a:hover {
   height: fit-content;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
-
+width: 100%;
   background: #374782;
   color: whitesmoke;
-  width: 600px;
 }
 
 .gradestitlecontainer {
-  width: 600px;
+  display: flex;
+  width: 100%;
 }
 
 .gradestitle h1 {
@@ -653,22 +652,34 @@ nav a:hover {
 }
 
 .gradecards {
-  display: flex;
-  padding: 5px;
+    margin: 1px;
+    font-size: medium;
+    display: flex;
+    column-gap: 7px;
+    padding: 8px;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 
 .gradescontainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
+  padding:20px auto;
+  margin: 60px auto;
+  box-shadow: 3px 3px 5px rgb(0 0 0 / 5%);
+  background: #fff;
+  border-radius: 9px;
 }
 
 .gradestitle {
+  border-start-end-radius: 7px;
+  border-start-start-radius: 7px;
   display: flex;
   width: 500px;
   justify-content: space-around;
   flex-direction: row;
+  padding: 10px;
   align-items: center;
 }
 

@@ -15,15 +15,15 @@ function ScheduleSheet({ periods }) {
     <h3>Teacher:{period.subject.teacher}</h3> */}
                 </div>
             </div>
-        )
-    }
-    )
+     ) })
+    
+    
 
     return (
         <div className="schedule-content">
-            <div >
+            <div>
                 <div className='row'>
-                    <h1>Schedule</h1><h1>Friday.07. 2022</h1>
+                    <h1>Schedule Friday.07. 2022</h1>
                 </div>
                 {eachClass}
                 <footer/>

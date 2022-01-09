@@ -31,13 +31,11 @@ function Grades() {
             <h3>Spring 2022</h3>
           </div>
         </div>
-        <div className="mappedgrades">
-          {mappedGrades}
+        {mappedGrades}
           <br></br>
           <img src="mascot.png" alt="checkedin mascot" className="mascot" />
         </div>
       </div>
-    </div>
   );
 }
 
