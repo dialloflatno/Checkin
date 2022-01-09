@@ -24,18 +24,37 @@ function Grades() {
   });
   return (
     <div className="gradesbox">
-      <div className="gradescontainer">
-        <div className="gradestitlecontainer">
-          <div className="gradestitle">
-            <h1>Grades</h1>
-            <h3>Spring 2022</h3>
+
+      <div className='fall-sems'>
+        <div className="gradescontainer">
+          <div className="gradestitlecontainer">
+            <div className="gradestitle-fall">
+              <h1>Grades</h1>
+              <h3>Fall 2022</h3>
+            </div>
           </div>
-        </div>
-        {mappedGrades}
+          {mappedGrades}
           <br></br>
           <img src="mascot.png" alt="checkedin mascot" className="mascot" />
         </div>
       </div>
+
+
+      <div className="spring-sems">
+        <div className="gradescontainer">
+          <div className="gradestitlecontainer">
+            <div className="gradestitle">
+              <h1>Grades</h1>
+              <h3>Spring 2022</h3>
+            </div>
+          </div>
+          {mappedGrades}
+          <br></br>
+          <img src="mascot.png" alt="checkedin mascot" className="mascot" />
+        </div>
+      </div>
+
+    </div>
   );
 }
 

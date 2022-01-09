@@ -610,7 +610,7 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   background-color: gray;
-  height: 100vh;
+  height: 100%;
 }
 
 .gradestitle {
@@ -632,7 +632,6 @@ width: 100%;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-
   background: #374782;
   color: whitesmoke;
   width: auto;
@@ -641,7 +640,7 @@ width: 100%;
   display: flex;
   align-items: center;
   width: 600px;
-  height: 350px;
+  height: 100%;
   left: 400px;
   top: 227px;
   background: #ffffff;
@@ -680,6 +679,19 @@ width: 100%;
   justify-content: space-around;
   flex-direction: row;
   padding: 10px;
+  align-items: center;
+}
+
+.gradestitle-fall {
+  color: white;
+  border-start-end-radius: 7px;
+  border-start-start-radius: 7px;
+  display: flex;
+  width: 500px;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 10px;
+  background-color: green;
   align-items: center;
 }
 
