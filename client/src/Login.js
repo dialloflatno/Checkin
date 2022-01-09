@@ -28,38 +28,41 @@ function Login({ handleLogin }) {
 
   return (
     <div>
-      <div className="signContainer">
-        <div>
-          <img src="checkedinLogo.svg" alt="checkedin Logo" className="logo" />
-          <img
-            src="mascot.png"
-            alt="checkedin mascot"
-            className="mascotSIGNIN"
-          />
-        </div>
-        <form onSubmit={handleSubmit}>
-          <input
-            className="username"
-            type="text"
-            onChange={(e) => setUsername(e.target.value)}
-            placeholder="username"
-          />
+      <div className='login-bckg'>
+        <div className="signContainer">
+          <div className='stack' >
+            <img src="checkedinLogo.svg" alt="checkedin Logo" className="logo" />
+            <img
+              src="mascot.png"
+              alt="checkedin mascot"
+              className="mascotSIGNIN"
+            />
+          </div>
           <br />
-          <input
-            className="password"
-            type="password"
-            onChange={(e) => setPassword(e.target.value)}
-            placeholder="password"
-          />
-          <br/>
-          <button onClick={handleClick} className="signIn" type="submit">
-            Sign In
-          </button>
-        </form>
+          <form onSubmit={handleSubmit}>
+            <input
+              className="username"
+              type="text"
+              onChange={(e) => setUsername(e.target.value)}
+              placeholder="username"
+            />
+            <br />
+            <input
+              className="password"
+              type="password"
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="password"
+            />
+            <br />
+            <button onClick={handleClick} className="signIn" type="submit">
+              Sign In
+            </button>
+          </form>
 
-        <Link to="/SignUp" className="signUp">
-          <h5>Your not Checkedin Yet ?</h5>
-        </Link>
+          <Link to="/SignUp" className="signUp">
+            <h5>Your not Checkedin Yet ?</h5>
+          </Link>
+        </div>
       </div>
     </div>
   );

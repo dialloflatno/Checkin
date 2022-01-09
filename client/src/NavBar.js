@@ -22,9 +22,11 @@ function NavBar({ user, setUser }) {
     <>
       <BrowserRouter>
         <div className="container">
+          <div className='place-box'>
           <Link to="/home">
             <img src="checkedinLogo.svg" alt="checkedin Logo" className="logo" />{" "}
           </Link>
+          </div>
           <nav>
             <Link to="/Emergency">
               <button className="errButton">Emergency</button>
