@@ -4,6 +4,8 @@ School.destroy_all
 Teacher.destroy_all
 Location.destroy_all
 Subject.destroy_all
+Period.destroy_all
+Schedule.destroy_all
 Event.destroy_all
 Grade.destroy_all
 Err.destroy_all

@@ -6,6 +6,10 @@ function Login({ setUser }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
+  function handleClick() {
+    console.log("Ready");
+  }
+
   function handleSubmit(e) {
     e.preventDefault();
 
@@ -23,18 +27,21 @@ function Login({ setUser }) {
   }
 
   return (
-     <div>
-        <div className="signContainer">
+    <div>
+      <div className="signContainer">
         <div>
-        <img src="logo.png" alt="checkedin Logo" className="logo" />
-        <img src="mascot.png" alt="checkedin mascot" className="mascotSIGNIN" />
-
-          </div>
+          <img src="logo.png" alt="checkedin Logo" className="logo" />
+          <img
+            src="mascot.png"
+            alt="checkedin mascot"
+            className="mascotSIGNIN"
+          />
+        </div>
         <form onSubmit={handleSubmit}>
           <input
             className="username"
             type="text"
-            value={username}
+            // value={username}
             onChange={(e) => setUsername(e.target.value)}
             placeholder="username"
           />
@@ -42,19 +49,21 @@ function Login({ setUser }) {
           <input
             className="password"
             type="password"
-            value={password}
+            // value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder="password"
           />
-          <br/>
-          <button className="signIn" type="submit">
+          <br />
+          <button onClick={handleClick} className="signIn" type="submit">
             Sign In
           </button>
         </form>
-        
-          <Link to="/SignUp"className ='signUp'><h5>Your not Checkedin Yet ?</h5></Link>
-        </div>
+
+        <Link to="/SignUp" className="signUp">
+          <h5>Your not Checkedin Yet ?</h5>
+        </Link>
       </div>
+    </div>
   );
 }
 

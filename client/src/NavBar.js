@@ -7,9 +7,9 @@ import Profile from "./Profile";
 import Events from "./Events";
 import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
 import React from "react";
-import SignIn from "./SignIn";
+import Login from "./Login";
 
-function Header({ user, setUser }) {
+function NavBar({ user, setUser }) {
   function handleLogoutClick() {
     fetch("/logout", { method: "DELETE" }).then((r) => {
       if (r.ok) {
@@ -17,15 +17,15 @@ function Header({ user, setUser }) {
       }
     });
   }
- 
 
   return (
     <>
       <div></div>
       <BrowserRouter>
         <div className="container">
-
-          <img src="logo.png" alt="checkedin Logo" className="logo" />
+          <Link to="/home">
+            <img src="logo.png" alt="checkedin Logo" className="logo" />{" "}
+          </Link>
           <nav>
             <Link to="/Emergency">
               <button className="errButton">Emergency</button>
@@ -43,16 +43,16 @@ function Header({ user, setUser }) {
               <li>
                 <Link to="/Events">Events</Link>
               </li>
-              <li id='user_name'>Hello,{user.full_name}</li>
+              <li id="user_name">Hello,{user.full_name}</li>
               <li>
                 {user ? (
-                  <button onClick={handleLogoutClick} className="logout">Logout</button>
+                  <button onClick={handleLogoutClick} className="logout">
+                    Logout
+                  </button>
                 ) : (
-                  <>
-                  </>
+                  <></>
                 )}
               </li>
-
             </ul>
           </nav>
         </div>
@@ -72,8 +72,8 @@ function Header({ user, setUser }) {
           <Route path="/Events">
             <Events />
           </Route>
-          <Route path="/signin">
-            <SignIn />
+          <Route path="/login">
+            <Login />
           </Route>
         </Switch>
       </BrowserRouter>
@@ -81,4 +81,4 @@ function Header({ user, setUser }) {
   );
 }
 
-export default Header;
+export default NavBar;
