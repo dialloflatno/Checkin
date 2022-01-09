@@ -4,8 +4,8 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import Login from "./Login";
 import SignUp from "./SignUp.js";
 import NavBar from "./NavBar";
-import Errorpage from "./ErrorPage";
-import Home from "./Home";
+// import Errorpage from "./ErrorPage";
+// import Home from "./Home";
 
 function App() {
   const [user, setUser] = useState("");
@@ -18,28 +18,31 @@ function App() {
     });
   }, []);
 
+  function handleLogin(user) {
+    setUser(user);
+  }
+
   return (
     <>
-      {user ? (
-        <Switch>
-          <Route path="/">
-            <Redirect to="/home" />
+      <main>
+        {user ? (
+          <Switch>
             <NavBar user={user} setUser={setUser} />
-            <Home user={user} />
-            {/* <Errorpage /> */}
-          </Route>
-        </Switch>
-      ) : (
-        <Switch>
-          <Route path="/signup">
-            <SignUp user={user} setUser={setUser} />
-          </Route>
-          <Route>
-            <Login setUser={setUser} />
-          </Route>
-          <Redirect to="/" />
-        </Switch>
-      )}
+            <Route exact path="/">
+            </Route>
+          </Switch>
+        ) : (
+          <Switch>
+            <Route path="/signup">
+              <SignUp user={user} setUser={setUser} />
+            </Route>
+            <Route>
+              <Login handleLogin={handleLogin} />
+            </Route>
+            <Redirect to="/login" />
+          </Switch>
+        )}
+      </main>
     </>
   );
 }

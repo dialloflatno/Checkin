@@ -20,7 +20,6 @@ function NavBar({ user, setUser }) {
 
   return (
     <>
-      <div></div>
       <BrowserRouter>
         <div className="container">
           <Link to="/home">
@@ -55,6 +54,8 @@ function NavBar({ user, setUser }) {
               </li>
             </ul>
           </nav>
+                  
+          
         </div>
         <Switch>
           <Route path="/Emergency">
