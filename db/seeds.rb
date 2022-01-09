@@ -6,6 +6,7 @@ Location.destroy_all
 Subject.destroy_all
 Event.destroy_all
 Grade.destroy_all
+Err.destroy_all
 
 puts 'New Users.....👥👥👥'
 
@@ -179,49 +180,49 @@ gym =
     location_id: Location.find_by(name: 'Gym').id,
   )
 
-puts 'New Periods.....'
-
-Period.create(
-  subject_id: Subject.find_by(name: 'Math').id,
-  schedule_id: Schedule.find_by(id: 3).id,
-  start_time: 9,
-  end_time: 11,
-)
-
-Period.create(
-  subject_id: Subject.find_by(name: 'Science').id,
-  schedule_id: Schedule.find_by(id: 3).id,
-  start_time: 9,
-  end_time: 11,
-)
-
-Period.create(
-  subject_id: Subject.find_by(name: 'English').id,
-  schedule_id: Schedule.find_by(id: 3).id,
-  start_time: 9,
-  end_time: 11,
-)
-
-Period.create(
-  subject_id: Subject.find_by(name: 'Spanish').id,
-  schedule_id: Schedule.find_by(id: 3).id,
-  start_time: 9,
-  end_time: 11,
-)
-
-Period.create(
-  subject_id: Subject.find_by(name: 'Gym').id,
-  schedule_id: Schedule.find_by(id: 3).id,
-  start_time: 9,
-  end_time: 11,
-)
-
 puts 'New Schedule.....'
 
 Schedule.create(
   student_id: Student.find_by(student_school_id: '1').id,
   period_id: 1,
   # period_second: 2, # period_thrid: 3, # period_fourth: 4, # period_fifth: 5,
+)
+
+puts 'New Periods.....'
+
+Period.create(
+  subject_id: Subject.find_by(name: 'Math').id,
+  schedule_id: Schedule.find_by(id: 2).id,
+  start_time: 9,
+  end_time: 11,
+)
+
+Period.create(
+  subject_id: Subject.find_by(name: 'Science').id,
+  schedule_id: Schedule.find_by(id: 2).id,
+  start_time: 9,
+  end_time: 11,
+)
+
+Period.create(
+  subject_id: Subject.find_by(name: 'English').id,
+  schedule_id: Schedule.find_by(id: 2).id,
+  start_time: 9,
+  end_time: 11,
+)
+
+Period.create(
+  subject_id: Subject.find_by(name: 'Spanish').id,
+  schedule_id: Schedule.find_by(id: 2).id,
+  start_time: 9,
+  end_time: 11,
+)
+
+Period.create(
+  subject_id: Subject.find_by(name: 'Gym').id,
+  schedule_id: Schedule.find_by(id: 2).id,
+  start_time: 9,
+  end_time: 11,
 )
 
 puts 'Ruining Students Day ....🙍🙍🙍'
