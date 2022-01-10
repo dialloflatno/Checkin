@@ -20,11 +20,29 @@ code {
   height: 112vh;
   background-color: #ffd600;
 }
+
+
+.navs{
+  idth: -webkit-fill-available;
+    display: flex;
+    position: fixed;
+    background: #ffd600;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: rgb(53 51 51 / 32%) 0px 2px 1px 1px;
+    box-sizing: border-box;
+    margin: 60pz;
+    column-gap: 15%;
+    padding-top: 3%;
+}
+
+}
+
 .container {
-  background-color: #ffd600;
-  box-shadow: rgba(53, 51, 51, 0.315) 0px 2px 1px 1px;
-  box-sizing: border-box;
-  display: flex;
+  /* background-color: #ffd600; */
+  /* box-shadow: rgba(53, 51, 51, 0.315) 0px 2px 1px 1px; */
+  /* box-sizing: border-box; */
+  /* display: flex; */
   -webkit-box-flex: 1;
   flex-grow: 1;
   margin: 0px;
@@ -43,8 +61,6 @@ code {
   grid-template-areas: 'logoMain  nav';
 }
 
-element.style {
-}
 .igkRz {
   box-sizing: border-box;
   display: flex;
@@ -236,23 +252,21 @@ time {
 }
 
 .column {
+  margin-bottom: 23px;
   padding: 10px;
-  background: white;
   display: flex;
-  grid-gap: 21px;
   gap: 21px;
   border-radius: 2px;
   flex-direction: row;
   align-content: space-between;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .column hr {
-  background: gray;
 }
 .column span {
-  font-weight: 600;
+  font-weight: 300;
 }
 .column .date {
   font-size: large;
@@ -1064,13 +1078,16 @@ form {
 
 .row h1{
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  grid-column-gap: 20px;
   column-gap: 20px;
   align-content: space-around;
   font-weight: 400;
+  font-size: larger;
+  height: 44px;
+  align-items: center;
 }
 #titleE {
   margin-left: -16px;

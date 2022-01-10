@@ -21,7 +21,10 @@ function NavBar({ user, setUser }) {
   return (
     <>
       <BrowserRouter>
+      <div class="fixed-header">
+
         <div className="container">
+        <header className="navs">
           <div className="place-box">
             <Link to="/home">
               <img
@@ -64,6 +67,9 @@ function NavBar({ user, setUser }) {
               </li>
             </ul>
           </nav>
+        </header>
+        </div>
+        
         </div>
         <Switch>
           <Route path="/Emergency">

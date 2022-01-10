@@ -11,7 +11,7 @@ function EventDisplay({ eventLists, handleEventDelete }) {
         key={e.id}
         title={e.title}
         location={e.location.name}
-        time={e.time}
+        time ={e.time}
         date={e.date}
         planner={e.planner}
         handleEventDelete={handleEventDelete}
