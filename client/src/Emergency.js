@@ -17,13 +17,13 @@ function Emergency() {
           <form>
             <textarea
               type="text"
-              placeholder="Whats Your Emergency "
+              placeholder="WHAT'S YOUR EMERGENCY?"
               onChange={(e) => console.log(e.target.value)}
             />
             <br />
             <input
               type="text"
-              placeholder="Whats Your Location "
+              placeholder="WHAT'S YOUR LOCATION?"
               onChange={(e) => console.log(e.target.value)}
               className="newTitle"
             />
