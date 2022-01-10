@@ -1,4 +1,4 @@
-function ScheduleSheet({ periods }) {
+function ScheduleSheet({ periods,date }) {
 
     const eachClass = periods.map(period => {
 
@@ -23,7 +23,7 @@ function ScheduleSheet({ periods }) {
         <div className="schedule-content">
             <div>
                 <div className='row'>
-                    <h1>Schedule Friday.07. 2022</h1>
+                    <h1>Schedule {date}</h1>
                 </div>
                 {eachClass}
                 <footer/>

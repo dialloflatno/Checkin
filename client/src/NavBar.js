@@ -21,7 +21,10 @@ function NavBar({ user, setUser }) {
   return (
     <>
       <BrowserRouter>
+      <div class="fixed-header">
+
         <div className="container">
+        <header className="navs">
           <div className="place-box">
             <Link to="/home">
               <img
@@ -30,7 +33,7 @@ function NavBar({ user, setUser }) {
                 className="logo-header"
               />{" "}
             </Link>
-            <div classname="sirencontainer">
+            <div className="sirencontainer">
               <Link to="/Emergency">
                 {/* <button className="errButton">Emergency</button> */}
                 <img src="siren.png" alt="siren" className="siren" />
@@ -64,6 +67,9 @@ function NavBar({ user, setUser }) {
               </li>
             </ul>
           </nav>
+        </header>
+        </div>
+        
         </div>
         <Switch>
           <Route path="/Emergency">

@@ -1,14 +1,14 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
@@ -20,11 +20,26 @@ code {
   height: 112vh;
   background-color: #ffd600;
 }
-.container {
-  background-color: #ffd600;
-  box-shadow: rgba(53, 51, 51, 0.315) 0px 2px 1px 1px;
-  box-sizing: border-box;
+
+.navs {
+  width: -webkit-fill-available;
   display: flex;
+  position: fixed;
+  background: #ffd600;
+  flex-direction: row;
+  justify-content: center;
+  box-shadow: rgb(53 51 51 / 32%) 0px 2px 1px 1px;
+  box-sizing: border-box;
+  margin: 60pz;
+  column-gap: 15%;
+  padding-top: 3%;
+}
+
+.container {
+  /* background-color: #ffd600; */
+  /* box-shadow: rgba(53, 51, 51, 0.315) 0px 2px 1px 1px; */
+  /* box-sizing: border-box; */
+  /* display: flex; */
   -webkit-box-flex: 1;
   flex-grow: 1;
   margin: 0px;
@@ -40,11 +55,9 @@ code {
   justify-items: end;
   display: grid;
   grid-template: 1fr 5fr 1fr /1fr 4fr;
-  grid-template-areas: "logoMain  nav";
+  grid-template-areas: 'logoMain  nav';
 }
 
-element.style {
-}
 .igkRz {
   box-sizing: border-box;
   display: flex;
@@ -194,10 +207,10 @@ video {
   align-content: center;
   justify-content: center;
   grid-template-areas:
-    "logo"
-    "username"
-    "password"
-    "signIn";
+    'logo'
+    'username'
+    'password'
+    'signIn';
 }
 .eigth {
   display: flex;
@@ -236,23 +249,21 @@ time {
 }
 
 .column {
+  margin-bottom: 23px;
   padding: 10px;
-  background: white;
   display: flex;
-  grid-gap: 21px;
   gap: 21px;
   border-radius: 2px;
   flex-direction: row;
   align-content: space-between;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .column hr {
-  background: gray;
 }
 .column span {
-  font-weight: 600;
+  font-weight: 300;
 }
 .column .date {
   font-size: large;
@@ -266,8 +277,8 @@ time {
   margin-top: 2%;
   position: absolute;
   border: none;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 18px;
   font-style: normal;
   line-height: 28px;
@@ -564,8 +575,8 @@ time {
 .signUp {
   margin: 60px auto;
   text-decoration: none;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 300;
@@ -586,8 +597,8 @@ time {
   border: none;
   background: none;
   text-decoration: none;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 300;
@@ -614,8 +625,8 @@ time {
   margin-left: 150px;
   border: none;
   background: none;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 300;
@@ -681,9 +692,9 @@ nav a:hover {
     grid-template-columns: 1fr;
     grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
     grid-template-areas:
-      "logo  errButton"
-      "menu"
-      "content";
+      'logo  errButton'
+      'menu'
+      'content';
   }
 
   .eventslist {
@@ -715,10 +726,10 @@ nav a:hover {
     grid-template-columns: 1fr;
 
     grid-template-areas:
-      "logo"
-      "username"
-      "password"
-      "signIn";
+      'logo'
+      'username'
+      'password'
+      'signIn';
   }
   .signIn {
     cursor: pointer;
@@ -727,8 +738,8 @@ nav a:hover {
     margin-top: 35%;
     position: absolute;
     border: none;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 18px;
     font-style: normal;
     line-height: 28px;
@@ -861,17 +872,53 @@ nav a:hover {
   border-radius: 0px;
 }
 
+.gradesbxg {
+  margin-top: -140px;
+  background: linear-gradient(
+    90deg,
+    rgb(119 173 239) 0%,
+    rgb(102 195 205) 30%,
+    #61dafb 100%
+  );
+  height: 300vh;
+  /* height: 100vh; */
+  flex-wrap: wrap;
+}
 .gradesbox {
   display: flex;
+  border-radius: 20px;
   flex-direction: row;
   align-items: center;
-  background-color: whitesmoke;
-  height: 100vh;
+  background: linear-gradient(
+    90deg,
+    rgb(119 173 239) 0%,
+    rgb(102 195 205) 30%,
+    #61dafb 100%
+  );
+  flex-wrap: nowrap;
+  /* height: 100vh; */
+  margin: 247px;
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: flex-start;
 }
-
+.gradesbox .avg {
+  margin: 60px;
+  display: flex;
+  align-items: center;
+  font-size: xxx-large;
+  color: aliceblue;
+  font-weight: lighter;
+  background-color: blueviolet;
+  height: 300px;
+  width: 300px;
+  padding: auto;
+  border-start-start-radius: 900px;
+  border-start-end-radius: 900px;
+  border-end-end-radius: 900px;
+  border-end-start-radius: 900px;
+  justify-content: center;
+}
 .gradestitle {
   height: fit-content;
   flex-direction: column;
@@ -1020,8 +1067,8 @@ textarea {
   background: #ffd600;
   border-radius: 5px;
   border: none;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 18px;
   font-style: normal;
   line-height: 28px;
@@ -1056,12 +1103,18 @@ form {
   background: none;
 }
 
-.row {
+.row h1 {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: center;
+  grid-column-gap: 20px;
+  column-gap: 20px;
+  align-content: space-around;
+  font-weight: 400;
+  font-size: larger;
+  height: 44px;
+  align-items: center;
 }
 #titleE {
   margin-left: -16px;
@@ -1072,12 +1125,15 @@ form {
 
 .schedulebox {
   height: fit-content;
-  width: 55%;
+  width: -moz-fit-content;
+  width: fit-content;
   margin-top: 5%;
-  padding: 10px;
+  padding: 0px;
   background: whitesmoke;
-  box-shadow: rgb(92, 91, 91) 1px 1px 10px 0px;
+  box-shadow: rgb(92 91 91) 1px 1px 10px 0px;
   border-radius: 2px;
+  border-start-end-radius: 20px;
+  border-start-start-radius: 20px;
 }
 
 .input-const {
@@ -1112,7 +1168,12 @@ form {
   display: flex;
   flex-direction: row;
   width: 100vw;
-  background: whitesmoke;
+  background: linear-gradient(
+    90deg,
+    rgb(119 173 239) 0%,
+    rgb(102 195 205) 30%,
+    #61dafb 100%
+  );
   flex-wrap: nowrap;
   justify-content: space-around;
   height: 100%;
@@ -1154,7 +1215,26 @@ form {
 }
 .addEvent {
 }
-
+.Bigtime time {
+  color: wheat;
+  display: flex;
+  display: fk;
+  background: linear-gradient(
+    90deg,
+    rgb(24 42 60) 0%,
+    rgb(8 35 96 / 86%) 30%,
+    #1d0937 100%
+  );
+  font-size: xxx-large;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  border-start-end-radius: 10px;
+  border-start-start-radius: 10px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
 #welcome {
   display: flex;
   justify-content: center;
