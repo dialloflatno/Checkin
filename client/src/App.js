@@ -4,8 +4,8 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import Login from "./Login";
 import SignUp from "./SignUp.js";
 import NavBar from "./NavBar";
-import Errorpage from "./ErrorPage";
-import Home from "./Home";
+// import Errorpage from "./ErrorPage";
+// import Home from "./Home";
 
 function App() {
   const [user, setUser] = useState("");
@@ -34,7 +34,6 @@ function App() {
             <Route>
               <Errorpage/>
             </Route>
-
             </Route>
           </Switch>
         ) : (
@@ -49,6 +48,7 @@ function App() {
             <Route path="/home">
               {/* <Home user ={user}/> */}
             </Route>
+
           </Switch>
         )}
       </main>

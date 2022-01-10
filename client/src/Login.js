@@ -24,6 +24,10 @@ function Login({ handleLogin }) {
       }
     });
   }
+function  handleClick() {
+  console.log('Ready');
+  
+}
 
 
   return (
@@ -58,6 +62,7 @@ function Login({ handleLogin }) {
               Sign In
             </button>
           </form>
+
 
           <Link to="/SignUp" className="signUp">
             <h5>Your not Checkedin Yet ?</h5>

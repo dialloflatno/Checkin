@@ -169,6 +169,7 @@ video {
   }
   .errfullpage {
   }
+
 }
 
 .signContainer {
@@ -247,7 +248,6 @@ font-size: 15px;
 
 .signIn {
   cursor: pointer;
-
   margin-left: 16%;
   margin-top: 2%;
   position: absolute;
