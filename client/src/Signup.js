@@ -53,6 +53,7 @@ function SignUp({ setUser }) {
           onChange={(e) => setFullName(e.target.value)}
           placeholder="Full Name"
         />
+        
         <input
           className="dateOFbirth"
           type="month"

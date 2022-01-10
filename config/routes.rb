@@ -2,13 +2,13 @@ Rails.application.routes.draw do
   resources :events, only: %i[index create destroy]
   resources :users, only: %i[index show create]
   resources :subjects, only: %i[index show create]
-  resources :periods
-  resources :errs
-  resources :schedules, only: %i[index show create]
-  resources :locations
+  resources :periods, only: %i[index show]
+  resources :errs, only: %i[index show]
+  resources :schedules, only: %i[index show create destroy]
+  resources :locations, only: %i[index show]
   resources :grades, only: %i[index show]
-  resources :semsters
-  resources :schools
+  # resources :semsters, only: %i[index show]
+  resources :schools, only: %i[index show]
   resources :teachers, only: [:index]
 
   resources :students, only: %i[index show update]

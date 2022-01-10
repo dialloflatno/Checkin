@@ -28,7 +28,12 @@ function App() {
         {user ? (
           <Switch>
             <NavBar user={user} setUser={setUser} />
-            <Route exact path="/">
+            <Home user ={user}/>
+
+            <Route exact path="/home">
+            <Route>
+              <Errorpage/>
+            </Route>
             </Route>
           </Switch>
         ) : (
@@ -40,6 +45,10 @@ function App() {
               <Login handleLogin={handleLogin} />
             </Route>
             <Redirect to="/login" />
+            <Route path="/home">
+              {/* <Home user ={user}/> */}
+            </Route>
+
           </Switch>
         )}
       </main>
