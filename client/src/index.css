@@ -207,7 +207,7 @@ video {
   width: 652px;
   border-spacing: revert;
   gap: 10px;
-  background: #777974;
+  background: whitesmoke;
 }
 div.eigth {
   overflow: scroll;
@@ -219,7 +219,7 @@ div.eigth {
   border-spacing: revert;
   gap: 10px;
   padding: 20px;
-  background: #777974;
+  background: whitesmoke;
 }
 div.list-content {
   height: 737px;
@@ -815,7 +815,7 @@ nav a:hover {
   font-weight: 500;
   font-size: 29px;
   line-height: 47px;
-  background-color: #9e9c8d;
+  background-color: whitesmoke;
 }
 
 .profilebox {
@@ -824,7 +824,7 @@ nav a:hover {
   left: 346px;
   top: 138px;
   border-radius: 2px;
-  background-color: #ffd600;
+  background-color: whitesmoke;
   margin-top: 3px;
 }
 
@@ -865,7 +865,7 @@ nav a:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: gray;
+  background-color: whitesmoke;
   height: 100vh;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -975,7 +975,7 @@ textarea {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  background-color: #ee1414;
+  background-color: #fa2a00;
   color: white;
   height: 100vh;
   width: 753px;
@@ -1112,7 +1112,7 @@ form {
   display: flex;
   flex-direction: row;
   width: 100vw;
-  background: #777974;
+  background: whitesmoke;
   flex-wrap: nowrap;
   justify-content: space-around;
   height: 100%;
@@ -1125,7 +1125,7 @@ form {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  background: #9e9c8d;
+  background: whitesmoke;
 }
 
 .eventsbox {
@@ -1133,7 +1133,7 @@ form {
   height: 100vh;
   left: 381px;
   top: 138px;
-  background: #c4c4c4;
+  background: whitesmoke;
   display: flex;
   flex-direction: column;
   align-content: center;
