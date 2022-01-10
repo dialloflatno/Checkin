@@ -10,7 +10,7 @@ function ScheduleSheet({ periods }) {
                     <h1>Start:<time>{period.start_time}</time>:00am End:{period.end_time}:00pm</h1>
                     <h3>Subject:{period.subject.name}</h3>
                     <h3>Room:TBA</h3>
-                    <h3>Teacher: </h3>
+                    <h3>Teacher:Subsitute </h3>
                     {/* <h3>Room:{period.subject.location}</h3>
     <h3>Teacher:{period.subject.teacher}</h3> */}
                 </div>

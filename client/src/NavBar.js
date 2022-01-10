@@ -24,7 +24,7 @@ function NavBar({ user, setUser }) {
         <div className="container">
           <div className='place-box'>
           <Link to="/home">
-            <img src="checkedinLogo.svg" alt="checkedin Logo" className="logo" />{" "}
+            <img src="checkedinLogo.svg" alt="checkedin Logo" className="logo-header" />{" "}
           </Link>
           </div>
           <nav>
