@@ -13,29 +13,37 @@ function Schedule() {
       .then((data) => setSchedule(data));
   }, []);
 
+  const time = new Date().toLocaleTimeString();
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+
+  const date = new Date().toLocaleDateString(undefined, options);
+
   const sheet = schedules.map((p) => {
     return (
       <ScheduleSheet
         key={p.id}
         student={p.student_id}
         periods={p.periods}
-        // teacher={p.periods.subject.name}
+      // teacher={p.periods.subject.name}
+      date={date}
       />
     );
 
   });
 
-  
+
   return <div className='schdule-sheet'>
     <div className="schedulebackground">
       <div className="schedulebox">
-        
+        <div className='Bigtime'>
+          <time>{time}</time>
+        </div>
         {sheet}
         {/* <img src="mascot.png" alt="checkedin mascot" className="mascot" /> */}
       </div>
-      </div>
     </div>
-  ;
+  </div>
+    ;
 }
 
 export default Schedule;

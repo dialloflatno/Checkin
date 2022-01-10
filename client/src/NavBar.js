@@ -30,7 +30,7 @@ function NavBar({ user, setUser }) {
                 className="logo-header"
               />{" "}
             </Link>
-            <div classname="sirencontainer">
+            <div className="sirencontainer">
               <Link to="/Emergency">
                 {/* <button className="errButton">Emergency</button> */}
                 <img src="siren.png" alt="siren" className="siren" />
