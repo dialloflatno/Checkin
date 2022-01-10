@@ -1,14 +1,14 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -40,7 +40,7 @@ code {
   justify-items: end;
   display: grid;
   grid-template: 1fr 5fr 1fr /1fr 4fr;
-  grid-template-areas: 'logoMain  nav';
+  grid-template-areas: "logoMain  nav";
 }
 
 element.style {
@@ -169,7 +169,19 @@ video {
   }
   .errfullpage {
   }
+}
 
+#errinfo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 60%;
+  font-size: small;
+  margin-top: 10px;
+  color: whitesmoke;
 }
 
 .signContainer {
@@ -182,10 +194,10 @@ video {
   align-content: center;
   justify-content: center;
   grid-template-areas:
-    'logo'
-    'username'
-    'password'
-    'signIn';
+    "logo"
+    "username"
+    "password"
+    "signIn";
 }
 .eigth {
   display: flex;
@@ -214,25 +226,26 @@ div.list-content {
   display: flex;
 }
 div.schdule-sheet {
-  
-
-height: 100vh;}
-
-.schdule-sheet  h1,h3,time {
-font-size: 15px;
+  height: 100vh;
 }
 
-.column {   
+.schdule-sheet h1,
+h3,
+time {
+  font-size: 15px;
+}
+
+.column {
   padding: 10px;
-    background: white;
-    display: flex;
-    grid-gap: 21px;
-    gap: 21px;
-    border-radius: 2px;
-    flex-direction: row;
-    align-content: space-between;
-    align-items: center;
-    justify-content: flex-end;
+  background: white;
+  display: flex;
+  grid-gap: 21px;
+  gap: 21px;
+  border-radius: 2px;
+  flex-direction: row;
+  align-content: space-between;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .column hr {
@@ -247,18 +260,18 @@ font-size: 15px;
 }
 
 .signIn {
-  cursor: pointer;
+  text-align: left;
+
   margin-left: 16%;
   margin-top: 2%;
   position: absolute;
   border: none;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 18px;
   font-style: normal;
   line-height: 28px;
   letter-spacing: 0em;
-  text-align: left;
   font-weight: 300;
   color: darkgoldenrod;
   font-kerning: none;
@@ -551,8 +564,8 @@ font-size: 15px;
 .signUp {
   margin: 60px auto;
   text-decoration: none;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 300;
@@ -573,8 +586,8 @@ font-size: 15px;
   border: none;
   background: none;
   text-decoration: none;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 300;
@@ -601,8 +614,8 @@ font-size: 15px;
   margin-left: 150px;
   border: none;
   background: none;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 300;
@@ -668,9 +681,9 @@ nav a:hover {
     grid-template-columns: 1fr;
     grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
     grid-template-areas:
-      'logo  errButton'
-      'menu'
-      'content';
+      "logo  errButton"
+      "menu"
+      "content";
   }
 
   .eventslist {
@@ -702,10 +715,10 @@ nav a:hover {
     grid-template-columns: 1fr;
 
     grid-template-areas:
-      'logo'
-      'username'
-      'password'
-      'signIn';
+      "logo"
+      "username"
+      "password"
+      "signIn";
   }
   .signIn {
     cursor: pointer;
@@ -714,8 +727,8 @@ nav a:hover {
     margin-top: 35%;
     position: absolute;
     border: none;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 18px;
     font-style: normal;
     line-height: 28px;
@@ -778,7 +791,7 @@ nav a:hover {
     margin: 10px;
     display: contents;
   }
-  .column {   
+  .column {
     padding: 10px;
     background: white;
     display: flex;
@@ -850,10 +863,13 @@ nav a:hover {
 
 .gradesbox {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   background-color: gray;
-  height: 100%;
+  height: 100vh;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
 }
 
 .gradestitle {
@@ -945,6 +961,14 @@ nav a:hover {
   flex-wrap: wrap;
   align-items: center;
 }
+
+.err-content .newTitle,
+textarea {
+  border-radius: 5px;
+  text-align: center;
+  font-family: sans-serif;
+  width: 455px;
+}
 .err {
   flex-direction: column;
   align-content: center;
@@ -969,12 +993,13 @@ nav a:hover {
 }
 
 textarea {
-  height: 122px;
-  width: 523px;
+  height: 90px;
   left: 466px;
-  top: 378px;
+
   border: none;
   border-radius: 3px;
+  padding-top: 80px;
+  margin-top: -25px;
 }
 
 .newTitle {
@@ -987,13 +1012,28 @@ textarea {
 }
 
 .helpbutton {
-  width: 214px;
-  height: 64px;
-  left: 621px;
-  top: 607px;
+  /* width: 214px;
+  height: 64px; */
+  /* left: 621px;
+  top: 607px; */
   border: none;
   background: #ffd600;
-  border-radius: 20px;
+  border-radius: 5px;
+  border: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 28px;
+  letter-spacing: 0em;
+  font-weight: bold;
+  color: darkgoldenrod;
+  font-kerning: none;
+  cursor: pointer;
+}
+
+.helpbutton:hover {
+  background: rgb(255, 226, 99);
 }
 
 form {
@@ -1036,7 +1076,7 @@ form {
   margin-top: 5%;
   padding: 10px;
   background: whitesmoke;
-  box-shadow:rgb(92, 91, 91) 1px 1px 10px 0px;
+  box-shadow: rgb(92, 91, 91) 1px 1px 10px 0px;
   border-radius: 2px;
 }
 
@@ -1121,4 +1161,16 @@ form {
   margin-top: 20px;
   font-size: x-large;
   font-weight: bold;
+}
+
+.siren {
+  height: 90px;
+}
+
+.place-box {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  column-gap: 40%;
 }

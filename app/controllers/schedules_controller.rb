@@ -12,11 +12,9 @@ class SchedulesController < ApplicationController
            status: :ok
   end
 
-
-  def destroy 
-    student = Student.find_by!(id: params[:id])
-    user_schedule = student.schedules
-    bye = user_schedule.destroy
-    render json:bye ,status: :no_content
-   end
+  def destroy
+    schedule = Schedule.find_by!(id: params[:id])
+    bye = schedule.destroy
+    render json: bye, status: :no_content
+  end
 end
