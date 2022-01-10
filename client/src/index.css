@@ -21,21 +21,18 @@ code {
   background-color: #ffd600;
 }
 
-
-.navs{
-  idth: -webkit-fill-available;
-    display: flex;
-    position: fixed;
-    background: #ffd600;
-    flex-direction: row;
-    justify-content: center;
-    box-shadow: rgb(53 51 51 / 32%) 0px 2px 1px 1px;
-    box-sizing: border-box;
-    margin: 60pz;
-    column-gap: 15%;
-    padding-top: 3%;
-}
-
+.navs {
+  width: -webkit-fill-available;
+  display: flex;
+  position: fixed;
+  background: #ffd600;
+  flex-direction: row;
+  justify-content: center;
+  box-shadow: rgb(53 51 51 / 32%) 0px 2px 1px 1px;
+  box-sizing: border-box;
+  margin: 60pz;
+  column-gap: 15%;
+  padding-top: 3%;
 }
 
 .container {
@@ -1076,7 +1073,7 @@ form {
   background: none;
 }
 
-.row h1{
+.row h1 {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
