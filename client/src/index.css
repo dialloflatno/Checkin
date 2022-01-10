@@ -872,8 +872,20 @@ nav a:hover {
   border-radius: 0px;
 }
 
+.gradesbxg {
+  margin-top: -140px;
+  background: linear-gradient(
+    90deg,
+    rgb(119 173 239) 0%,
+    rgb(102 195 205) 30%,
+    #61dafb 100%
+  );
+  height: 100vh;
+  flex-wrap: wrap;
+}
 .gradesbox {
   display: flex;
+  border-radius: 20px;
   flex-direction: row;
   align-items: center;
   background: linear-gradient(
@@ -883,12 +895,28 @@ nav a:hover {
     #61dafb 100%
   );
   flex-wrap: nowrap;
-  height: 100vh;
+  /* height: 100vh; */
+  margin: 247px;
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: flex-start;
 }
-
+.gradesbox .avg{margin: 60px;
+  display: flex;
+  align-items: center;
+  font-size: xxx-large;
+  color: aliceblue;
+  font-weight: lighter;
+  background-color: blueviolet;
+  height: 300px;
+  width: 300px;
+  padding: auto;
+  border-start-start-radius: 900px;
+  border-start-end-radius: 900px;
+  border-end-end-radius: 900px;
+  border-end-start-radius: 900px;
+  justify-content: center;
+}
 .gradestitle {
   height: fit-content;
   flex-direction: column;
