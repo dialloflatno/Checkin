@@ -4,8 +4,8 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import Login from "./Login";
 import SignUp from "./SignUp.js";
 import NavBar from "./NavBar";
-// import Errorpage from "./ErrorPage";
-// import Home from "./Home";
+import Errorpage from "./ErrorPage";
+import Home from "./Home";
 
 function App() {
   const [user, setUser] = useState("");
@@ -28,12 +28,12 @@ function App() {
         {user ? (
           <Switch>
             <NavBar user={user} setUser={setUser} />
-            <Home user ={user}/>
+            <Home user={user} />
 
             <Route exact path="/home">
-            <Route>
-              <Errorpage/>
-            </Route>
+              <Route>
+                <Errorpage />
+              </Route>
             </Route>
           </Switch>
         ) : (
@@ -45,10 +45,7 @@ function App() {
               <Login handleLogin={handleLogin} />
             </Route>
             <Redirect to="/login" />
-            <Route path="/home">
-              {/* <Home user ={user}/> */}
-            </Route>
-
+            <Route path="/home">{/* <Home user ={user}/> */}</Route>
           </Switch>
         )}
       </main>

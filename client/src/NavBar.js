@@ -22,15 +22,23 @@ function NavBar({ user, setUser }) {
     <>
       <BrowserRouter>
         <div className="container">
-          <div className='place-box'>
-          <Link to="/home">
-            <img src="checkedinLogo.svg" alt="checkedin Logo" className="logo-header" />{" "}
-          </Link>
+          <div className="place-box">
+            <Link to="/home">
+              <img
+                src="checkedinLogo.svg"
+                alt="checkedin Logo"
+                className="logo-header"
+              />{" "}
+            </Link>
+            <div classname="sirencontainer">
+              <Link to="/Emergency">
+                {/* <button className="errButton">Emergency</button> */}
+                <img src="siren.png" alt="siren" className="siren" />
+              </Link>
+            </div>
           </div>
           <nav>
-            <Link to="/Emergency">
-              <button className="errButton">Emergency</button>
-            </Link>
+            <br />
             <ul>
               <li>
                 <Link to="/Schedule">Schedule</Link>
@@ -44,7 +52,7 @@ function NavBar({ user, setUser }) {
               <li>
                 <Link to="/Events">Events</Link>
               </li>
-              <li id="user_name">Hello,{user.full_name}</li>
+              <li id="user_name">Hello, {user.full_name}</li>
               <li>
                 {user ? (
                   <button onClick={handleLogoutClick} className="logout">
@@ -56,8 +64,6 @@ function NavBar({ user, setUser }) {
               </li>
             </ul>
           </nav>
-                  
-          
         </div>
         <Switch>
           <Route path="/Emergency">

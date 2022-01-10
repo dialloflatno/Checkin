@@ -6,7 +6,7 @@ function Login({ handleLogin }) {
   const [password, setPassword] = useState("");
 
   function handleClick() {
-    console.log("Ready");
+    console.log("Login button has been clicked!");
   }
 
   function handleSubmit(e) {
@@ -24,18 +24,17 @@ function Login({ handleLogin }) {
       }
     });
   }
-function  handleClick() {
-  console.log('Ready');
-  
-}
-
 
   return (
     <div>
-      <div className='login-bckg'>
+      <div className="login-bckg">
         <div className="signContainer">
-          <div className='stack' >
-            <img src="checkedinLogo.svg" alt="checkedin Logo" className="logo" />
+          <div className="stack">
+            <img
+              src="checkedinLogo.svg"
+              alt="checkedin Logo"
+              className="logo"
+            />
             <img
               src="mascot.png"
               alt="checkedin mascot"
@@ -62,7 +61,6 @@ function  handleClick() {
               Sign In
             </button>
           </form>
-
 
           <Link to="/SignUp" className="signUp">
             <h5>Your not Checkedin Yet ?</h5>
