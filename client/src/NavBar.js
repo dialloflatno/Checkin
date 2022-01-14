@@ -21,55 +21,49 @@ function NavBar({ user, setUser }) {
   return (
     <>
       <BrowserRouter>
-      <div class="fixed-header">
-
-        <div className="container">
-        <header className="navs">
-          <div className="place-box">
-            <Link to="/home">
-              <img
-                src="checkedinLogo.svg"
-                alt="checkedin Logo"
-                className="logo-header"
-              />{" "}
-            </Link>
-            <div className="sirencontainer">
-              <Link to="/Emergency">
-                {/* <button className="errButton">Emergency</button> */}
-                <img src="siren.png" alt="siren" className="siren" />
-              </Link>
-            </div>
+        <div class="fixed-header">
+          <div className="container">
+            <header className="navs">
+              <div className="place-box">
+                <Link to="/home">
+                 
+                </Link>
+                <div className="sirencontainer">
+                  <Link to="/Emergency">
+                    {/* <button className="errButton">Emergency</button> */}
+                    <img src="siren.png" alt="siren" className="siren" />
+                  </Link>
+                </div>
+              </div>
+              <nav>
+                <br />
+                <ul>
+                  <li>
+                    <Link to="/Schedule">Schedule</Link>
+                  </li>
+                  <li>
+                    <Link to="/Profile">Profile</Link>
+                  </li>
+                  <li>
+                    <Link to="/Grades">Grades</Link>
+                  </li>
+                  <li>
+                    <Link to="/Events">Events</Link>
+                  </li>
+                  <li id="user_name">Hello, {user.full_name}</li>
+                  <li>
+                    {user ? (
+                      <button onClick={handleLogoutClick} className="logout">
+                        Logout
+                      </button>
+                    ) : (
+                      <></>
+                    )}
+                  </li>
+                </ul>
+              </nav>
+            </header>
           </div>
-          <nav>
-            <br />
-            <ul>
-              <li>
-                <Link to="/Schedule">Schedule</Link>
-              </li>
-              <li>
-                <Link to="/Profile">Profile</Link>
-              </li>
-              <li>
-                <Link to="/Grades">Grades</Link>
-              </li>
-              <li>
-                <Link to="/Events">Events</Link>
-              </li>
-              <li id="user_name">Hello, {user.full_name}</li>
-              <li>
-                {user ? (
-                  <button onClick={handleLogoutClick} className="logout">
-                    Logout
-                  </button>
-                ) : (
-                  <></>
-                )}
-              </li>
-            </ul>
-          </nav>
-        </header>
-        </div>
-        
         </div>
         <Switch>
           <Route path="/Emergency">

@@ -45,7 +45,7 @@ function App() {
               <Login handleLogin={handleLogin} />
             </Route>
             <Redirect to="/login" />
-            <Route path="/home">{/* <Home user ={user}/> */}</Route>
+            <Route path="/home"></Route>
           </Switch>
         )}
       </main>
