@@ -36,8 +36,8 @@ function Form({ event, handleAdd }) {
           <div className="formHolder">
             <hr className="vl" />
             <div className="formbox">
+              <span id="titleE">New Event</span>
               <div className="input-const">
-                <span id="titleE">New Event</span>
 
                 <input
                   placeholder="Title"
@@ -54,21 +54,18 @@ function Form({ event, handleAdd }) {
                   onChange={(e) => setLocation(e.target.value)}
                   className="newLocation"
                 />
-                <br />
                 <input
                   type="date"
                   placeholder="Date"
                   onChange={(e) => setDate(e.target.value)}
                   className="newDate"
                 />
-                <br />
                 <input
                   type="time"
                   placeholder="Time"
                   onChange={(e) => setTime(e.target.value)}
                   className="newTime"
                 />
-                <br />
                 <button className="addEvent" type="submit">
                   ADD EVENT
                 </button>

@@ -194,7 +194,7 @@ puts 'New Periods.....'
 
 Period.create(
   subject_id: Subject.find_by(name: 'Math').id,
-  schedule_id: Schedule.find_by(id: 2).id,
+  schedule_id: Schedule.find_by(id: 2),
   start_time: 9,
   end_time: 11,
 )
