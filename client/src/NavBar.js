@@ -21,7 +21,7 @@ function NavBar({ user, setUser }) {
   return (
     <>
       <BrowserRouter>
-        <div class="fixed-header">
+        <div className="fixed-header">
           <div>
             <header className="navs">
               <div className="place-box">

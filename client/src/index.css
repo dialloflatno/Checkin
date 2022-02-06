@@ -240,7 +240,6 @@ time {
 }
 
 .column {
-  margin-bottom: 23px;
   padding: 10px;
   display: flex;
   font-size: 10px;
@@ -750,6 +749,7 @@ nav a:hover {
   }
   form {
     display: flex;
+    margin: 10px;
     justify-content: center;
     align-content: center;
     flex-direction: column;
@@ -1038,11 +1038,9 @@ textarea {
 textarea {
   height: 90px;
   left: 466px;
-
   border: none;
   border-radius: 3px;
   padding-top: 80px;
-  margin-top: -25px;
 }
 
 .newTitle {

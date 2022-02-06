@@ -11,6 +11,12 @@ function Grades() {
       .then((data) => setGrades(data));
   }, []);
 
+  function sumUpGrades(grade) {
+    const avg = grade.reduce((p, c) => p + c, 0) / grade.length
+    return avg
+
+  }
+
   const mappedGrades = grades.map((e) => {
     return (
       <GradeCard
@@ -23,16 +29,25 @@ function Grades() {
       />
     );
   });
+
+
+
+  const theGrade = grades.map(a => a.grade)
+
+
+  console.log(sumUpGrades(theGrade));
+
+
   return (
     <div className="gradesbxg">
 
 
 
-        <br />
+      <br />
 
       <div className="gradesbox">
-        <h1 className='avg'>90avg</h1>
-        <br/>
+        <h1 className='avg'>{sumUpGrades(theGrade)} avg</h1>
+        <br />
         <div className='fall-sems'>
           <div className="gradescontainer">
             <div className="gradestitlecontainer">
