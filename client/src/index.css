@@ -936,8 +936,6 @@ nav a:hover {
   background: #374782;
   color: whitesmoke;
   width: auto;
-
-
 }
 .mappedgrades {
   display: flex;
@@ -1105,8 +1103,7 @@ form {
   column-gap: 20px;
   align-content: space-around;
   font-weight: 400;
-  font-size: larger;
-  height: 44px;
+  font-size: large;
   align-items: center;
 }
 #titleE {

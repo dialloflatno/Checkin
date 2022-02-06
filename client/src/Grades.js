@@ -35,9 +35,6 @@ function Grades() {
   const theGrade = grades.map(a => a.grade)
 
 
-  console.log(sumUpGrades(theGrade));
-
-
   return (
     <div className="gradesbxg">
 
@@ -46,7 +43,7 @@ function Grades() {
       <br />
 
       <div className="gradesbox">
-        <h1 className='avg'>{sumUpGrades(theGrade)} avg</h1>
+        <h1 className='avg'>{ theGrade? sumUpGrades(theGrade) : "Not Posted" } avg</h1>
         <br />
         <div className='fall-sems'>
           <div className="gradescontainer">

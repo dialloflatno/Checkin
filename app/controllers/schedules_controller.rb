@@ -5,15 +5,13 @@ class SchedulesController < ApplicationController
   end
 
   def show
-    student = Student.find_by!(id: params[:id])
+    student = Student.find_by(id: params[:id])
     user_schedule = student.schedules
-    render json:
-             user_schedule.to_json(except: %i[password created_at updated_at]),
-           status: :ok
+    render json: user_schedule,status: :ok
   end
 
   def destroy
-    schedule = Schedule.find_by!(id: params[:id])
+    schedule = Schedule.find_by(id: params[:id])
     bye = schedule.destroy
     render json: bye, status: :no_content
   end
