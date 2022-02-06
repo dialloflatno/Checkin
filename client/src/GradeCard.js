@@ -1,4 +1,4 @@
-function GradeCard({ student, subject, grade, comment, teacher }) {
+function GradeCard({ subject, grade, comment, teacher }) {
   return (
     <div>
           <div className="gradecards">

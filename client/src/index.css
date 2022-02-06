@@ -23,7 +23,6 @@ code {
 
 .navs {
   width: -webkit-fill-available;
-  display: flex;
   position: fixed;
   background: #ffd600;
   flex-direction: row;
@@ -32,7 +31,6 @@ code {
   box-sizing: border-box;
   margin: 60pz;
   column-gap: 15%;
-  padding-top: 3%;
 }
 
 .container {
@@ -145,16 +143,9 @@ header,
 hgroup,
 menu,
 nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0px;
+output {
   padding: 0px;
+  font-size: 10px;
   border: 0px;
   /* font: inherit; */
   vertical-align: baseline;
@@ -245,13 +236,13 @@ div.schdule-sheet {
 .schdule-sheet h1,
 h3,
 time {
-  font-size: 15px;
+  font-size: 10px;
 }
 
 .column {
-  margin-bottom: 23px;
   padding: 10px;
   display: flex;
+  font-size: 10px;
   gap: 21px;
   border-radius: 2px;
   flex-direction: row;
@@ -266,7 +257,6 @@ time {
   font-weight: 300;
 }
 .column .date {
-  font-size: large;
   font-weight: 600;
 }
 
@@ -640,11 +630,18 @@ time {
 }
 
 nav {
+  height: 40px;
+  font-size: 10px;
+  width: -webkit-fill-available;
   display: flex;
-  justify-content: center;
-  padding: 15px;
+  position: fixed;
+  background: #ffd600;
+  flex-direction: row;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  grid-column-gap: 0%;
+  padding: 12px;
   align-items: center;
-  padding: 20px;
 }
 
 a {
@@ -752,7 +749,7 @@ nav a:hover {
   }
   form {
     display: flex;
-    margin: 30px auto;
+    margin: 10px;
     justify-content: center;
     align-content: center;
     flex-direction: column;
@@ -803,6 +800,7 @@ nav a:hover {
     display: contents;
   }
   .column {
+    font-size: 10px;
     padding: 10px;
     background: white;
     display: flex;
@@ -873,7 +871,6 @@ nav a:hover {
 }
 
 .gradesbxg {
-  margin-top: -140px;
   background: linear-gradient(
     90deg,
     rgb(119 173 239) 0%,
@@ -885,7 +882,6 @@ nav a:hover {
   flex-wrap: wrap;
 }
 .gradesbox {
-  display: flex;
   border-radius: 20px;
   flex-direction: row;
   align-items: center;
@@ -897,7 +893,6 @@ nav a:hover {
   );
   flex-wrap: nowrap;
   /* height: 100vh; */
-  margin: 247px;
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: flex-start;
@@ -981,7 +976,6 @@ nav a:hover {
   border-start-end-radius: 7px;
   border-start-start-radius: 7px;
   display: flex;
-  width: 500px;
   justify-content: space-around;
   flex-direction: row;
   padding: 10px;
@@ -993,7 +987,7 @@ nav a:hover {
   border-start-end-radius: 7px;
   border-start-start-radius: 7px;
   display: flex;
-  width: 500px;
+  width: 100%;
   justify-content: space-around;
   flex-direction: row;
   padding: 10px;
@@ -1042,11 +1036,9 @@ textarea {
 textarea {
   height: 90px;
   left: 466px;
-
   border: none;
   border-radius: 3px;
   padding-top: 80px;
-  margin-top: -25px;
 }
 
 .newTitle {
@@ -1084,20 +1076,19 @@ textarea {
 }
 
 form {
-  display: flex;
-  margin: 60px auto;
+  /* display: flex; */
   justify-content: center;
   align-content: center;
   flex-direction: column;
   align-items: center;
 }
-.form-content {
+/* .form-content {
   margin-right: 0%;
   height: 36vh;
   width: 38vw;
   margin-top: -5%;
   padding: -1px;
-}
+} */
 .canceled {
   border: none;
   background: none;
@@ -1112,8 +1103,7 @@ form {
   column-gap: 20px;
   align-content: space-around;
   font-weight: 400;
-  font-size: larger;
-  height: 44px;
+  font-size: large;
   align-items: center;
 }
 #titleE {
@@ -1126,8 +1116,6 @@ form {
 .schedulebox {
   height: fit-content;
   width: -moz-fit-content;
-  width: fit-content;
-  margin-top: 5%;
   padding: 0px;
   background: whitesmoke;
   box-shadow: rgb(92 91 91) 1px 1px 10px 0px;
@@ -1137,7 +1125,7 @@ form {
 }
 
 .input-const {
-  height: 144px;
+  /* height: 144px;
   display: inline-flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -1145,17 +1133,15 @@ form {
   flex-direction: row;
   background: #fed700;
   padding: 22px;
-
   width: 47.4%;
-
   height: 152px;
   background: #ffd600;
-  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%); */
 }
 
 .input-const input {
-  height: 40px;
-  width: 187px;
+  height: 26px;
+  width: 146px;
   border: none;
   gap: 20px;
 }
@@ -1165,9 +1151,6 @@ form {
   background: none;
 }
 .schedulebackground {
-  display: flex;
-  flex-direction: row;
-  width: 100vw;
   background: linear-gradient(
     90deg,
     rgb(119 173 239) 0%,
@@ -1216,23 +1199,18 @@ form {
 .addEvent {
 }
 .Bigtime time {
-  color: wheat;
+  color: rgb(252, 252, 252);
   display: flex;
-  display: fk;
-  background: linear-gradient(
-    90deg,
-    rgb(24 42 60) 0%,
-    rgb(8 35 96 / 86%) 30%,
-    #1d0937 100%
-  );
+  background: rgb(0, 0, 0);
   font-size: xxx-large;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 30vh;
+  height: 27vh;
   border-start-end-radius: 10px;
   border-start-start-radius: 10px;
   font-weight: 200;
+  padding: -28px;
   margin-bottom: 20px;
 }
 #welcome {
@@ -1244,7 +1222,7 @@ form {
 }
 
 .siren {
-  height: 90px;
+  height: 43px;
 }
 
 .place-box {

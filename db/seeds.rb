@@ -86,12 +86,6 @@ beacon =
     school_authorization_code: 123_456,
   )
 
-# milliardHighSchool =
-#   School.create(
-#     name: 'Milliard HighSchool',
-#     address: '9383 ParkSide Central W',
-#     school_authorization_code: 928_030,
-#   ) #
 
 puts 'New Staff.....🧑‍🏫 🧑‍🏫 🧑‍🏫 '
 
@@ -194,7 +188,7 @@ puts 'New Periods.....'
 
 Period.create(
   subject_id: Subject.find_by(name: 'Math').id,
-  schedule_id: Schedule.find_by(id: 2).id,
+  schedule_id: Schedule.find_by(id: 2),
   start_time: 9,
   end_time: 11,
 )
