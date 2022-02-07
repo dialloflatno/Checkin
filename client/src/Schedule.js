@@ -27,7 +27,7 @@ function Schedule() {
       <ScheduleSheet
         key={p.id}
         student={p.student_id}
-        periods={p.periods}
+        periods={p.subjects}
         location = {p.subjects.map(the => the.location )}
       // teacher={p.periods.subject.name}
       date={date}
