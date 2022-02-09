@@ -24,11 +24,11 @@ function NavBar({ user, setUser }) {
         <div className="fixed-header">
           <div>
             <header className="navs">
-              <div className="place-box">
-                <Link to="/home"></Link>
-                <div className="sirencontainer"></div>
+              <div>
               </div>
               <nav>
+                <Link to="/home"><h1>Checkedin</h1></Link>
+                <br/>
                 <Link to="/Emergency">
                   <img src="siren.png" alt="siren" className="siren" />
                 </Link>

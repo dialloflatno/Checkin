@@ -21,7 +21,6 @@ function Grades() {
     return (
       <GradeCard
         key={e.id}
-        // student={e.student}
         subject={e.subject}
         grade={e.grade}
         comment={e.comment}
