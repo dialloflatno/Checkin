@@ -27,13 +27,10 @@ function App() {
       <main>
         {user ? (
           <Switch>
-            <NavBar user={user} setUser={setUser} />
-            <Home user={user} />
-
-            <Route exact path="/home">
-              <Route>
-                <Errorpage />
-              </Route>
+            <Route exact path="/">
+              <NavBar user={user} setUser={setUser} />
+              <Home user={user} />
+              <Errorpage />
             </Route>
           </Switch>
         ) : (

@@ -17,13 +17,18 @@ function Schedule() {
   const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
   const date = new Date().toLocaleDateString(undefined, options);
+  console.log(schedules);
 
+
+  const locationsOfrooms = schedules.map( sub => sub.subjects.map(the => the.location ))
+  debugger
   const sheet = schedules.map((p) => {
     return (
       <ScheduleSheet
         key={p.id}
         student={p.student_id}
-        periods={p.periods}
+        periods={p.subjects}
+        location = {p.subjects.map(the => the.location )}
       // teacher={p.periods.subject.name}
       date={date}
       />

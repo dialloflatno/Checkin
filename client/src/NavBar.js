@@ -1,41 +1,37 @@
 // This is the Navigation Bar
-import "./App.css";
-import Emergency from "./Emergency";
-import Schedule from "./Schedule";
-import Grades from "./Grades";
-import Profile from "./Profile";
-import Events from "./Events";
-import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
-import React from "react";
-import Login from "./Login";
+import './App.css'
+import Emergency from './Emergency'
+import Schedule from './Schedule'
+import Grades from './Grades'
+import Profile from './Profile'
+import Events from './Events'
+import { BrowserRouter, Link, Route, Switch } from 'react-router-dom'
+import React from 'react'
+import Login from './Login'
 
 function NavBar({ user, setUser }) {
   function handleLogoutClick() {
-    fetch("/logout", { method: "DELETE" }).then((r) => {
+    fetch('/logout', { method: 'DELETE' }).then((r) => {
       if (r.ok) {
-        setUser("");
+        setUser('')
       }
-    });
+    })
   }
 
   return (
     <>
       <BrowserRouter>
-        <div class="fixed-header">
-          <div className="container">
+        <div className="fixed-header">
+          <div>
             <header className="navs">
               <div className="place-box">
-                <Link to="/home">
-                 
-                </Link>
-                <div className="sirencontainer">
-                  <Link to="/Emergency">
-                    {/* <button className="errButton">Emergency</button> */}
-                    <img src="siren.png" alt="siren" className="siren" />
-                  </Link>
-                </div>
+                <Link to="/home"></Link>
+                <div className="sirencontainer"></div>
               </div>
               <nav>
+                <Link to="/Emergency">
+                  <img src="siren.png" alt="siren" className="siren" />
+                </Link>
                 <br />
                 <ul>
                   <li>
@@ -87,7 +83,7 @@ function NavBar({ user, setUser }) {
         </Switch>
       </BrowserRouter>
     </>
-  );
+  )
 }
 
-export default NavBar;
+export default NavBar

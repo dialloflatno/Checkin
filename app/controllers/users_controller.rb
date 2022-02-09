@@ -35,6 +35,8 @@ class UsersController < ApplicationController
       :state,
       :school,
       :IDNUMBER,
+      :teacher,
+      :student,
     )
   end
 end
