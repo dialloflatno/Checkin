@@ -32,6 +32,7 @@ class UsersController < ApplicationController
       :password,
       :password_confirmation,
       :DOB,
+      :admin,
       :state,
       :school,
       :IDNUMBER,

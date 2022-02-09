@@ -30,7 +30,6 @@ function App() {
             <Route exact path="/home">
             <NavBar user={user} setUser={setUser} />
             <Home user={user} />
-                {/* <Errorpage /> */}
               </Route>
           </Switch>
         ) : (

@@ -7,6 +7,7 @@ class CreateUsers < ActiveRecord::Migration[6.1]
       t.string :DOB
       t.string :username
       t.string :state
+      t.boolean :admin, default: false
       t.string :school
       t.integer :IDNUMBER
       t.string :password_digest

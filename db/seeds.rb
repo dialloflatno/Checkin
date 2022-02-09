@@ -21,6 +21,7 @@ ibrahima_user =
     state: 'NY',
     school: 'Beacon',
     IDNUMBER: '1',
+    admin: true,
     username: 'brack123',
     password: 'brack6',
   )
@@ -34,6 +35,7 @@ dan_user =
     state: 'NY',
     school: 'Beacon',
     IDNUMBER: '2',
+    admin: false,
     username: 'danm',
     password: 'dan123',
   )
@@ -47,6 +49,7 @@ nick_user =
     state: 'NY',
     school: 'Beacon',
     IDNUMBER: '3',
+    admin: true,
     username: 'nickb',
     password: '123456',
   )
@@ -59,6 +62,7 @@ fin_user =
     state: 'NY',
     school: 'Beacon',
     IDNUMBER: '4',
+    admin: false,
     phone_number: 1_900_293_390,
     username: 'finnm',
     password: 'finn12',
@@ -73,6 +77,7 @@ harris_user =
     school: 'Beacon',
     IDNUMBER: '5',
     phone_number: 6_666_666_666,
+    admin: false,
     username: 'harrisk',
     password: 'harris',
   )
@@ -187,35 +192,35 @@ Schedule.create(
 puts 'New Periods.....'
 
 Period.create(
-  subject_id: Subject.find_by(name: 'Math').id,
+  subject_id: Subject.find_by(name: 'Math'),
   schedule_id: Schedule.find_by(id: 2),
   start_time: 9,
   end_time: 11,
 )
 
 Period.create(
-  subject_id: Subject.find_by(name: 'Science').id,
+  subject_id: Subject.find_by(name: 'Science'),
   schedule_id: Schedule.find_by(id: 2).id,
   start_time: 9,
   end_time: 11,
 )
 
 Period.create(
-  subject_id: Subject.find_by(name: 'English').id,
+  subject_id: Subject.find_by(name: 'English'),
   schedule_id: Schedule.find_by(id: 2).id,
   start_time: 9,
   end_time: 11,
 )
 
 Period.create(
-  subject_id: Subject.find_by(name: 'Spanish').id,
+  subject_id: Subject.find_by(name: 'Spanish'),
   schedule_id: Schedule.find_by(id: 2).id,
   start_time: 9,
   end_time: 11,
 )
 
 Period.create(
-  subject_id: Subject.find_by(name: 'Gym').id,
+  subject_id: Subject.find_by(name: 'Gym'),
   schedule_id: Schedule.find_by(id: 2).id,
   start_time: 9,
   end_time: 11,
