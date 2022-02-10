@@ -20,8 +20,8 @@ function Schedule() {
   console.log(schedules);
 
 
-  const locationsOfrooms = schedules.map(sub => sub.subjects.map(the => the.location))
-  
+  const locationsOfrooms = schedules.map(sub => sub.subjects.map(the => the.location))  
+
   const sheet = schedules.map((p) => {
     return (
       <ScheduleSheet

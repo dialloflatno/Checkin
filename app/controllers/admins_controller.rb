@@ -51,6 +51,7 @@ class AdminsController < ApplicationController
     # def remove_student 
     # end
 
+
 end
 
 private 
@@ -74,3 +75,4 @@ private
     def teacher_reg_params
       params.permit(:teacher)
     end
+
