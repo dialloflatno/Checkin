@@ -14,11 +14,11 @@ Rails.application.routes.draw do
   resources :students, only: %i[index show update]
 
   #admin route
-    post '/teacher/:id/register', to: 'admins#create_teacher'
-    post '/student/:id/register', to: 'admins#create_student'
-    patch '/teacher/:id/update', to: 'admins#set_teacher'
-    patch '/student/:id/update', to: 'admins#set_student'
-
+  
+  post '/teacher/:id/register', to: 'admins#create_teacher'
+  post '/student/:id/register', to: 'admins#create_student'
+  patch '/teacher/:id/update', to: 'admins#set_teacher'
+  patch '/student/:id/update', to: 'admins#set_student'
 
   #user route
     get '/me', to: 'users#show'

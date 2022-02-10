@@ -1,13 +1,8 @@
 // This is the Navigation Bar
 import './App.css'
-import Emergency from './Emergency'
-import Schedule from './Schedule'
-import Grades from './Grades'
-import Profile from './Profile'
-import Events from './Events'
-import { BrowserRouter, Link, Route, Switch } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import React from 'react'
-import Login from './Login'
+
 
 function NavBar({ user, setUser }) {
   function handleLogoutClick() {
@@ -20,68 +15,46 @@ function NavBar({ user, setUser }) {
 
   return (
     <>
-      <BrowserRouter>
-        <div className="fixed-header">
-          <div>
-            <header className="navs">
-              <div className="place-box">
-                <Link to="/home"></Link>
-                <div className="sirencontainer"></div>
-              </div>
-              <nav>
-                <Link to="/Emergency">
-                  <img src="siren.png" alt="siren" className="siren" />
-                </Link>
-                <br />
-                <ul>
-                  <li>
-                    <Link to="/Schedule">Schedule</Link>
-                  </li>
-                  <li>
-                    <Link to="/Profile">Profile</Link>
-                  </li>
-                  <li>
-                    <Link to="/Grades">Grades</Link>
-                  </li>
-                  <li>
-                    <Link to="/Events">Events</Link>
-                  </li>
-                  <li id="user_name">Hello, {user.full_name}</li>
-                  <li>
-                    {user ? (
-                      <button onClick={handleLogoutClick} className="logout">
-                        Logout
-                      </button>
-                    ) : (
-                      <></>
-                    )}
-                  </li>
-                </ul>
-              </nav>
-            </header>
-          </div>
+      <div className="fixed-header">
+        <div>
+          <header className="navs">
+            <div className="place-box"></div>
+            <nav>
+              <Link to="/">
+              <Link to="/emergency">
+                <img src="siren.png" alt="siren" className="siren" />
+              </Link>
+                <h1>Checkedin</h1>
+              </Link>
+              <br />
+              <ul>
+                <li>
+                  <Link to="/schedule">Schedule</Link>
+                </li>
+                <li>
+                  <Link to="/profile">Profile</Link>
+                </li>
+                <li>
+                  <Link to="/grades">Grades</Link>
+                </li>
+                <li>
+                  <Link to="/events">Events</Link>
+                </li>
+                <li id="user_name">Hello,{user.full_name}</li>
+                <li>
+                  {user ? (
+                    <button onClick={handleLogoutClick} className="logout">
+                      Logout
+                    </button>
+                  ) : (
+                    <></>
+                  )}
+                </li>
+              </ul>
+            </nav>
+          </header>
         </div>
-        <Switch>
-          <Route path="/Emergency">
-            <Emergency />
-          </Route>
-          <Route path="/Schedule">
-            <Schedule />
-          </Route>
-          <Route path="/Profile">
-            <Profile />
-          </Route>
-          <Route path="/Grades">
-            <Grades />
-          </Route>
-          <Route path="/Events">
-            <Events />
-          </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
-        </Switch>
-      </BrowserRouter>
+      </div>
     </>
   )
 }
