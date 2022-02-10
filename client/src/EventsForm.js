@@ -34,11 +34,10 @@ function Form({ event, handleAdd }) {
       <div className="form">
         <form onSubmit={handleSubmit}>
           <div className="formHolder">
-            <hr className="vl" />
             <div className="formbox">
-              <span id="titleE">New Event</span>
               <div className="input-const">
 
+              <span id="titleE">New Event</span>
                 <input
                   placeholder="Title"
                   onChange={(e) => setTitle(e.target.value)}

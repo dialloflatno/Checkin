@@ -1,25 +1,30 @@
-import React from "react";
-import { useState, useEffect } from "react";
-import { Route, Switch, Redirect } from "react-router-dom";
-import Login from "./Login";
-import SignUp from "./SignUp.js";
-import NavBar from "./NavBar";
-import Errorpage from "./ErrorPage";
-import Home from "./Home";
+import React from 'react'
+import { useState, useEffect } from 'react'
+import { Route, Switch, Redirect } from 'react-router-dom'
+import Login from './Login'
+import SignUp from './SignUp.js'
+import NavBar from './NavBar'
+import Errorpage from './ErrorPage'
+import Home from './Home'
+import Emergency from './Emergency'
+import Schedule from './Schedule'
+import Profile from './Profile'
+import Grades from './Grades'
+import Events from './Events'
 
 function App() {
-  const [user, setUser] = useState("");
+  const [user, setUser] = useState('')
 
   useEffect(() => {
-    fetch("/me").then((r) => {
+    fetch('/me').then((r) => {
       if (r.ok) {
-        r.json().then((user) => setUser(user));
+        r.json().then((user) => setUser(user))
       }
-    });
-  }, []);
+    })
+  }, [])
 
   function handleLogin(user) {
-    setUser(user);
+    setUser(user)
   }
 
   return (
@@ -30,7 +35,26 @@ function App() {
             <Route exact path="/">
               <NavBar user={user} setUser={setUser} />
               <Home user={user} />
-              <Errorpage />
+            </Route>
+            <Route path="/emergency">
+              <NavBar user={user} setUser={setUser} />
+              <Emergency />
+            </Route>
+            <Route path="/schedule">
+              <NavBar user={user} setUser={setUser} />
+              <Schedule />
+            </Route>
+            <Route path="/profile">
+              <NavBar user={user} setUser={setUser} />
+              <Profile />
+            </Route>
+            <Route path="/grades">
+              <NavBar user={user} setUser={setUser} />
+              <Grades />
+            </Route>
+            <Route exact path="/events">
+              <NavBar user={user} setUser={setUser} />
+              <Events />
             </Route>
           </Switch>
         ) : (
@@ -47,7 +71,7 @@ function App() {
         )}
       </main>
     </>
-  );
+  )
 }
 
-export default App;
+export default App

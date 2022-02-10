@@ -35,7 +35,6 @@ class AdminsController < ApplicationController
 
 
     def create_student
-
       reg_student = Student.create(student_params)
       if reg_student
         render json: reg_student, status: :created
@@ -46,6 +45,7 @@ class AdminsController < ApplicationController
     end
 
     # def remove_teacher 
+      
     # end
 
     # def remove_student 

@@ -21,7 +21,7 @@ function Schedule() {
 
 
   const locationsOfrooms = schedules.map(sub => sub.subjects.map(the => the.location))
-  debugger
+  
   const sheet = schedules.map((p) => {
     return (
       <ScheduleSheet

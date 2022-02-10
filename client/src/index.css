@@ -20,11 +20,13 @@ code {
   height: 112vh;
   background-color: #ffd600;
 }
-
+nav h1 {
+  margin-bottom: 12px;
+}
 .navs {
   width: -webkit-fill-available;
   position: fixed;
-  background: #ffd600;
+  /* background: #ffd600; */
   flex-direction: row;
   justify-content: center;
   box-shadow: rgb(53 51 51 / 32%) 0px 2px 1px 1px;
@@ -73,7 +75,6 @@ code {
 html,
 body,
 div,
-span,
 applet,
 object,
 iframe,
@@ -82,67 +83,6 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
 output {
   /* margin-top: 85px; */
   padding: 0px;
@@ -152,6 +92,9 @@ output {
   /* vertical-align: baseline; */
 }
 
+span {
+  font-size: 13px;
+}
 .container a {
   margin: 18px;
   display: flex;
@@ -227,7 +170,7 @@ div.eigth {
   background: whitesmoke;
 }
 div.list-content {
-  height: 737px;
+  /* height: 737px; */
   display: flex;
 }
 div.schdule-sheet {
@@ -631,14 +574,15 @@ time {
 }
 
 nav {
-  height: 40px;
-  font-size: 10px;
+  margin: 1px auto;
+  height: 63px;
+  font-size: 0.9375rem;
   width: -webkit-fill-available;
   display: flex;
   position: fixed;
   background: #ffd600;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-around;
   box-sizing: border-box;
   grid-column-gap: 0%;
   padding: 12px;
@@ -646,8 +590,11 @@ nav {
 }
 
 a {
+  display: flex;
   text-decoration: none;
   color: black;
+  align-items: center;
+  flex-direction: row;
 }
 
 nav ul {
@@ -841,6 +788,8 @@ nav a:hover {
 .profile-content {
   margin: 10%;
   padding: auto;
+  display: flex;
+  align-items: center;
 }
 
 .profileicon {
