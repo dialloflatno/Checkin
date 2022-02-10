@@ -10,6 +10,8 @@ class CreateUsers < ActiveRecord::Migration[6.1]
       t.boolean :admin, default: false
       t.string :school
       t.integer :IDNUMBER
+      t.boolean :teacher, default: false
+      t.boolean :student, default: false
       t.string :password_digest
       
       t.timestamps

@@ -135,6 +135,8 @@ ActiveRecord::Schema.define(version: 2022_01_06_020048) do
     t.boolean "admin", default: false
     t.string "school"
     t.integer "IDNUMBER"
+    t.boolean "teacher", default: false
+    t.boolean "student", default: false
     t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
