@@ -11,30 +11,29 @@ Rails.application.routes.draw do
   # resources :semsters, only: %i[index show]
   resources :schools, only: %i[index show]
   resources :teachers, only: [:index]
-
   resources :students, only: %i[index show update]
 
   #admin route
-  
-  post '/teacher/:id', to: 'admins#create_teacher'
-  post '/student/:id', to: 'admins#create_student'
-  patch '/teacher/:id', to: 'admins#set_teacher'
-  patch '/student/:id', to: 'admins#set_student'
+    post '/teacher/:id/register', to: 'admins#create_teacher'
+    post '/student/:id/register', to: 'admins#create_student'
+    patch '/teacher/:id/update', to: 'admins#set_teacher'
+    patch '/student/:id/update', to: 'admins#set_student'
+
 
   #user route
-  get '/me', to: 'users#show'
-  post '/signup', to: 'users#create'
+    get '/me', to: 'users#show'
+    post '/signup', to: 'users#create'
 
   #session routes for login / logout
-  post '/login', to: 'sessions#create'
-  delete '/logout', to: 'sessions#destroy'
+    post '/login', to: 'sessions#create'
+    delete '/logout', to: 'sessions#destroy'
 
   #events routes
-  post '/events', to: 'events#create'
-  delete '/events', to: 'events#destroy'
+    post '/events', to: 'events#create'
+    delete '/events', to: 'events#destroy'
 
   #Grades Routes
-  get '/grades', to: 'grades#show'
+    get '/grades', to: 'grades#show'
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
