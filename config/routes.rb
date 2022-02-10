@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :admins, only: %i[ index show create_teacher create_student set_student destroy set_teacher]
+  resources :admins, only: %i[ index show create destroy ]
   resources :events, only: %i[index create destroy]
   resources :users, only: %i[index show create]
   resources :subjects, only: %i[index show create]
@@ -13,6 +13,13 @@ Rails.application.routes.draw do
   resources :teachers, only: [:index]
 
   resources :students, only: %i[index show update]
+
+  #admin route
+  
+  post '/teacher/:id', to: 'admins#create_teacher'
+  post '/student/:id', to: 'admins#create_student'
+  patch '/teacher/:id', to: 'admins#set_teacher'
+  patch '/student/:id', to: 'admins#set_student'
 
   #user route
   get '/me', to: 'users#show'

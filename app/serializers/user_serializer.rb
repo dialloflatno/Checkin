@@ -1,5 +1,4 @@
 class UserSerializer < ActiveModel::Serializer
-  attributes :id ,:full_name, :email, :phone_number, :admin
   attributes :id ,:full_name, :email, :phone_number, :teacher, :student
 
   has_many :students
