@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :admins, only: %i[ index show create_teacher create_student set_student destroy set_teacher]
   resources :events, only: %i[index create destroy]
   resources :users, only: %i[index show create]
   resources :subjects, only: %i[index show create]

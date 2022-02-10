@@ -7,4 +7,6 @@ class Teacher < ApplicationRecord
 
   validates :school_authorization_code, presence: true
   validates :teacher_school_id, presence: true, uniqueness: true
+
+  
 end

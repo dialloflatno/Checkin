@@ -1,6 +1,5 @@
 function ScheduleSheet({ periods, date , location}) {
 
-
     console.log(periods);
 
     const theRooms = location.map(the => the.name)

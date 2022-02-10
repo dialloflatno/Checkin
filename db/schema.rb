@@ -132,6 +132,7 @@ ActiveRecord::Schema.define(version: 2022_01_06_020048) do
     t.string "DOB"
     t.string "username"
     t.string "state"
+    t.boolean "admin", default: false
     t.string "school"
     t.integer "IDNUMBER"
     t.boolean "teacher", default: false

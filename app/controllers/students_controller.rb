@@ -17,6 +17,11 @@ class StudentsController < ApplicationController
   end
 end
 
+#// when student === false  student.destory
+#// when  student === true  student.create 
+#// when teacher === false  teacher.destory
+#// when  teacher  === true  teaher.create 
+
 private
 
 def student_params

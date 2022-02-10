@@ -49,32 +49,5 @@ function App() {
     </>
   );
 }
-//   return (
-//     <>
-//       <NavBar user={user} setUser={setUser} />
-//       <main>
-//         {user ? (
-//           <Switch>
-//             <Route exact path="/home">
-//               <Home user={user} setUser={setUser} />
-//             </Route>
-//           </Switch>
-//         ) : (
-//           <Switch>
-//             <Route path="/signup">
-//               <SignUp setUser={setUser} />
-//             </Route>
-//             <Route path="/login">
-//               <Login setUser={setUser} />
-//             </Route>
-//             <Route path="/">
-//               <Home />
-//             </Route>
-//           </Switch>
-//         )}
-//       </main>
-//     </>
-//   );
-// }
 
 export default App;

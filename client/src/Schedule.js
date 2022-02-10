@@ -20,7 +20,7 @@ function Schedule() {
   console.log(schedules);
 
 
-  const locationsOfrooms = schedules.map( sub => sub.subjects.map(the => the.location ))
+  const locationsOfrooms = schedules.map(sub => sub.subjects.map(the => the.location))
   debugger
   const sheet = schedules.map((p) => {
     return (
@@ -28,9 +28,8 @@ function Schedule() {
         key={p.id}
         student={p.student_id}
         periods={p.subjects}
-        location = {p.subjects.map(the => the.location )}
-      // teacher={p.periods.subject.name}
-      date={date}
+        location={p.subjects.map(the => the.location)}
+        date={date}
       />
     );
 
