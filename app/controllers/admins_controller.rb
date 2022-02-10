@@ -12,14 +12,14 @@ class AdminsController < ApplicationController
     end
 
     def set_teacher
-        user = User.find_by(id: params[:user_id])
-        teacher_set = user.update(:teacher)
+        user = User.find_by(id: params[:id])
+        teacher_set = user.update(teacher_reg_params)
         render json: teacher_set 
     end
 
     def set_student
         user = User.find_by(id: params[:id])
-        student_set = user.update(:student)
+        student_set = user.update(stud_reg_params)
         render json: student_set 
     end
 
@@ -62,4 +62,15 @@ private
     def teacher_params
         params.permit(:teacher_school_id, :school_id, :user_id, :school_authorization_code )
     end
-    
+
+    def user_params
+      params.permit(:id, :student,:teacher,:admin)
+    end
+
+    def stud_reg_params
+      params.permit(:student)
+    end
+
+    def teacher_reg_params
+      params.permit(:teacher)
+    end

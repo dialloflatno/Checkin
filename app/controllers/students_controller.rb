@@ -1,4 +1,5 @@
 class StudentsController < ApplicationController
+  
   def index
     students = Student.all
     render json: students.to_json(except: %i[password created_at updated_at]),
@@ -12,9 +13,12 @@ class StudentsController < ApplicationController
 
   def update
     student = Student.find_by(id: params[:id])
-    new_student = student.update(student_params)
+    new_student = student.update(:student)
     render json: new_student
   end
+
+
+
 end
 
 #// when student === false  student.destory
