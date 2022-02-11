@@ -51,7 +51,6 @@ class AdminsController < ApplicationController
     # def remove_student 
     # end
 
-
 end
 
 private 
