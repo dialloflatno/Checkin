@@ -6,7 +6,7 @@
 
 ## Project Summary 
 
-We wanted to develop an app that would help students report emergencies, see schedules, grades, and create events in their schools. We aim to promotoe automony and responsibility by giving students the ability to feel invested in their own space and community. In a time where school shootings and violence are at an all-time-high we believe an app such as CheckedIn is a neccesity for schools of all kinds. 
+We wanted to develop an app that would help students report emergencies, see schedules, grades, and create events in their schools. We aim to promote autonomy and responsibility by giving students the ability to feel invested in their own space and community. In a time where school shootings and violence are at an all-time-high, we believe an app such as CheckedIn is a necessity for schools of all kinds. 
 
 ## Stories
 
