@@ -10,6 +10,7 @@ import Schedule from './Schedule'
 import Profile from './Profile'
 import Grades from './Grades'
 import Events from './Events'
+import Teacher from './Teacher'
 import Admin from './Admin'
 
 function App() {
@@ -62,6 +63,17 @@ function App() {
 
     )
   } else if ( user.teacher === true ) {
+    return (
+      <>
+        <Switch>
+          <Route path='/'>
+            <Teacher />
+          </Route>
+        </Switch>
+      </>
+    )
+  }
+  else if ( user.admin === true ) {
 
     return (
       <>
@@ -73,7 +85,6 @@ function App() {
       </>
     )
   }
-
   else {
     return (
       <>
