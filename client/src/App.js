@@ -74,6 +74,7 @@ function App() {
     )
   }
   else if ( user.admin === true ) {
+
     return (
       <>
         <Switch>
