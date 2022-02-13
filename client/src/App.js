@@ -32,6 +32,7 @@ function App() {
   if (user.student) {
     return (
       <main>
+      
         <Switch>
           <Route exact path="/">
             <NavBar user={user} setUser={setUser} />
