@@ -12,6 +12,7 @@ import Grades from './Grades'
 import Events from './Events'
 import Teacher from './Teacher'
 import Admin from './Admin'
+import EmergencyRequest from './EmergencyRequest'
 
 function App() {
   const [user, setUser] = useState([])
@@ -65,8 +66,11 @@ function App() {
     return (
       <>
         <Switch>
-          <Route path='/'>
-            <Teacher />
+          <Route  exact path ='/'>
+            <Teacher/>
+          </Route>
+          <Route path='/errs'>
+            <EmergencyRequest/>
           </Route>
         </Switch>
       </>
