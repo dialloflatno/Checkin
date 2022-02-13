@@ -16,6 +16,7 @@ import EmergencyRequest from './EmergencyRequest'
 
 function App() {
   const [user, setUser] = useState([])
+  const [emergencyShow, setEmergencyRequests] = useState([])
 
   useEffect(() => {
     fetch('/me').then((r) => {
@@ -25,10 +26,15 @@ function App() {
     })
   }, [])
 
+  function handleNewEmergency(newRequest) {
+    console.log('Request sent to await rapid responses!')
+    const addRequest = [...emergencyShow, newRequest]
+    setEmergencyRequests(addRequest)
+  }
+
   function handleLogin(user) {
     setUser(user)
   }
-
 
   if (user.student) {
     return (
@@ -40,7 +46,7 @@ function App() {
           </Route>
           <Route path="/emergency">
             <NavBar user={user} setUser={setUser} />
-            <Emergency />
+            <Emergency user={user.students} />
           </Route>
           <Route path="/schedule">
             <NavBar user={user} setUser={setUser} />
@@ -60,35 +66,37 @@ function App() {
           </Route>
         </Switch>
       </main>
-
     )
-  } else if ( user.teacher === true ) {
+  } else if (user.teacher === true) {
     return (
       <>
         <Switch>
-          <Route  exact path ='/'>
-            <Teacher/>
+          <Route exact path="/">
+            <NavBar user={user} setUser={setUser} />
+            <Teacher />
           </Route>
-          <Route path='/errs'>
-            <EmergencyRequest/>
+          <Route path="/errs">
+            {/* <NavBar user={user} setUser={setUser} /> */}
+            <EmergencyRequest
+              handleNewEmergency={handleNewEmergency}
+              emergencyShow={emergencyShow}
+              setEmergencyRequests={setEmergencyRequests}
+            />
           </Route>
         </Switch>
       </>
     )
-  }
-  else if ( user.admin === true ) {
-
+  } else if (user.admin === true) {
     return (
       <>
         <Switch>
-          <Route path='/'>
+          <Route path="/">
             <Admin />
           </Route>
         </Switch>
       </>
     )
-  }
-  else {
+  } else {
     return (
       <>
         <Switch>

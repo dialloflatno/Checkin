@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react'
 import EQuest from './EQuest'
 
-export default function EmergencyRequest() {
-  const [emergencyShow, setEmergencyRequests] = useState({})
+export default function EmergencyRequest({ emergencyShow, setEmergencyRequests}) {
 
   useEffect(() => {
     fetch('/errs').then((r) => {
