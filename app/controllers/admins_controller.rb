@@ -74,3 +74,4 @@ private
     def teacher_reg_params
       params.permit(:teacher)
     end
+

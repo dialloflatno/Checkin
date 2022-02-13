@@ -32,7 +32,7 @@ function App() {
   if (user.student) {
     return (
       <main>
-
+      
         <Switch>
           <Route exact path="/">
             <NavBar user={user} setUser={setUser} />
@@ -74,7 +74,6 @@ function App() {
     )
   }
   else if ( user.admin === true ) {
-
     return (
       <>
         <Switch>
@@ -102,6 +101,5 @@ function App() {
     )
   }
 }
-
 
 export default App
