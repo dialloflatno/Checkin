@@ -608,6 +608,10 @@ nav {
   color: aliceblue;
   margin-bottom: 12px;
 }
+.newnav h5 {
+  margin-bottom: 7px;
+  color: rgb(122, 124, 126);
+  margin-left: 3px;}
 
 .newnav ul {
   display: flex;
@@ -617,6 +621,10 @@ nav {
   grid-gap: 10px;
   gap: 10px;
   color: whitesmoke;
+}
+.newnav li {
+  color: whitesmoke;
+
 }
 
 a {
