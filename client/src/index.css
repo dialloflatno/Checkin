@@ -611,7 +611,13 @@ nav {
 .newnav h5 {
   margin-bottom: 7px;
   color: rgb(122, 124, 126);
-  margin-left: 3px;}
+  margin-left: 3px;
+}
+nav h5 {
+  margin-bottom: 7px;
+  color: #978319;
+  margin-left: 3px;
+}
 
 .newnav ul {
   display: flex;

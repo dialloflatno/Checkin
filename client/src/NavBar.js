@@ -25,6 +25,8 @@ function NavBar({ user, setUser }) {
                 <img src="siren.png" alt="siren" className="siren" />
               </Link>
                 <h1>Checkedin</h1>
+                <br/>
+                <h5> Student</h5>
               </Link>
               <br />
               <ul>
