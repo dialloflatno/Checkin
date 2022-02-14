@@ -6,7 +6,9 @@ export default function EmergencyRequest({ emergencyShow, setEmergencyRequests})
   useEffect(() => {
     fetch('/errs').then((r) => {
       if (r.ok) {
-        r.json().then((studentErrs) => setEmergencyRequests(studentErrs))
+        r.json().then((studentErrs) => {
+            console.log(studentErrs);
+            setEmergencyRequests(studentErrs)})
       }
     })
   }, [])

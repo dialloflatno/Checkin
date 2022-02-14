@@ -1,5 +1,5 @@
 // Emergency Request Page
-import React, { useReducer, useState } from 'react'
+import React, { useState } from 'react'
 
 function Emergency({ user, handleNewEmergency }) {
   const [emergency, setEmergency] = useState('')

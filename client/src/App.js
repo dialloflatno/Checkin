@@ -13,6 +13,7 @@ import Events from './Events'
 import Teacher from './Teacher'
 import Admin from './Admin'
 import EmergencyRequest from './EmergencyRequest'
+import TeacherNavBar from './TeacherNavBar'
 
 function App() {
   const [user, setUser] = useState([])
@@ -25,12 +26,17 @@ function App() {
       }
     })
   }, [])
+debugger
+  console.log(emergencyShow);
 
   function handleNewEmergency(newRequest) {
+    console.log(newRequest);
     console.log('Request sent to await rapid responses!')
-    const addRequest = [...emergencyShow, newRequest]
+    const addRequest = [...emergencyShow,newRequest]
+    console.log(addRequest);
     setEmergencyRequests(addRequest)
   }
+
 
   function handleLogin(user) {
     setUser(user)
@@ -46,7 +52,10 @@ function App() {
           </Route>
           <Route path="/emergency">
             <NavBar user={user} setUser={setUser} />
-            <Emergency user={user.students} />
+            <Emergency 
+              user={user.students}
+              handleNewEmergency={handleNewEmergency}
+            />
           </Route>
           <Route path="/schedule">
             <NavBar user={user} setUser={setUser} />
@@ -72,13 +81,12 @@ function App() {
       <>
         <Switch>
           <Route exact path="/">
-            <NavBar user={user} setUser={setUser} />
+            <TeacherNavBar user={user} setUser={setUser} />
             <Teacher />
           </Route>
           <Route path="/errs">
-            {/* <NavBar user={user} setUser={setUser} /> */}
+          <TeacherNavBar user={user} setUser={setUser} />
             <EmergencyRequest
-              handleNewEmergency={handleNewEmergency}
               emergencyShow={emergencyShow}
               setEmergencyRequests={setEmergencyRequests}
             />

@@ -589,6 +589,36 @@ nav {
   align-items: center;
 }
 
+.newnav {
+  margin: 1px auto;
+  height: 63px;
+  font-size: 0.9375rem;
+  width: -webkit-fill-available;
+  display: flex;
+  position: fixed;
+  background: #474642;
+  flex-direction: row;
+  justify-content: space-around;
+  box-sizing: border-box;
+  grid-column-gap: 0%;
+  padding: 12px;
+  align-items: center;
+}
+.newnav h1 {
+  color: aliceblue;
+  margin-bottom: 12px;
+}
+
+.newnav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  list-style: none;
+  grid-gap: 10px;
+  gap: 10px;
+  color: whitesmoke;
+}
+
 a {
   display: flex;
   text-decoration: none;
@@ -938,6 +968,7 @@ nav a:hover {
 
 .err-content .newTitle,
 textarea {
+  margin: 20px auto;
   border-radius: 5px;
   text-align: center;
   font-family: sans-serif;
