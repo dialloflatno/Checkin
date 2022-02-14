@@ -16,3 +16,4 @@ We wanted to develop an app that would help students report emergencies, see sch
 - Students can also submit emergencies (i.e. armed student, or a student has fainted)
 - Teachers can submit grades and create schedules for students
 - Admins can manage the status of our users
+![Screen Shot 2022-02-14 at 13 34 04](https://user-images.githubusercontent.com/87031638/153925208-5a15e63b-1c02-4e12-858f-cce3770f23ff.jpg)
