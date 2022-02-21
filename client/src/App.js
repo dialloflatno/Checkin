@@ -14,6 +14,7 @@ import Teacher from './Teacher'
 import Admin from './Admin'
 import EmergencyRequest from './EmergencyRequest'
 import TeacherNavBar from './TeacherNavBar'
+import LandingPage from './LandingPage'
 
 function App() {
   const [user, setUser] = useState([])
@@ -115,7 +116,9 @@ debugger
             <Login handleLogin={handleLogin} />
           </Route>
           <Redirect to="/login" />
-          <Route path="/home"></Route>
+          <Route>
+            <LandingPage/>
+          </Route>
         </Switch>
       </>
     )

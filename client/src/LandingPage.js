@@ -1,3 +1,4 @@
+import Header from "./Header";
 
 
 
@@ -7,12 +8,12 @@ export default function LandingPage() {
 
         <div>
 
-
-
+            <Header />
+            <h1>HELLO</h1>
 
 
         </div>
-        
+
     )
 
 }
