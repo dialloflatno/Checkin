@@ -31,7 +31,7 @@ nav h1 {
   justify-content: center;
   box-shadow: rgb(53 51 51 / 32%) 0px 2px 1px 1px;
   box-sizing: border-box;
-  margin: 60pz;
+  /* margin-top: -26px; */
   column-gap: 15%;
 }
 
