@@ -61,7 +61,7 @@ function Login({ handleLogin }) {
             </button>
           </form>
 
-          <Link to="/SignUp" className="signUp">
+          <Link to="/signup" className="signUp">
             <h5>Your not Checkedin Yet ?</h5>
           </Link>
           </div>
