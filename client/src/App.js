@@ -15,6 +15,7 @@ import Admin from './Admin'
 import EmergencyRequest from './EmergencyRequest'
 import TeacherNavBar from './TeacherNavBar'
 import LandingPage from './LandingPage'
+import AdminNavBar from './AdminNavBar'
 
 function App() {
   const [user, setUser] = useState([])
@@ -27,13 +28,13 @@ function App() {
       }
     })
   }, [])
-debugger
+  debugger
   console.log(emergencyShow);
 
   function handleNewEmergency(newRequest) {
     console.log(newRequest);
     console.log('Request sent to await rapid responses!')
-    const addRequest = [...emergencyShow,newRequest]
+    const addRequest = [...emergencyShow, newRequest]
     console.log(addRequest);
     setEmergencyRequests(addRequest)
   }
@@ -53,7 +54,7 @@ debugger
           </Route>
           <Route path="/emergency">
             <NavBar user={user} setUser={setUser} />
-            <Emergency 
+            <Emergency
               user={user.students}
               handleNewEmergency={handleNewEmergency}
             />
@@ -86,7 +87,7 @@ debugger
             <Teacher />
           </Route>
           <Route path="/errs">
-          <TeacherNavBar user={user} setUser={setUser} />
+            <TeacherNavBar user={user} setUser={setUser} />
             <EmergencyRequest
               emergencyShow={emergencyShow}
               setEmergencyRequests={setEmergencyRequests}
@@ -100,6 +101,7 @@ debugger
       <>
         <Switch>
           <Route path="/">
+            <AdminNavBar user={user} setUser={setUser} />
             <Admin />
           </Route>
         </Switch>
@@ -117,7 +119,7 @@ debugger
           </Route>
           <Redirect to="/login" />
           <Route>
-            <LandingPage/>
+            <LandingPage />
           </Route>
         </Switch>
       </>
