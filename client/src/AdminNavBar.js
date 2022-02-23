@@ -18,7 +18,7 @@ export default function AdminNavBar({ user, setUser }) {
         <div>
           <header className="navs">
             <div className="place-box"></div>
-            <nav className="newnav">
+            <nav className="adminnewnav">
               <Link to="/">
                 <h1> Checkedin</h1>
                 <br/>
@@ -30,10 +30,13 @@ export default function AdminNavBar({ user, setUser }) {
                   <Link to="/errs">EmergencyRequest</Link>
                 </li>
                 <li>
-                  <Link to="/grades">Grades</Link>
+                  <Link to="/grades">Schools</Link>
                 </li>
                 <li>
-                  <Link to="/events">Events</Link>
+                  <Link to="/events">Teachers</Link>
+                </li>
+                <li>
+                  <Link to="/events">Students</Link>
                 </li>
                 <li id="user_name">Hello,{user.full_name}</li>
                 <li>

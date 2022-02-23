@@ -202,6 +202,28 @@ time {
 .column .date {
   font-weight: 600;
 }
+.adminnewnav{
+  margin: 1px auto;
+  height: 63px;
+  font-size: 0.9375rem;
+  width: -webkit-fill-available;
+  display: flex;
+  position: fixed;
+  background: #2374aa;
+  flex-direction: row;
+  justify-content: space-around;
+  box-sizing: border-box;
+  grid-column-gap: 0%;
+  color: #ffffff;
+  padding: 12px;
+  align-items: center;
+}
+
+.adminnewnav nav h5 {
+  margin-bottom: 7px;
+  color: #ffffff;
+  margin-left: 3px;
+}
 
 .signIn {
   border: none;

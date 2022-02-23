@@ -1,7 +1,7 @@
 
 
 
-export default function Teacher() {
+export default function TeacherUser() {
 
     return (
         <>
