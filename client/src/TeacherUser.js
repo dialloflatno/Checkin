@@ -1,11 +1,12 @@
 
 
 
-export default function TeacherUser() {
+export default function TeacherUser({teachers}) {
+
+    console.log(teachers);
 
     return (
         <>
-
 
         </>
 

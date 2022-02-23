@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react"
+import StudentUser from './StudentUser'
+import TeacherUser from './TeacherUser'
+
 
 
 
@@ -13,11 +16,13 @@ useEffect(() => {
       }
     })
   }, [])
-
+debugger
   console.log(allUsers);
 
     return (
         <>
+            <StudentUser students = { allUsers.students}/>
+            <TeacherUser teachers = {allUsers.teachers}/>
             
 
         </>
