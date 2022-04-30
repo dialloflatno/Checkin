@@ -21,6 +21,7 @@ function App() {
   const [user, setUser] = useState([])
   const [emergencyShow, setEmergencyRequests] = useState([])
 
+
   useEffect(() => {
     fetch('/me').then((r) => {
       if (r.ok) {
@@ -47,6 +48,7 @@ function App() {
   if (user.student) {
     return (
       <main>
+      
         <Switch>
           <Route exact path="/">
             <NavBar user={user} setUser={setUser} />
@@ -92,11 +94,13 @@ function App() {
               emergencyShow={emergencyShow}
               setEmergencyRequests={setEmergencyRequests}
             />
+
           </Route>
         </Switch>
       </>
     )
   } else if (user.admin === true) {
+
     return (
       <>
         <Switch>
