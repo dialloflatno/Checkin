@@ -43,7 +43,7 @@ function SignUp({ setUser }) {
     <div className="signContainer">
       <form className="signupFORM" onSubmit={handleSubmit}>
         <img src="logo.png" alt="checkedin Logo" className="logoSIGNUP" />
-        <Link to="/SignIn">
+        <Link to="/signin">
           <button className="closeButton">X</button>
         </Link>
         <br />

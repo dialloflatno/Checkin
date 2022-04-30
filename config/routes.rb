@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :users, only: %i[index show create]
   resources :subjects, only: %i[index show create]
   resources :periods, only: %i[index show]
-  resources :errs, only: %i[index show]
+  resources :errs, only: %i[index create show]
   resources :schedules, only: %i[index show create destroy]
   resources :locations, only: %i[index show]
   resources :grades, only: %i[index show]

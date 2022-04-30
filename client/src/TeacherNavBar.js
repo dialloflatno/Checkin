@@ -1,16 +1,15 @@
 // This is the Navigation Bar
-import './App.css'
-import { Link } from 'react-router-dom'
-import React from 'react'
+import "./App.css";
+import { Link } from "react-router-dom";
+import React from "react";
 
-
-function NavBar({ user, setUser }) {
+export default function TeacherNavBar({ user, setUser }) {
   function handleLogoutClick() {
-    fetch('/logout', { method: 'DELETE' }).then((r) => {
+    fetch("/logout", { method: "DELETE" }).then((r) => {
       if (r.ok) {
-        setUser('')
+        setUser("");
       }
-    })
+    });
   }
 
   return (
@@ -19,22 +18,16 @@ function NavBar({ user, setUser }) {
         <div>
           <header className="navs">
             <div className="place-box"></div>
-            <nav>
+            <nav className="newnav">
               <Link to="/">
-              <Link to="/emergency">
-                <img src="siren.png" alt="siren" className="siren" />
-              </Link>
-                <h1>Checkedin</h1>
+                <h1> Checkedin</h1>
                 <br/>
-                <h5> Student</h5>
+                <h5> Teacher</h5>
               </Link>
               <br />
               <ul>
                 <li>
-                  <Link to="/schedule">Schedule</Link>
-                </li>
-                <li>
-                  <Link to="/profile">Profile</Link>
+                  <Link to="/errs">EmergencyRequest</Link>
                 </li>
                 <li>
                   <Link to="/grades">Grades</Link>
@@ -58,7 +51,5 @@ function NavBar({ user, setUser }) {
         </div>
       </div>
     </>
-  )
+  );
 }
-
-export default NavBar
