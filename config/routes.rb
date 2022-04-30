@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :users, only: %i[index show create]
   resources :subjects, only: %i[index show create]
   resources :periods, only: %i[index show]
-  resources :errs, only: %i[index show]
+  resources :errs, only: %i[index create show]
   resources :schedules, only: %i[index show create destroy]
   resources :locations, only: %i[index show]
   resources :grades, only: %i[index show]
@@ -14,11 +14,11 @@ Rails.application.routes.draw do
   resources :students, only: %i[index show update]
 
   #admin route
-    post '/teacher/:id/register', to: 'admins#create_teacher'
-    post '/student/:id/register', to: 'admins#create_student'
-    patch '/teacher/:id/update', to: 'admins#set_teacher'
-    patch '/student/:id/update', to: 'admins#set_student'
-
+  
+  post '/teacher/:id/register', to: 'admins#create_teacher'
+  post '/student/:id/register', to: 'admins#create_student'
+  patch '/teacher/:id/update', to: 'admins#set_teacher'
+  patch '/student/:id/update', to: 'admins#set_student'
 
   #user route
     get '/me', to: 'users#show'

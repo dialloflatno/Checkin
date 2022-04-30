@@ -71,7 +71,7 @@ fin_user =
     admin: false,
     phone_number: 1_900_293_390,
     teacher: false,
-    student: false,
+    student: true,
     username: 'finnm',
     password: 'finn12',
   )

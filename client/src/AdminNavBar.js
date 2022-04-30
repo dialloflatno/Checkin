@@ -1,16 +1,15 @@
 // This is the Navigation Bar
-import './App.css'
-import { Link } from 'react-router-dom'
-import React from 'react'
+import "./App.css";
+import { Link } from "react-router-dom";
+import React from "react";
 
-
-function NavBar({ user, setUser }) {
+export default function AdminNavBar({ user, setUser }) {
   function handleLogoutClick() {
-    fetch('/logout', { method: 'DELETE' }).then((r) => {
+    fetch("/logout", { method: "DELETE" }).then((r) => {
       if (r.ok) {
-        setUser('')
+        setUser("");
       }
-    })
+    });
   }
 
   return (
@@ -19,28 +18,25 @@ function NavBar({ user, setUser }) {
         <div>
           <header className="navs">
             <div className="place-box"></div>
-            <nav>
+            <nav className="adminnewnav">
               <Link to="/">
-              <Link to="/emergency">
-                <img src="siren.png" alt="siren" className="siren" />
-              </Link>
-                <h1>Checkedin</h1>
+                <h1> Checkedin</h1>
                 <br/>
-                <h5> Student</h5>
+                <h5> Admin</h5>
               </Link>
               <br />
               <ul>
                 <li>
-                  <Link to="/schedule">Schedule</Link>
+                  <Link to="/errs">EmergencyRequest</Link>
                 </li>
                 <li>
-                  <Link to="/profile">Profile</Link>
+                  <Link to="/grades">Schools</Link>
                 </li>
                 <li>
-                  <Link to="/grades">Grades</Link>
+                  <Link to="/events">Teachers</Link>
                 </li>
                 <li>
-                  <Link to="/events">Events</Link>
+                  <Link to="/events">Students</Link>
                 </li>
                 <li id="user_name">Hello,{user.full_name}</li>
                 <li>
@@ -58,7 +54,5 @@ function NavBar({ user, setUser }) {
         </div>
       </div>
     </>
-  )
+  );
 }
-
-export default NavBar

@@ -41,9 +41,7 @@ function Grades() {
 
       <br />
 
-      <div className="gradesbox">
-        <h1 className='avg'>{ theGrade? sumUpGrades(theGrade) : "Not Posted" } avg</h1>
-        <br />
+      <div >
         <div className='fall-sems'>
           <div className="gradescontainer">
             <div className="gradestitlecontainer">
@@ -52,9 +50,10 @@ function Grades() {
                 <h3>Fall 2022</h3>
               </div>
             </div>
+        <h1>{ theGrade? sumUpGrades(theGrade) : "Not Posted" } avg</h1>
             {mappedGrades}
             <br></br>
-            <img src="mascot.png" alt="checkedin mascot" className="mascot" />
+            {/* <img src="mascot.png" alt="checkedin mascot" className="mascot" /> */}
           </div>
         </div>
 

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import React from 'react'
 
 
-function NavBar({ user, setUser }) {
+function Header({ user, setUser }) {
   function handleLogoutClick() {
     fetch('/logout', { method: 'DELETE' }).then((r) => {
       if (r.ok) {
@@ -61,4 +61,4 @@ function NavBar({ user, setUser }) {
   )
 }
 
-export default NavBar
+export default Header

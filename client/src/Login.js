@@ -27,19 +27,20 @@ function Login({ handleLogin }) {
 
   return (
     <div>
-      <div className="login-bckg">
+      <div className ='login-bckg'>
         <div className="signContainer">
+          <div className ='loginHolder'>
           <div className="stack">
             <img
               src="checkedinLogo.svg"
               alt="checkedin Logo"
               className="logo"
             />
-            <img
+            {/* <img
               src="mascot.png"
               alt="checkedin mascot"
               className="mascotSIGNIN"
-            />
+            /> */}
           </div>
           <br />
           <form onSubmit={handleSubmit}>
@@ -49,22 +50,21 @@ function Login({ handleLogin }) {
               onChange={(e) => setUsername(e.target.value)}
               placeholder="username"
             />
-            <br />
             <input
               className="password"
               type="password"
               onChange={(e) => setPassword(e.target.value)}
               placeholder="password"
             />
-            <br />
             <button onClick={handleClick} className="signIn" type="submit">
               Sign In
             </button>
           </form>
 
-          <Link to="/SignUp" className="signUp">
+          <Link to="/signup" className="signUp">
             <h5>Your not Checkedin Yet ?</h5>
           </Link>
+          </div>
         </div>
       </div>
     </div>

@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #ffd600;
+
 }
 
 code {
@@ -20,16 +22,18 @@ code {
   height: 112vh;
   background-color: #ffd600;
 }
-
+nav h1 {
+  margin-bottom: 12px;
+}
 .navs {
   width: -webkit-fill-available;
   position: fixed;
-  background: #ffd600;
+  /* background: #ffd600; */
   flex-direction: row;
   justify-content: center;
   box-shadow: rgb(53 51 51 / 32%) 0px 2px 1px 1px;
   box-sizing: border-box;
-  margin: 60pz;
+  /* margin-top: -26px; */
   column-gap: 15%;
 }
 
@@ -73,7 +77,6 @@ code {
 html,
 body,
 div,
-span,
 applet,
 object,
 iframe,
@@ -82,67 +85,6 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
 output {
   /* margin-top: 85px; */
   padding: 0px;
@@ -152,6 +94,9 @@ output {
   /* vertical-align: baseline; */
 }
 
+span {
+  font-size: 13px;
+}
 .container a {
   margin: 18px;
   display: flex;
@@ -189,20 +134,17 @@ output {
   color: whitesmoke;
 }
 
-.signContainer {
-  margin-top: -108px;
-  background-color: #ffd600;
-  width: 100vw;
-  display: grid;
-  grid-template: 1fr 5fr 1fr;
+
+.loginHolder{
+  display: flex;
+  margin: 172px auto;
+  flex-direction: column;
   align-items: center;
-  align-content: center;
-  justify-content: center;
-  grid-template-areas:
-    "logo"
-    "username"
-    "password"
-    "signIn";
+}
+
+.signContainer {
+  display: grid;
+  justify-items: center;
 }
 .eigth {
   display: flex;
@@ -227,7 +169,7 @@ div.eigth {
   background: whitesmoke;
 }
 div.list-content {
-  height: 737px;
+  /* height: 737px; */
   display: flex;
 }
 div.schdule-sheet {
@@ -260,24 +202,44 @@ time {
 .column .date {
   font-weight: 600;
 }
+.adminnewnav{
+  margin: 1px auto;
+  height: 63px;
+  font-size: 0.9375rem;
+  width: -webkit-fill-available;
+  display: flex;
+  position: fixed;
+  background: #2374aa;
+  flex-direction: row;
+  justify-content: space-around;
+  box-sizing: border-box;
+  grid-column-gap: 0%;
+  color: #ffffff;
+  padding: 12px;
+  align-items: center;
+}
+
+.adminnewnav h5 {
+  margin-bottom: 7px;
+  color: #ffffff;
+  margin-left: 3px;
+}
 
 .signIn {
-  text-align: left;
-
-  margin-left: 16%;
-  margin-top: 2%;
-  position: absolute;
   border: none;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 316px;
+  margin: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 18px;
   font-style: normal;
   line-height: 28px;
   letter-spacing: 0em;
   font-weight: 300;
   color: darkgoldenrod;
+  font-feature-settings: "kern" off;
   font-kerning: none;
   cursor: pointer;
+
 }
 .signIn:hover {
   background: white;
@@ -549,19 +511,19 @@ time {
   border-radius: nullpx;
 }
 
-.stack {
+/* .stack {
   margin: 60px auto;
   width: 58%;
   height: 27%;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.signIn {
+} */
+/* .signIn {
   position: absolute;
   margin-top: 16.5%;
   margin-right: -8.5%;
-}
+} */
 
 .signUp {
   margin: 60px auto;
@@ -607,10 +569,11 @@ time {
 }
 
 .signupFORM {
-  margin: 72% auto;
+  margin: 60px auto;
   display: inline-block;
   justify-content: center;
 }
+
 
 .signUP {
   margin-left: 150px;
@@ -631,23 +594,71 @@ time {
 }
 
 nav {
-  height: 40px;
-  font-size: 10px;
+  margin: 1px auto;
+  height: 63px;
+  font-size: 0.9375rem;
   width: -webkit-fill-available;
   display: flex;
   position: fixed;
   background: #ffd600;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-around;
   box-sizing: border-box;
   grid-column-gap: 0%;
   padding: 12px;
   align-items: center;
 }
 
+.newnav {
+  margin: 1px auto;
+  height: 63px;
+  font-size: 0.9375rem;
+  width: -webkit-fill-available;
+  display: flex;
+  position: fixed;
+  background: #474642;
+  flex-direction: row;
+  justify-content: space-around;
+  box-sizing: border-box;
+  grid-column-gap: 0%;
+  padding: 12px;
+  align-items: center;
+}
+.newnav h1 {
+  color: aliceblue;
+  margin-bottom: 12px;
+}
+.newnav h5 {
+  margin-bottom: 7px;
+  color: rgb(122, 124, 126);
+  margin-left: 3px;
+}
+nav h5 {
+  margin-bottom: 7px;
+  color: #978319;
+  margin-left: 3px;
+}
+
+.newnav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  list-style: none;
+  grid-gap: 10px;
+  gap: 10px;
+  color: whitesmoke;
+}
+.newnav li {
+  color: whitesmoke;
+
+}
+
 a {
+  display: flex;
   text-decoration: none;
   color: black;
+  align-items: center;
+  flex-direction: row;
 }
 
 nav ul {
@@ -750,8 +761,7 @@ nav a:hover {
   }
   form {
     display: flex;
-    margin: 10px;
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: center;
     flex-direction: column;
     align-items: center;
@@ -841,6 +851,8 @@ nav a:hover {
 .profile-content {
   margin: 10%;
   padding: auto;
+  display: flex;
+  align-items: center;
 }
 
 .profileicon {
@@ -898,23 +910,7 @@ nav a:hover {
   justify-content: space-around;
   align-content: flex-start;
 }
-.gradesbox .avg {
-  margin: 60px;
-  display: flex;
-  align-items: center;
-  font-size: xxx-large;
-  color: aliceblue;
-  font-weight: lighter;
-  background-color: blueviolet;
-  height: 300px;
-  width: 300px;
-  padding: auto;
-  border-start-start-radius: 900px;
-  border-start-end-radius: 900px;
-  border-end-end-radius: 900px;
-  border-end-start-radius: 900px;
-  justify-content: center;
-}
+
 .gradestitle {
   height: fit-content;
   flex-direction: column;
@@ -967,7 +963,6 @@ nav a:hover {
 
 .gradescontainer {
   padding: 20px auto;
-  margin: 60px auto;
   box-shadow: 3px 3px 5px rgb(0 0 0 / 5%);
   background: #fff;
   border-radius: 9px;
@@ -1006,6 +1001,7 @@ nav a:hover {
 
 .err-content .newTitle,
 textarea {
+  margin: 20px auto;
   border-radius: 5px;
   text-align: center;
   font-family: sans-serif;
@@ -1077,8 +1073,8 @@ textarea {
 }
 
 form {
-  /* display: flex; */
-  justify-content: center;
+  display: flex;
+  justify-content: space-evenly;
   align-content: center;
   flex-direction: column;
   align-items: center;
