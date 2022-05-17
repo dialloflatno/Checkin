@@ -757,6 +757,7 @@ nav a:hover {
 
 #location-name h2 {
   color: white;
+  text-decoration: underline;
 }
 
 #location-name {
@@ -765,7 +766,7 @@ nav a:hover {
   align-items: baseline;
   justify-content: center;
   align-content: center;
-  margin-bottom: 65px;
+  margin-bottom: 130px;
 }
 
 @media screen and (max-width: 550px) {
