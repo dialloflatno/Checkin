@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #ffd600;
+  font-size: large;
 }
 
 code {
@@ -734,12 +735,17 @@ nav a:hover {
 }
 
 #eqstack {
-  padding-left: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  border: 1px solid rgb(0 0 0 / 5%);
+  border-radius: 10px;
+  padding: 30px;
+  margin: 20px;
+  max-width: 450px;
+  min-width: 225px;
+  background-color: rgb(248 248 248 / 19%);
+  font-size: 1.2em;
 }
 
 #teacher-err-body {
@@ -766,7 +772,7 @@ nav a:hover {
   align-items: baseline;
   justify-content: center;
   align-content: center;
-  margin-bottom: 130px;
+  margin: 20px;
 }
 
 @media screen and (max-width: 550px) {
@@ -1118,6 +1124,7 @@ form {
   align-content: center;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
 }
 /* .form-content {
   margin-right: 0%;

@@ -47,12 +47,24 @@ function Emergency({ user, handleNewEmergency }) {
 
   if (displaylocation.length)
     location_name = displaylocation?.map((place) => (
-      <div className="location-info">
-        <p>
-          Location: {place.name}, ID#: {place.id}
-        </p>
-      </div>
+      // <div className="location-info">
+      <option className="location-info">
+        {place.name}
+        {/* {place.id} */}
+      </option>
+      // </div>
     ));
+
+  function handleChange(e) {
+    const room = e.target.value;
+    console.log("Checking Location");
+    const getRoom = displaylocation.find((zone) => zone.name === room);
+    console.log(room);
+    console.log(getRoom);
+    const roomId = getRoom?.id;
+    console.log(roomId);
+    // history.push(`/books/${bookMatched}`)
+  }
 
   return (
     <div className="errfullpage">
@@ -73,12 +85,24 @@ function Emergency({ user, handleNewEmergency }) {
               onChange={(e) => setEmergency(e.target.value)}
             />
             <br />
-            <input
+
+            {/* New selector for locations */}
+            <div id="location-name">
+              <h2>Location</h2>
+
+              <select onChange={handleChange}>
+                <option>Where are you?</option>
+                {location_name}
+              </select>
+            </div>
+            {/* Previous submission for locations  */}
+
+            {/* <input
               type="text"
               placeholder="WHAT'S YOUR LOCATION?"
               onChange={(e) => setLocation(e.target.value)}
               className="newTitle"
-            />
+            /> */}
             <br />
             <button type="submit" className="helpbutton">
               HELP
@@ -86,10 +110,6 @@ function Emergency({ user, handleNewEmergency }) {
           </form>
           <img src="mascot.png" alt="checkedin mascot" className="mascot" />
         </div>
-      </div>
-      <div id="location-name">
-        <h2>Location Info</h2>
-        {location_name}
       </div>
     </div>
   );
