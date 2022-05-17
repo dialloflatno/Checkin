@@ -56,14 +56,16 @@ function Emergency({ user, handleNewEmergency }) {
     ));
 
   function handleChange(e) {
+    // Finding ID of locations for submission from
     const room = e.target.value;
     console.log("Checking Location");
-    const getRoom = displaylocation.find((zone) => zone.name === room);
     console.log(room);
+    const getRoom = displaylocation.find((zone) => zone.name === room);
     console.log(getRoom);
     const roomId = getRoom?.id;
     console.log(roomId);
-    // history.push(`/books/${bookMatched}`)
+    // Setter function for ID of location for submission form to work
+    setLocation(roomId);
   }
 
   return (
