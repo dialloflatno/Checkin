@@ -1,21 +1,22 @@
-import { useEffect, useState } from 'react'
-import EQuest from './EQuest'
+import { useEffect, useState } from "react";
+import EQuest from "./EQuest";
 
-export default function EmergencyRequest({ emergencyShow, setEmergencyRequests}) {
-
-
+export default function EmergencyRequest({
+  emergencyShow,
+  setEmergencyRequests,
+}) {
   useEffect(() => {
-    fetch('/errs').then((r) => {
+    fetch("/errs").then((r) => {
       if (r.ok) {
         r.json().then((studentErrs) => {
-            console.log(studentErrs);
-            setEmergencyRequests(studentErrs)})
-
+          console.log(studentErrs);
+          setEmergencyRequests(studentErrs);
+        });
       }
-    })
-  }, [])
+    });
+  }, []);
 
-  let columnErrs = 'No Emergencies'
+  let columnErrs = "No Emergencies";
 
   if (emergencyShow.length) {
     columnErrs = emergencyShow?.map((student) => (
@@ -24,8 +25,8 @@ export default function EmergencyRequest({ emergencyShow, setEmergencyRequests})
         location={student.location.name}
         studentID={student.student.student_school_id}
       />
-    ))
+    ));
   }
 
-  return <>{columnErrs}</>
+  return <div id="teacher-err-body">{columnErrs}</div>;
 }
