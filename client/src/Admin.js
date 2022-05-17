@@ -16,7 +16,7 @@ useEffect(() => {
       }
     })
   }, [])
-debugger
+// debugger
   console.log(allUsers);
 
     return (
