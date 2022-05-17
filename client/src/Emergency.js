@@ -47,12 +47,26 @@ function Emergency({ user, handleNewEmergency }) {
 
   if (displaylocation.length)
     location_name = displaylocation?.map((place) => (
-      <div className="location-info">
-        <p>
-          Location: {place.name}, ID#: {place.id}
-        </p>
-      </div>
+      // <div className="location-info">
+      <option className="location-info">
+        {place.name}
+        {/* {place.id} */}
+      </option>
+      // </div>
     ));
+
+  function handleChange(e) {
+    // Finding ID of locations for submission from
+    const room = e.target.value;
+    console.log("Checking Location");
+    console.log(room);
+    const getRoom = displaylocation.find((zone) => zone.name === room);
+    console.log(getRoom);
+    const roomId = getRoom?.id;
+    console.log(roomId);
+    // Setter function for ID of location for submission form to work
+    setLocation(roomId);
+  }
 
   return (
     <div className="errfullpage">
@@ -73,12 +87,22 @@ function Emergency({ user, handleNewEmergency }) {
               onChange={(e) => setEmergency(e.target.value)}
             />
             <br />
-            <input
+
+            {/* New selector for locations */}
+            <div id="location-name">
+              <select id="location-dropdown" onChange={handleChange}>
+                <option>WHERE ARE YOU?</option>
+                {location_name}
+              </select>
+            </div>
+            {/* Previous submission for locations  */}
+
+            {/* <input
               type="text"
               placeholder="WHAT'S YOUR LOCATION?"
               onChange={(e) => setLocation(e.target.value)}
               className="newTitle"
-            />
+            /> */}
             <br />
             <button type="submit" className="helpbutton">
               HELP
@@ -86,10 +110,6 @@ function Emergency({ user, handleNewEmergency }) {
           </form>
           <img src="mascot.png" alt="checkedin mascot" className="mascot" />
         </div>
-      </div>
-      <div id="location-name">
-        <h2>Location Info</h2>
-        {location_name}
       </div>
     </div>
   );
