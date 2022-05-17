@@ -87,7 +87,10 @@ function Emergency({ user, handleNewEmergency }) {
           <img src="mascot.png" alt="checkedin mascot" className="mascot" />
         </div>
       </div>
-      <div>{location_name}</div>
+      <div id="location-name">
+        <h2>Location Info</h2>
+        {location_name}
+      </div>
     </div>
   );
 }
