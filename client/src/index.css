@@ -94,11 +94,6 @@ output {
 /* vertical-align: baseline; */
 /* } */
 
-#eqstack {
-  padding-left: 25px;
-  margin-top: 100px;
-}
-
 span {
   font-size: 13px;
 }
@@ -697,7 +692,13 @@ nav a:hover {
   background: none;
   font-size: small;
   border: none;
+  cursor: pointer;
 }
+
+.logout:hover {
+  color: rgb(65, 61, 4);
+}
+
 @media only screen and (max-width: 550px) {
   .container {
     grid-template-columns: 1fr;
@@ -731,6 +732,25 @@ nav a:hover {
     margin-right: 23px;
   }
 }
+
+#eqstack {
+  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#teacher-err-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  margin-top: 100px;
+}
+
 @media screen and (max-width: 550px) {
   .signContainer {
     align-items: center;

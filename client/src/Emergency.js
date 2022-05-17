@@ -1,19 +1,33 @@
 // Emergency Request Page
-import React, { useState } from 'react'
+import React, { useState, useEffect } from "react";
 
 function Emergency({ user, handleNewEmergency }) {
-  const [emergency, setEmergency] = useState('')
-  const [location, setLocation] = useState('')
+  const [emergency, setEmergency] = useState("");
+  const [location, setLocation] = useState("");
+  const [displaylocation, setDisplaylocation] = useState("");
 
-  const sUid = user?.map((their) => their.id)
+  const sUid = user?.map((their) => their.id);
+
+  useEffect(() => {
+    fetch("/locations").then((r) => {
+      if (r.ok) {
+        r.json().then((schoollocations) => {
+          console.log(schoollocations);
+          setDisplaylocation(schoollocations);
+        });
+      }
+    });
+  }, []);
+
+  console.log(displaylocation);
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
-    fetch('/errs', {
-      method: 'POST',
+    fetch("/errs", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
         emergency: emergency,
@@ -23,11 +37,19 @@ function Emergency({ user, handleNewEmergency }) {
     })
       .then((r) => r.json())
       .then((eRequest) => {
-        handleNewEmergency(eRequest)
-        setEmergency('')
-        setLocation('')
-      })
-  }
+        handleNewEmergency(eRequest);
+        setEmergency("");
+        setLocation("");
+      });
+  };
+
+  const location_name = displaylocation?.map((place) => (
+    <div className="location-info">
+      <p>
+        Location: {place.name}, ID#: {place.id}
+      </p>
+    </div>
+  ));
 
   return (
     <div className="errfullpage">
@@ -62,8 +84,9 @@ function Emergency({ user, handleNewEmergency }) {
           <img src="mascot.png" alt="checkedin mascot" className="mascot" />
         </div>
       </div>
+      <div>{location_name}</div>
     </div>
-  )
+  );
 }
 
-export default Emergency
+export default Emergency;
