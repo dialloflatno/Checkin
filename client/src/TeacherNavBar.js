@@ -21,20 +21,22 @@ export default function TeacherNavBar({ user, setUser }) {
             <nav className="newnav">
               <Link to="/">
                 <h1> Checkedin</h1>
-                <br/>
+                <br />
                 <h5> Teacher</h5>
               </Link>
               <br />
               <ul>
+                {/* HIDING THESE LIS UNTIL WE FINISH FUNCTIONALITY AND DESIGN */}
+
                 <li>
                   <Link to="/errs">EmergencyRequest</Link>
                 </li>
-                <li>
+                {/* <li> 
                   <Link to="/grades">Grades</Link>
                 </li>
                 <li>
                   <Link to="/events">Events</Link>
-                </li>
+                </li> */}
                 <li id="user_name">Hello,{user.full_name}</li>
                 <li>
                   {user ? (
