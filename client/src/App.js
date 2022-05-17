@@ -35,6 +35,7 @@ function App() {
     console.log("Request sent to await rapid responses!");
     const addRequest = [...emergencyShow, newRequest];
     console.log(addRequest);
+    debugger;
     setEmergencyRequests(addRequest);
   }
 
@@ -98,7 +99,7 @@ function App() {
     return (
       <>
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <AdminNavBar user={user} setUser={setUser} />
             <Admin />
           </Route>
