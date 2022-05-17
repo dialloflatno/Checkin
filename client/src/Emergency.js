@@ -90,10 +90,8 @@ function Emergency({ user, handleNewEmergency }) {
 
             {/* New selector for locations */}
             <div id="location-name">
-              <h2>Location</h2>
-
-              <select onChange={handleChange}>
-                <option>Where are you?</option>
+              <select id="location-dropdown" onChange={handleChange}>
+                <option>WHERE ARE YOU?</option>
                 {location_name}
               </select>
             </div>

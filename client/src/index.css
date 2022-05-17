@@ -775,6 +775,14 @@ nav a:hover {
   margin: 20px;
 }
 
+#location-dropdown {
+  height: 30px;
+  width: 459px;
+  text-align: center;
+  font-weight: bold;
+  color: gray;
+}
+
 @media screen and (max-width: 550px) {
   .signContainer {
     align-items: center;
@@ -1052,6 +1060,7 @@ textarea {
   text-align: center;
   font-family: sans-serif;
   width: 455px;
+  font-weight: bold;
 }
 .err {
   flex-direction: column;
