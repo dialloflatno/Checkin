@@ -43,13 +43,16 @@ function Emergency({ user, handleNewEmergency }) {
       });
   };
 
-  const location_name = displaylocation?.map((place) => (
-    <div className="location-info">
-      <p>
-        Location: {place.name}, ID#: {place.id}
-      </p>
-    </div>
-  ));
+  let location_name = "no location";
+
+  if (displaylocation.length)
+    location_name = displaylocation?.map((place) => (
+      <div className="location-info">
+        <p>
+          Location: {place.name}, ID#: {place.id}
+        </p>
+      </div>
+    ));
 
   return (
     <div className="errfullpage">

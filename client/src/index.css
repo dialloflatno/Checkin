@@ -751,6 +751,10 @@ nav a:hover {
   margin-top: 100px;
 }
 
+.location-info {
+  font: white;
+}
+
 @media screen and (max-width: 550px) {
   .signContainer {
     align-items: center;
