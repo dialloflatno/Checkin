@@ -28,7 +28,7 @@ export default function TeacherNavBar({ user, setUser }) {
               <ul>
                 {/* HIDING THESE LIS UNTIL WE FINISH FUNCTIONALITY AND DESIGN */}
 
-                <li className="teacher-nav-li">
+                <li id="teacher-er" className="teacher-nav-li">
                   <Link to="/errs">Emergency Requests</Link>
                 </li>
                 {/* <li> 

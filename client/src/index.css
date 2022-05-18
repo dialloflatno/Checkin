@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #ffd600;
+  background-color: white;
   font-size: large;
 }
 
@@ -204,7 +204,6 @@ time {
   font-weight: 600;
 }
 .adminnewnav {
-  margin: 1px auto;
   height: 63px;
   font-size: 0.9375rem;
   width: -webkit-fill-available;
@@ -626,19 +625,19 @@ nav h5 {
 }
 
 .newnav {
-  margin: 1px auto;
   height: 63px;
   font-size: 0.9375rem;
   width: -webkit-fill-available;
   display: flex;
   position: fixed;
-  background: #474642;
+  background: #777777;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   box-sizing: border-box;
   grid-column-gap: 0%;
   padding: 12px;
   align-items: center;
+  padding-left: 20px;
 }
 .newnav h1 {
   color: aliceblue;
@@ -648,6 +647,7 @@ nav h5 {
   margin-bottom: 7px;
   color: rgb(122, 124, 126);
   margin-left: 3px;
+  color: rgb(0, 0, 0);
 }
 nav h5 {
   margin-bottom: 7px;
@@ -663,9 +663,18 @@ nav h5 {
   grid-gap: 10px;
   gap: 10px;
   color: whitesmoke;
+  padding: 10px;
 }
 .newnav li {
   color: whitesmoke;
+}
+
+newnav li a {
+  padding-right: 10px;
+}
+
+#teacher-er {
+  padding-right: 20px;
 }
 
 a {
