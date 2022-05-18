@@ -9,14 +9,8 @@ export default function EQuest({ emerg, location, studentID }) {
       <span>Student#ID: {studentID}</span> */}
 
       {/* NEW VIEW OF EMERGENCIES AS A TABLE */}
+      {/* WE DON'T NEED THIS ANYMORE LOL */}
       <table>
-        <thead>
-          <tr>
-            <th>Emergency</th>
-            <th>Location</th>
-            <th>Student ID#</th>
-          </tr>
-        </thead>
         <tbody>
           <tr>
             <td>{emerg}</td>

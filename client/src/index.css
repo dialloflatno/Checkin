@@ -1349,6 +1349,10 @@ form {
   margin-top: 100px;
 }
 
+#eqstack th {
+  width: fit-content;
+}
+
 #eqstack {
   display: flex;
   flex-direction: column;
