@@ -28,5 +28,26 @@ export default function EmergencyRequest({
     ));
   }
 
-  return <div id="teacher-err-body">{columnErrs}</div>;
+  return (
+    <div id="teacher-err-body">
+      <table>
+        <thead>
+          <tr>
+            <th>Emergency</th>
+            <th>Location</th>
+            <th>Student ID#</th>
+          </tr>
+        </thead>
+        <tbody>
+          {emergencyShow?.map((e) => (
+            <tr>
+              <td>{e.emergency}</td>
+              <td>{e.location.name}</td>
+              <td>{e.student.student_school_id}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
 }

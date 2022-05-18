@@ -765,29 +765,6 @@ nav a:hover {
   }
 }
 
-#eqstack {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid rgb(0 0 0 / 5%);
-  border-radius: 10px;
-  padding: 30px;
-  margin: 20px;
-  max-width: 400px;
-  min-width: 225px;
-  background-color: rgb(248 248 248 / 19%);
-  font-size: 1.2em;
-}
-
-#teacher-err-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: nowrap;
-  align-content: center;
-  margin-top: 100px;
-}
-
 .location-info {
   color: white;
 }
@@ -1345,4 +1322,75 @@ form {
   align-content: center;
   align-items: center;
   column-gap: 40%;
+}
+
+/* CSS ADDITIONS FOR TABLE 5/18/22 */
+
+#eqstack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(0 0 0 / 5%);
+  border-radius: 10px;
+  padding: 30px;
+  margin: 20px;
+  max-width: 400px;
+  min-width: 225px;
+  background-color: rgb(248 248 248 / 19%);
+  font-size: 1.2em;
+}
+
+#teacher-err-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  align-content: center;
+  margin-top: 100px;
+}
+
+#eqstack th {
+  width: fit-content;
+}
+
+#eqstack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ffffff;
+  text-align: left;
+  padding: 8px;
+  font-size: 32px;
+}
+
+th {
+  background-color: rgb(117, 201, 250);
+}
+
+td {
+  background-color: rgb(205, 235, 253);
+}
+
+form {
+  display: flex;
+  gap: 5px;
+}
+
+form td:last-child {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+form * {
+  font-size: 28px;
 }
