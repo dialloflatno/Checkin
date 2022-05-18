@@ -77,7 +77,7 @@ function Emergency({ user, handleNewEmergency }) {
           {/* <h1>Emergency Response Request</h1> */}
           <div id="title-div">
             <h2>
-              Submit your emergency with Checkedin to your teachers and admins
+              Submit your emergency with Checkedin to your teachers and admins.
             </h2>
           </div>
           <span id="errinfo">
