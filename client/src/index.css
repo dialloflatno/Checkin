@@ -1085,7 +1085,7 @@ button {
 }
 
 .err-content {
-  margin-top: 22.5%;
+  /* margin-top: 22.5%; */
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -1106,7 +1106,8 @@ textarea {
   /* font-weight: bold; */
 }
 .err {
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
   align-content: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -1114,7 +1115,7 @@ textarea {
   /* background-color: #fa2a00; */
   color: rgb(37, 37, 37);
   height: 100vh;
-  width: 753px;
+  width: auto;
   left: 376px;
   top: 138px;
   border-radius: 0px;

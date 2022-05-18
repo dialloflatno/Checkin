@@ -71,12 +71,13 @@ function Emergency({ user, handleNewEmergency }) {
   return (
     <div className="errfullpage">
       <div className="err">
+        <img src="mascot.png" alt="checkedin mascot" className="mascot" />
+
         <div className="err-content">
           {/* <h1>Emergency Response Request</h1> */}
           <div id="title-div">
             <h2>
-              Submit your emergency with Checkedin to your teachers and
-              admins
+              Submit your emergency with Checkedin to your teachers and admins
             </h2>
           </div>
           <span id="errinfo">
@@ -112,8 +113,8 @@ function Emergency({ user, handleNewEmergency }) {
               SUBMIT
             </button>
           </form>
-          <img src="mascot.png" alt="checkedin mascot" className="mascot" />
         </div>
+        <img src="mascot.png" alt="checkedin mascot" className="mascot" />
       </div>
     </div>
   );
