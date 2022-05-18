@@ -132,7 +132,8 @@ span {
   width: 60%;
   font-size: small;
   margin-top: 10px;
-  color: whitesmoke;
+  color: rgb(128, 128, 128);
+  text-align: center;
 }
 
 .loginHolder {
@@ -311,6 +312,10 @@ time {
   width: 30vw;
 }
 
+#user_name {
+  padding-right: 15px;
+}
+
 .username {
   /* position: absolute; */
   margin: 5px;
@@ -327,6 +332,7 @@ time {
   left: 893px;
   top: 690px;
   border-radius: nullpx;
+  padding-right: 15px;
 }
 .usernameSU {
   /* position: absolute; */
@@ -593,7 +599,7 @@ time {
 }
 
 nav {
-  margin: 1px auto;
+  /* margin: 1px auto; */
   height: 63px;
   font-size: 0.9375rem;
   width: -webkit-fill-available;
@@ -601,11 +607,22 @@ nav {
   position: fixed;
   background: #ffd600;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   box-sizing: border-box;
   grid-column-gap: 0%;
-  padding: 12px;
   align-items: center;
+}
+
+nav a {
+  padding-left: 10px;
+}
+
+nav ul {
+  padding-right: 35px;
+}
+
+nav h5 {
+  padding-left: 10px;
 }
 
 .newnav {
@@ -690,8 +707,10 @@ nav a:hover {
   font-weight: 700;
 }
 .logout {
+  color: rgb(0, 0, 0);
   background: none;
-  font-size: small;
+  font-size: medium;
+  font-weight: bold;
   border: none;
   cursor: pointer;
 }
@@ -776,10 +795,11 @@ nav a:hover {
 }
 
 #location-dropdown {
-  height: 30px;
+  height: 35px;
   width: 459px;
+  border: none;
   text-align: center;
-  font-weight: bold;
+  background-color: rgb(241, 241, 241);
   color: gray;
 }
 
@@ -1045,12 +1065,21 @@ nav a:hover {
   align-items: center;
 }
 
+.teacher-nav-li a,
+button {
+  color: whitesmoke;
+}
+
 .err-content {
-  margin-top: 10%;
+  margin-top: 22.5%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.err-content h1 {
+  font-size: 1.8em;
 }
 
 .err-content .newTitle,
@@ -1060,7 +1089,7 @@ textarea {
   text-align: center;
   font-family: sans-serif;
   width: 455px;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 .err {
   flex-direction: column;
@@ -1068,8 +1097,8 @@ textarea {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  background-color: #fa2a00;
-  color: white;
+  /* background-color: #fa2a00; */
+  color: rgb(37, 37, 37);
   height: 100vh;
   width: 753px;
   left: 376px;
@@ -1078,7 +1107,7 @@ textarea {
 }
 
 .errfullpage {
-  background-color: #fa2a00;
+  background-color: white;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -1089,8 +1118,10 @@ textarea {
   height: 90px;
   left: 466px;
   border: none;
-  border-radius: 3px;
+  background-color: rgb(241, 241, 241);
+  border-radius: 10px;
   padding-top: 80px;
+  color: #dedede;
 }
 
 .newTitle {
@@ -1121,6 +1152,7 @@ textarea {
   color: darkgoldenrod;
   font-kerning: none;
   cursor: pointer;
+  padding: 10px;
 }
 
 .helpbutton:hover {

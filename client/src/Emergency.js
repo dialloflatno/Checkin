@@ -74,16 +74,14 @@ function Emergency({ user, handleNewEmergency }) {
         <div className="err-content">
           <h1>Emergency Response Request</h1>
           <span id="errinfo">
-            IMPORTANT! Emergency response request forms are solely for very
-            dangerous situations.
-            <br></br>
-            Submitting non-emergency related information will result in severe
-            diciplinary action.
+            IMPORTANT! Emergency response request forms are solely for dangerous
+            situations. Submitting non-emergency related information will result
+            in severe diciplinary action.
           </span>
           <form onSubmit={handleSubmit}>
             <textarea
               type="text"
-              placeholder="WHAT'S YOUR EMERGENCY?"
+              placeholder="What's your emergency?"
               onChange={(e) => setEmergency(e.target.value)}
             />
             <br />
@@ -91,7 +89,7 @@ function Emergency({ user, handleNewEmergency }) {
             {/* New selector for locations */}
             <div id="location-name">
               <select id="location-dropdown" onChange={handleChange}>
-                <option>WHERE ARE YOU?</option>
+                <option>Where are you?</option>
                 {location_name}
               </select>
             </div>
@@ -105,7 +103,7 @@ function Emergency({ user, handleNewEmergency }) {
             /> */}
             <br />
             <button type="submit" className="helpbutton">
-              HELP
+              SUBMIT
             </button>
           </form>
           <img src="mascot.png" alt="checkedin mascot" className="mascot" />
