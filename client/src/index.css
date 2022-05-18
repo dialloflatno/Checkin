@@ -327,7 +327,7 @@ time {
   border: none;
   padding: 5px;
   height: 30px;
-  width: 305px;
+  width: 295px;
   left: 893px;
   top: 690px;
   border-radius: nullpx;
@@ -1139,7 +1139,6 @@ textarea {
   background-color: rgb(241, 241, 241);
   border-radius: 10px;
   padding-top: 80px;
-  color: #dedede;
 }
 
 .newTitle {
