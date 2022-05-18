@@ -21,22 +21,24 @@ export default function TeacherNavBar({ user, setUser }) {
             <nav className="newnav">
               <Link to="/">
                 <h1> Checkedin</h1>
-                <br/>
+                <br />
                 <h5> Teacher</h5>
               </Link>
               <br />
               <ul>
-                <li>
-                  <Link to="/errs">EmergencyRequest</Link>
+                {/* HIDING THESE LIS UNTIL WE FINISH FUNCTIONALITY AND DESIGN */}
+
+                <li id="teacher-er" className="teacher-nav-li">
+                  <Link to="/errs">Emergency Requests</Link>
                 </li>
-                <li>
+                {/* <li> 
                   <Link to="/grades">Grades</Link>
                 </li>
                 <li>
                   <Link to="/events">Events</Link>
-                </li>
+                </li> */}
                 <li id="user_name">Hello,{user.full_name}</li>
-                <li>
+                <li className="teacher-nav-li">
                   {user ? (
                     <button onClick={handleLogoutClick} className="logout">
                       Logout
