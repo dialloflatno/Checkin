@@ -604,7 +604,7 @@ nav {
   width: -webkit-fill-available;
   display: flex;
   position: fixed;
-  background: #ffe55e;
+  /* background: #ffe55e; */
   flex-direction: row;
   justify-content: space-between;
   box-sizing: border-box;
@@ -722,6 +722,9 @@ nav a:hover {
   font-weight: bold;
   border: none;
   cursor: pointer;
+  border-radius: 10px;
+  background-color: #ffd600;
+  padding: 10px;
 }
 
 .logout:hover {
