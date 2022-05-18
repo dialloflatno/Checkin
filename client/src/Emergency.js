@@ -72,7 +72,13 @@ function Emergency({ user, handleNewEmergency }) {
     <div className="errfullpage">
       <div className="err">
         <div className="err-content">
-          <h1>Emergency Response Request</h1>
+          {/* <h1>Emergency Response Request</h1> */}
+          <div id="title-div">
+            <h2>
+              Submit your emergency with Checkedin to your teachers and
+              admins
+            </h2>
+          </div>
           <span id="errinfo">
             IMPORTANT! Emergency response request forms are solely for dangerous
             situations. Submitting non-emergency related information will result

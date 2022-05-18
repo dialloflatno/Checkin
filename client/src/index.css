@@ -130,7 +130,7 @@ span {
   flex-wrap: wrap;
   align-items: center;
   width: 60%;
-  font-size: small;
+  font-size: x-small;
   margin-top: 10px;
   color: rgb(128, 128, 128);
   text-align: center;
@@ -605,7 +605,7 @@ nav {
   width: -webkit-fill-available;
   display: flex;
   position: fixed;
-  background: #ffd600;
+  background: #ffe55e;
   flex-direction: row;
   justify-content: space-between;
   box-sizing: border-box;
@@ -801,6 +801,11 @@ nav a:hover {
   text-align: center;
   background-color: rgb(241, 241, 241);
   color: gray;
+}
+
+#title-div {
+  width: 500px;
+  text-align: center;
 }
 
 @media screen and (max-width: 550px) {

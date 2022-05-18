@@ -48,7 +48,11 @@ function App() {
         <Switch>
           <Route exact path="/">
             <NavBar user={user} setUser={setUser} />
-            <Home user={user} />
+            {/* <Home user={user} /> */}
+            <Emergency
+              user={user.students}
+              handleNewEmergency={handleNewEmergency}
+            />
           </Route>
           <Route exact path="/emergency">
             <NavBar user={user} setUser={setUser} />
