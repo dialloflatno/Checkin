@@ -1378,11 +1378,11 @@ thead th {
 }
 
 tbody tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: #f0f0f0;
 }
 
 tbody tr {
-  background-color: rgb(205, 235, 253);
+  background-color: rgb(255, 255, 255);
   font-size: 0.75em;
 }
 
