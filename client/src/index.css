@@ -1370,15 +1370,20 @@ td {
   border: 1px solid #ffffff;
   text-align: left;
   padding: 8px;
-  font-size: 32px;
 }
 
-th {
+thead th {
   background-color: rgb(117, 201, 250);
+  font-size: 1em;
 }
 
-td {
-  background-color: rgb(205, 235, 253);
+tbody tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+tbody tr {
+  background-color: rgb(255, 255, 255);
+  font-size: 0.75em;
 }
 
 form {
@@ -1391,6 +1396,6 @@ form td:last-child {
   justify-content: space-evenly;
 }
 
-form * {
-  /* font-size: 28px; */
+table tbody tr {
+  text-transform: lowercase;
 }
