@@ -32,12 +32,12 @@ export default function EmergencyRequest({
     <div id="teacher-err-body">
       <h2>Active Emergencies</h2>
 
-      <table>
+      <table id="active">
         <thead>
           <tr>
             <th>Emergency</th>
             <th>Location</th>
-            <th>Student ID#</th>
+            <th>Student ID</th>
             <th>Action</th>
             <th>Status</th>
           </tr>
@@ -53,15 +53,18 @@ export default function EmergencyRequest({
               </td>
               <td>
                 <select>
-                  <option></option>
+                  <option>unresolved</option>
+                  <option>pending</option>
+                  <option>resolved</option>
                 </select>
               </td>
             </tr>
           ))}
         </tbody>
       </table>
+      <br></br>
       <h2>Resolved Emergencies</h2>
-      <table>
+      <table id="resolved">
         <thead>
           <tr>
             <th>Emergency</th>
@@ -82,7 +85,9 @@ export default function EmergencyRequest({
               </td>
               <td>
                 <select>
-                  <option></option>
+                  <option>unresolved</option>
+                  <option>pending</option>
+                  <option>resolved</option>{" "}
                 </select>
               </td>
             </tr>

@@ -1372,8 +1372,8 @@ td {
   padding: 8px;
 }
 
-thead th {
-  background-color: rgb(149, 216, 255);
+#active thead th {
+  background-color: #ffd600;
   font-size: 1em;
 }
 
@@ -1398,4 +1398,9 @@ form td:last-child {
 
 table tbody tr {
   text-transform: lowercase;
+}
+
+#resolved th {
+  background-color: rgb(149, 216, 255);
+  font-size: 1em;
 }
