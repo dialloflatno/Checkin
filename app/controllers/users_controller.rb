@@ -14,11 +14,17 @@ class UsersController < ApplicationController
 
   def create
     user = User.create(user_params)
+    byebug
     if user
       render json: user, status: :created
     else
       render json: { error: 'validation error' }, status: :unprocessable_entity
     end
+  end
+
+  def update
+    user_updated = User.update(user_params)
+    render json: user_updated, status: :updated
   end
 
   private

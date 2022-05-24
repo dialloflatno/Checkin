@@ -15,7 +15,7 @@ export default function EQuest({ emerg, location, studentID }) {
           <tr>
             <td>{emerg}</td>
             <td>{location}</td>
-            <td>{studentID}</td>
+            <td>{studentID}</td> 
           </tr>
         </tbody>
       </table>
