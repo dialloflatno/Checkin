@@ -30,6 +30,8 @@ export default function EmergencyRequest({
 
   return (
     <div id="teacher-err-body">
+      <h2>Active Emergencies</h2>
+
       <table>
         <thead>
           <tr>
@@ -37,6 +39,7 @@ export default function EmergencyRequest({
             <th>Location</th>
             <th>Student ID#</th>
             <th>Action</th>
+            <th>Status</th>
           </tr>
         </thead>
         <tbody>
@@ -45,7 +48,43 @@ export default function EmergencyRequest({
               <td>{e.emergency}</td>
               <td>{e.location.name}</td>
               <td>{e.student.student_school_id}</td>
-              <td>edit / delete</td>
+              <td>
+                <button>resolve</button>
+              </td>
+              <td>
+                <select>
+                  <option></option>
+                </select>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <h2>Resolved Emergencies</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Emergency</th>
+            <th>Location</th>
+            <th>Student ID#</th>
+            <th>Action</th>
+            <th>Status</th>{" "}
+          </tr>
+        </thead>
+        <tbody>
+          {emergencyShow?.map((e) => (
+            <tr>
+              <td>{e.emergency}</td>
+              <td>{e.location.name}</td>
+              <td>{e.student.student_school_id}</td>
+              <td>
+                <button>resolve</button>
+              </td>
+              <td>
+                <select>
+                  <option></option>
+                </select>
+              </td>
             </tr>
           ))}
         </tbody>
