@@ -314,7 +314,9 @@ time {
 #user_name {
   padding-right: 15px;
 }
-
+.columnWork{
+  margin: 90px auto;
+}
 .username {
   /* position: absolute; */
   margin: 5px;
