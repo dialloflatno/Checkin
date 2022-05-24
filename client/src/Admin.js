@@ -43,10 +43,11 @@ export default function Admin() {
           <td>{users.school}</td>
           <td>{users.IDNUMBER}</td>
           <td>{users.state}</td>
-          <td><select>
+          <td>Student <button>Status</button></td>
+          {/* <td>Student <select>
             <option >STUDENT</option>
             <option>TEACHER</option>
-            </select></td>
+            </select></td> */}
         </tbody>
       </table>
       </div>
