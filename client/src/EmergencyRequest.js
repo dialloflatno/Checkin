@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import ReadOnlyRow from "./components/ReadOnlyRow";
 import EQuest from "./EQuest";
 
 export default function EmergencyRequest({
@@ -49,12 +50,13 @@ export default function EmergencyRequest({
               <td>{e.location.name}</td>
               <td>{e.student.student_school_id}</td>
               <td>
-                <button>resolve</button>
+                <input></input>
+                <button>save</button>
+                <button>cancel</button>
               </td>
               <td>
                 <select>
                   <option>unresolved</option>
-                  <option>pending</option>
                   <option>resolved</option>
                 </select>
               </td>
@@ -76,21 +78,7 @@ export default function EmergencyRequest({
         </thead>
         <tbody>
           {emergencyShow?.map((e) => (
-            <tr>
-              <td>{e.emergency}</td>
-              <td>{e.location.name}</td>
-              <td>{e.student.student_school_id}</td>
-              <td>
-                <button>resolve</button>
-              </td>
-              <td>
-                <select>
-                  <option>unresolved</option>
-                  <option>pending</option>
-                  <option>resolved</option>{" "}
-                </select>
-              </td>
-            </tr>
+            <ReadOnlyRow e={e} />
           ))}
         </tbody>
       </table>

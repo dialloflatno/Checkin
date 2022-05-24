@@ -705,7 +705,7 @@ nav h3 {
 }
 
 nav a:hover {
-  color: rgb(65, 61, 4);
+  color: rgb(224, 224, 224);
 }
 
 .nav-toggle {
@@ -1347,6 +1347,8 @@ form {
   flex-wrap: nowrap;
   align-content: center;
   margin-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 #eqstack th {
@@ -1403,4 +1405,8 @@ table tbody tr {
 #resolved th {
   background-color: rgb(149, 216, 255);
   font-size: 1em;
+}
+
+table button {
+  color: black;
 }
