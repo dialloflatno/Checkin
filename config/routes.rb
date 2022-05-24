@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :admins, only: %i[ index show create destroy ]
   resources :events, only: %i[index create destroy]
-  resources :users, only: %i[index show create]
+  resources :users, only: %i[index show create update]
   resources :subjects, only: %i[index show create]
   resources :periods, only: %i[index show]
   resources :errs, only: %i[index create show]
@@ -23,6 +23,7 @@ Rails.application.routes.draw do
   #user route
     get '/me', to: 'users#show'
     post '/signup', to: 'users#create'
+    # post '/signup', to: 'users#create'
 
   #session routes for login / logout
     post '/login', to: 'sessions#create'

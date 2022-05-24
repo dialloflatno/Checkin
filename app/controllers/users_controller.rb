@@ -22,6 +22,11 @@ class UsersController < ApplicationController
     end
   end
 
+  def update
+    user_updated = User.update(user_params)
+    render json: user_updated, status: :updated
+  end
+
   private
 
   def user_params

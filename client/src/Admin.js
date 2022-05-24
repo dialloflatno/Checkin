@@ -21,6 +21,10 @@ export default function Admin() {
   console.log(allUsers);
 
 
+
+
+
+
   let columnUsers = "No Users";
 
   if (allUsers.length) {
@@ -44,10 +48,6 @@ export default function Admin() {
           <td>{users.IDNUMBER}</td>
           <td>{users.state}</td>
           <td>Student <button>Status</button></td>
-          {/* <td>Student <select>
-            <option >STUDENT</option>
-            <option>TEACHER</option>
-            </select></td> */}
         </tbody>
       </table>
       </div>
