@@ -317,6 +317,9 @@ time {
 .columnWork{
   margin: 90px auto;
 }
+.userTabel button{
+  color: black;
+}
 .username {
   /* position: absolute; */
   margin: 5px;

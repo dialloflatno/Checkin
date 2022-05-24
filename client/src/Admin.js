@@ -25,20 +25,39 @@ export default function Admin() {
 
   if (allUsers.length) {
     columnUsers = allUsers?.map((users) => (
-      <ul>
-       <li>{users. full_name} <br/> Email Address: {users.email} <br/> School:{users.school}<br/>Student ID NUMBER:{users.IDNUMBER}<br/>{users.state}<br/>{users.student}</li>
-      </ul>
-    )
+      <div class = 'userTabel'>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>School</th>
+            <th>ID NUMBER</th>
+            <th>STATE</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <td>{users.full_name}</td>
+          <td>{users.email}</td>
+          <td>{users.school}</td>
+          <td>{users.IDNUMBER}</td>
+          <td>{users.state}</td>
+          <td><select>
+            <option >STUDENT</option>
+            <option>TEACHER</option>
+            </select></td>
+        </tbody>
+      </table>
+      </div>
+      )
     )
   }
   return (
     <>
 
       <div class='columnWork'>
-        {
- columnUsers
-
-        }
+        { columnUsers }
 
       </div>
     </>
