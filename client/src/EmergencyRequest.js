@@ -36,6 +36,7 @@ export default function EmergencyRequest({
             <th>Emergency</th>
             <th>Location</th>
             <th>Student ID#</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
@@ -44,6 +45,7 @@ export default function EmergencyRequest({
               <td>{e.emergency}</td>
               <td>{e.location.name}</td>
               <td>{e.student.student_school_id}</td>
+              <td>edit / delete</td>
             </tr>
           ))}
         </tbody>
