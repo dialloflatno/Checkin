@@ -14,7 +14,6 @@ class UsersController < ApplicationController
 
   def create
     user = User.create(user_params)
-    byebug
     if user
       render json: user, status: :created
     else
@@ -23,8 +22,9 @@ class UsersController < ApplicationController
   end
 
   def update
-    user_updated = User.update(user_params)
-    render json: user_updated, status: :updated
+    user = User.find_by(id: params[:id])
+    user_updated = user.update(user_params)
+    render json: user_updated, status: :ok
   end
 
   private
