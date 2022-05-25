@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-function SignUp({ setUser }) {
+function Signup({ setUser }) {
   const [full_name, setFullName] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -132,4 +132,4 @@ function SignUp({ setUser }) {
   );
 }
 
-export default SignUp;
+export default Signup;

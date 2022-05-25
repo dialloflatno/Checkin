@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 import Login from "./Login";
-import SignUp from "./SignUp.js";
+import Signup from "./Signup.js";
 import NavBar from "./NavBar";
 import Home from "./Home";
 import Emergency from "./Emergency";
@@ -114,7 +114,7 @@ function App() {
       <>
         <Switch>
           <Route path="/signup">
-            <SignUp user={user} setUser={setUser} />
+            <Signup user={user} setUser={setUser} />
           </Route>
           <Route>
             <Login handleLogin={handleLogin} />

@@ -71,7 +71,7 @@ function handleClickTeacher(e) {
           <td>{users.school}</td>
           <td>{users.IDNUMBER}</td>
           <td>{users.state}</td>
-          <td><button onClick= {handleClickStudent}>Student</button> <button onClick= {handleClickTeacher} >Teacher</button></td>
+          <td>{users.student}<button onClick= {handleClickStudent}>Student</button> <button onClick= {handleClickTeacher} >Teacher</button></td>
         </tbody>
       </table>
       </div>
