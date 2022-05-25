@@ -23,7 +23,7 @@ Rails.application.routes.draw do
   #user route
     get '/me', to: 'users#show'
     post '/signup', to: 'users#create'
-    # post '/signup', to: 'users#create'
+    patch '/users/:id', to: 'users#update'
 
   #session routes for login / logout
     post '/login', to: 'sessions#create'
