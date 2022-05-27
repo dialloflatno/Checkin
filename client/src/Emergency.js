@@ -116,7 +116,15 @@ function Emergency({ user, handleNewEmergency }) {
         </div>
         <img src="mascot.png" alt="checkedin mascot" className="mascot" />
         <h1>Feeling Nervous or Worried?</h1>
-        <strong> 1) Breath in  hold for 10 second 2) Breath out slowly Breath in  hold for 10 seconds 3)Breath out slowly </strong>
+        <ul>
+          <ul>1) Breath in hold for 10 second</ul> 
+          <br/>
+          <ul>2) Breath out slowly </ul>
+          <br/>
+          <ul>3)Breath in hold for 10 seconds</ul>
+          <br/>
+          <ul>4)Breath out slowly</ul>
+        </ul>
       </div>
     </div>
   );
