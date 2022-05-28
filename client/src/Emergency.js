@@ -125,6 +125,7 @@ function Emergency({ user, handleNewEmergency }) {
           <br/>
           <ul>4)Breath out slowly</ul>
         </ul>
+
       </div>
     </div>
   );

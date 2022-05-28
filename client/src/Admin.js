@@ -12,6 +12,7 @@ export default function Admin() {
   const [teacher, setAsTeacher] = useState('')
   const [student, setAsStudent] = useState(false)
 
+
   useEffect(() => {
     fetch('/users').then((r) => {
       if (r.ok) {
@@ -54,6 +55,7 @@ export default function Admin() {
   if (allUsers.length) {
     columnUsers = allUsers?.map((users) => (
       <div class = 'userTabel'>
+
             <>
               <tbody>
                 <td>{users.full_name}</td>
@@ -65,6 +67,7 @@ export default function Admin() {
               </tbody>
             </>
           )
+
       </div>
   )
   )
