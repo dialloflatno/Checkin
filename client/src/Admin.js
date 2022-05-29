@@ -23,10 +23,10 @@ export default function Admin() {
   console.log(allUsers);
 
 
-  function handleClickStudent(e) {
-    console.log('student');
+  function handleClickStudent(id) {
+    console.log(`student id is ${id}`);
     setAsStudent((student) => !student)
-    fetch(`/users/${allUsers?.map((users) => (users.id))}`, {
+    fetch(`/users/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -53,42 +53,42 @@ export default function Admin() {
 
   if (allUsers.length) {
     columnUsers = allUsers?.map((users) => (
-      <div class = 'userTabel'>
-            <>
-              <tbody>
-                <td>{users.full_name}</td>
-                <td>{users.email}</td>
-                <td>{users.school}</td>
-                <td>{users.IDNUMBER}</td>
-                <td>{users.state}</td>
-                <td>{users.student}<button onClick={handleClickStudent}>Student</button> <button onClick={handleClickTeacher} >Teacher</button></td>
-              </tbody>
-            </>
-          )
-      </div>
-  )
-  )
-}
-return (
-  <>
-
-    <div class='columnWork'>
       <div class='userTabel'>
-        <table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Email</th>
-              <th>School</th>
-              <th>ID NUMBER</th>
-              <th>STATE</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          {columnUsers}
-        </table>
+        <>
+          <tbody>
+            <td>{users.full_name}</td>
+            <td>{users.email}</td>
+            <td>{users.school}</td>
+            <td>{users.IDNUMBER}</td>
+            <td>{users.state}</td>
+            <td>{users.student}<button onClick={() => handleClickStudent(users.id)}>Student</button> <button onClick={handleClickTeacher} >Teacher</button></td>
+          </tbody>
+        </>
+        )
       </div>
-    </div>
-  </>
-)
+    )
+    )
+  }
+  return (
+    <>
+
+      <div class='columnWork'>
+        <div class='userTabel'>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>School</th>
+                <th>ID NUMBER</th>
+                <th>STATE</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            {columnUsers}
+          </table>
+        </div>
+      </div>
+    </>
+  )
 }
