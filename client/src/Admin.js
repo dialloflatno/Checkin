@@ -4,6 +4,7 @@ import TeacherUser from "./TeacherUser";
 import User from "./User";
 
 export default function Admin() {
+  
   const [allUsers, setAllUsers] = useState("");
   const [teacher, setAsTeacher] = useState(false);
   const [student, setAsStudent] = useState(false);
@@ -21,6 +22,7 @@ export default function Admin() {
   function handleClickStudent(id) {
     console.log(`student id is ${id}`);
     setAsStudent((student) => !student);
+
     fetch(`/users/${id}`, {
       method: "PATCH",
       headers: {
@@ -58,7 +60,9 @@ export default function Admin() {
 
   if (allUsers.length) {
     columnUsers = allUsers?.map((users) => (
+      
       <div class="userTabel">
+
         <>
           <tbody>
             <td>{users.full_name}</td>
@@ -103,3 +107,4 @@ export default function Admin() {
     </>
   );
 }
+
