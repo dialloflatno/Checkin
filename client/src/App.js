@@ -86,7 +86,10 @@ function App() {
         <Switch>
           <Route exact path="/">
             <TeacherNavBar user={user} setUser={setUser} />
-            <Teacher />
+            <EmergencyRequest
+              emergencyShow={emergencyShow}
+              setEmergencyRequests={setEmergencyRequests}
+            />{" "}
           </Route>
           <Route path="/errs">
             <TeacherNavBar user={user} setUser={setUser} />
