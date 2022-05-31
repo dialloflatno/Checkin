@@ -10,12 +10,13 @@ import Schedule from "./Schedule";
 import Profile from "./Profile";
 import Grades from "./Grades";
 import Events from "./Events";
-import Teacher from "./Teacher";
+import School from "./School";
 import Admin from "./Admin";
 import EmergencyRequest from "./EmergencyRequest";
 import TeacherNavBar from "./TeacherNavBar";
 import LandingPage from "./LandingPage";
 import AdminNavBar from "./AdminNavBar";
+import Teacher from "./Teacher";
 
 function App() {
   const [user, setUser] = useState([]);
@@ -108,6 +109,10 @@ function App() {
           <Route exact path="/">
             <AdminNavBar user={user} setUser={setUser} />
             <Admin />
+          </Route>
+          <Route path="/schools">
+          <AdminNavBar user={user} setUser={setUser} />
+            <School />
           </Route>
         </Switch>
       </>

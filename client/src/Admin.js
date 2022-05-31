@@ -21,7 +21,6 @@ export default function Admin() {
   function handleClickStudent(id) {
     console.log(`student id is ${id}`);
     setAsStudent((student) => !student);
-
     fetch(`/users/${id}`, {
       method: "PATCH",
       headers: {
