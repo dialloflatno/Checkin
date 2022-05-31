@@ -314,12 +314,10 @@ time {
 #user_name {
   padding-right: 15px;
 }
-.columnWork{
+/* .columnWork {
   margin: 90px auto;
-}
-.userTabel button{
-  color: black;
-}
+} */
+
 .username {
   /* position: absolute; */
   margin: 5px;
@@ -1411,22 +1409,7 @@ form td:last-child {
 table tbody tr {
   text-transform: lowercase;
 }
-/* USER TABEL */
 
-
-.userTabel {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  align-content: center;
-  margin-top: 100px;
-}
-
-.userTabel thead {
-  background: #a7cbea;
-
-}
 #eqstack th {
   width: fit-content;
 }
@@ -1437,7 +1420,6 @@ table tbody tr {
   gap: 10px;
   padding: 1rem;
 }
-
 
 #resolved th {
   background-color: rgb(149, 216, 255);
@@ -1452,9 +1434,21 @@ table button {
   width: 100%;
 }
 
-/* TEACHER TABLE CSS */
-
 /* ADMIN TABLE CSS */
 
+.userTable {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  align-content: center;
+  margin-top: 100px;
+}
 
+.userTable button {
+  color: black;
+}
 
+.userTable thead {
+  background: #a7cbea;
+}

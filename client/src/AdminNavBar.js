@@ -30,7 +30,7 @@ export default function AdminNavBar({ user, setUser }) {
                   <Link to="/errs">EmergencyRequest</Link>
                 </li>
                 <li>
-                  <Link to="/grades">Schools</Link>
+                  <Link to="/schools">Schools</Link>
                 </li>
                 <li>
                   <Link to="/events">Teachers</Link>

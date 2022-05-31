@@ -4,7 +4,7 @@ import TeacherUser from "./TeacherUser";
 import User from "./User";
 
 export default function Admin() {
-  const [allUsers, setAllUsers] = useState("");
+  const [allUsers, setAllUsers] = useState([]);
   const [teacher, setAsTeacher] = useState(false);
   const [student, setAsStudent] = useState(false);
 
@@ -58,7 +58,7 @@ export default function Admin() {
 
   if (allUsers.length) {
     columnUsers = allUsers?.map((users) => (
-      <div class="userTabel">
+      <div class="userTable">
         <>
           <tbody>
             <td>{users.full_name}</td>
@@ -77,29 +77,43 @@ export default function Admin() {
             </td>
           </tbody>
         </>
-        )
       </div>
     ));
   }
   return (
-    <>
-      <div class="columnWork">
-        <div class="userTabel">
-          <table>
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>School</th>
-                <th>ID NUMBER</th>
-                <th>STATE</th>
-                <th>Status</th>
-              </tr>
-            </thead>
-            {columnUsers}
-          </table>
-        </div>
-      </div>
-    </>
+    <div class="userTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>School</th>
+            <th>ID NUMBER</th>
+            <th>STATE</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          {allUsers?.map((e) => (
+            <tr>
+              <td>{e.full_name}</td>
+              <td>{e.email}</td>
+              <td>{e.school}</td>
+              <td>{e.IDNUMBER}</td>
+              <td>{e.state}</td>
+              <td>
+                {e.student}
+                <button onClick={() => handleClickStudent(e.id)}>
+                  Student
+                </button>{" "}
+                <button onClick={() => handleClickTeacher(e.id)}>
+                  Teacher
+                </button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 }
