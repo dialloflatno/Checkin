@@ -74,10 +74,14 @@ export default function EmergencyRequest({
     setEditRowId(null);
   };
 
+  const handleCancelClick = () => {
+    setEditRowId(null);
+  };
+
   return (
     <div id="teacher-err-body">
       <h2>Active Emergencies</h2>
-      <form id="activeform">
+      <form id="activeform" onSubmit={handleEditFormSubmit}>
         <table id="active">
           <thead>
             <tr>
@@ -95,6 +99,7 @@ export default function EmergencyRequest({
                   <EditableRow
                     editFormData={editFormData}
                     handleEditFormChange={handleEditFormChange}
+                    handleCancelClick={handleCancelClick}
                     e={e}
                   />
                 ) : (
